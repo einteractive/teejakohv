@@ -20,14 +20,14 @@
         </div><!--/span-->
 
         <div class="col-12 col-lg-9">
-          <p class="float-left ">
-            <button type="button" class="btn btn-primary btn-sm d-lg-none" data-toggle="offcanvas">Toggle nav</button>
-          </p>
+
+            <button type="button" class="btn btn-primary btn-lg d-lg-none" data-toggle="offcanvas">Toggle nav</button>
+
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
           <div class="page-header">
-            <h1><?php the_title(); ?></h1>
+            <h1 class="display-4"><?php the_title(); ?></h1>
           </div>
 
           <?php the_content(); ?>
