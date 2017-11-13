@@ -1,3 +1,8 @@
 body {
-  background-image: url('./images/bg.jpg');
+  @include bgMixin("../images/bg.jpg");
+  background-color: #f3f3f3;
+}
+#mainWraaper {
+  background-color: white;
+  overflow: hidden;
 }

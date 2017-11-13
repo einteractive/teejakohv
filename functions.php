@@ -1,17 +1,17 @@
 <?php
-	
+
 /**
  * Styles.
  *
  * Theme Styles Functions.
  */
- 
+
 function theme_styles() {
-	
+
 	wp_enqueue_style( 'theme_css', get_template_directory_uri() . '/css/theme.css' );
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'slider_horizontal', get_template_directory_uri() . '/css/slider-horizontal.css' );
-	wp_enqueue_style( 'font_awesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css' );
+	//wp_enqueue_style( 'slider_horizontal', get_template_directory_uri() . '/css/slider-horizontal.css' );
+	//wp_enqueue_style( 'font_awesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
@@ -30,9 +30,13 @@ function theme_js() {
 	$wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
 	$wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
 
-	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
-	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
-	wp_enqueue_script( 'menu_dropdown_js', get_template_directory_uri() . '/js/menu_dropdown.js', array('jquery', 'bootstrap_js'), '', true );
+
+
+
+	wp_enqueue_script( 'popper_js',  get_template_directory_uri() . '/js/popper.js', array('jQuery'), false, true );
+	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.js', array('popper_js'), '', true );
+	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('bootstrap_js'), '', true );
+	//wp_enqueue_script( 'menu_dropdown_js', get_template_directory_uri() . '/js/menu_dropdown.js', array('jquery', 'bootstrap_js'), '', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
@@ -192,8 +196,8 @@ Menu_Item_Custom_Fields_Example::init();
 function create_widget( $name, $id, $description ) {
 
 	register_sidebar(array(
-		'name' => __( $name ),	 
-		'id' => $id, 
+		'name' => __( $name ),
+		'id' => $id,
 		'description' => __( $description ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
@@ -285,14 +289,14 @@ add_action( 'wpt_footer', 'wpt_footer_cart_link' );
 
 
 function wpt_footer_cart_link() {
-	
+
 	global $woocommerce;
 
 	if ( ( sizeof( $woocommerce->cart->cart_contents ) > 0 ) && ( !is_cart() && !is_checkout() ) ) :
 		echo '<a class="btn btn-default alt" href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart', 'woocommerce' ) . '</a>';
 
 		echo '<a class="btn btn-success" href="' . $woocommerce->cart->get_checkout_url() . '" title="' . __( 'Checkout' ) . '">' . __( 'Checkout', 'woocommerce' ) . '</a>';
-	endif;	
+	endif;
 }
 /**
  * Woocommerce Checkout.
@@ -356,7 +360,7 @@ function widget( $args, $instance ) {
  *
  * Change number of products displayed per page
  *
- */ 
+ */
 
 add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 
@@ -372,22 +376,22 @@ function new_loop_shop_per_page( $cols ) {
  *
  * Placeholder image
  *
- */ 
+ */
 
 /*
 * goes in theme functions.php or a custom plugin. Replace the image filename/path with your own :)
 *
 **/
 add_action( 'init', 'custom_fix_thumbnail' );
- 
+
 function custom_fix_thumbnail() {
   add_filter('woocommerce_placeholder_img_src', 'custom_woocommerce_placeholder_img_src');
-   
+
 	function custom_woocommerce_placeholder_img_src( $src ) {
 	$upload_dir = wp_upload_dir();
 	$uploads = untrailingslashit( $upload_dir['baseurl'] );
 	$src = $uploads . '/2017/05/switch-product.jpg';
-	 
+
 	return $src;
 	}
 }
@@ -396,7 +400,7 @@ function custom_fix_thumbnail() {
  *
  * Custom hook for Product Single
  *
- */ 
+ */
 add_action('woocommerce_before_single_product_intro','woocommerce_template_single_price',10);
 add_action('woocommerce_before_single_product_intro','woocommerce_template_single_add_to_cart',20);
 
