@@ -62,7 +62,8 @@ add_theme_support( 'wc-product-gallery-lightbox' );
 function register_theme_menus() {
 	register_nav_menus(
 		array(
-			'primary'	=> __( 'Primary Menu' )
+			'primary'	=> __( 'Primary Menu' ),
+			'topmenu'	=> __( 'Top Menu' )
 		)
 	);
 }
