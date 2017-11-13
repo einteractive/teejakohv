@@ -11,10 +11,11 @@
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
-
+<<<<<<< HEAD
             <a href="#" class="list-group-item">SUper</a>
+=======
             <a href="#" class="list-group-item">Link</a>
-
+>>>>>>> b006710a1a9a33c5b5ba686cbd961967a5c45305
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
