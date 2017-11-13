@@ -85,10 +85,14 @@
         <div class="col-md-6 ml-auto">
           <div class="row">
             <div class="col-sm-6">
-              <button type="button" class="btn btn-outline-success btn-block">Success</button>
+              <?php get_product_search_form() ?>
             </div>
             <div class="col-sm-6">
-              <button type="button" class="btn btn-outline-secondary btn-block">Secondary</button>
+              
+              
+              <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
+              
+              
             </div>
           </div>
         </div>
