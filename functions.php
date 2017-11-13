@@ -60,7 +60,8 @@ function register_theme_menus() {
 	register_nav_menus(
 		array(
 			'primary'	=> __( 'Primary Menu', 'teejakohv' ),
-			'topmenu'	=> __( 'Top Menu', 'teejakohv' )
+			'topmenu'	=> __( 'Top Menu', 'teejakohv' ),
+			'topmenulogin'	=> __( 'Top Login Menu', 'teejakohv' )
 		)
 	);
 }
@@ -404,3 +405,26 @@ remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_sing
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
+
+/**
+ * Login / Logout Button in Menu.
+ */
+add_filter( 'wp_nav_menu_items', 'add_loginout_link', 10, 2 );
+
+function add_loginout_link( $items, $args ) {
+
+   if (is_user_logged_in() && $args->theme_location == 'topmenulogin') {
+
+       $items .= '<li><a class="nav-link" href="'. wp_logout_url( get_permalink( woocommerce_get_page_id( 'myaccount' ) ) ) .'"> ' . __( 'Log Out', 'teejakohv' ) . ' </a></li>';
+
+   }
+
+   elseif (!is_user_logged_in() && $args->theme_location == 'topmenulogin') {
+
+       $items .= '<li><a class="nav-link" href="' . get_permalink( woocommerce_get_page_id( 'myaccount' ) ) . '"> ' . __( 'Login', 'teejakohv' ) . ' </a></li>';
+
+   }
+
+   return $items;
+
+}

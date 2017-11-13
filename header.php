@@ -19,11 +19,23 @@
     <nav id="topMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <div class="navbar" id="header">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
-            </li>
-                      </ul>
+	        
+
+
+		<!-- The WordPress Menu goes here -->
+				<?php wp_nav_menu(
+					array(
+						'theme_location'  => 'topmenu',
+						'container_class' => 'collapse navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav mr-auto',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					)
+				); ?>
+
+<?php do_action('icl_language_selector'); ?>
 
         </div>
       </div>
@@ -34,12 +46,34 @@
       <div class="row">
         <div class="col-md-6 ml-auto">
           <div class="row">
-            <div class="col-sm-6">
-              <button type="button" class="btn btn-outline-success btn-block">Success</button>
-            </div>
-            <div class="col-sm-6">
-              <button type="button" class="btn btn-outline-secondary btn-block">Secondary</button>
-            </div>
+              
+
+ <nav id="topMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="navbar" id="header">
+	        
+
+
+		<!-- The WordPress Menu goes here -->
+				<?php wp_nav_menu(
+					array(
+						'theme_location'  => 'topmenulogin',
+						'container_class' => 'navbar-collapse',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav mr-auto',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'walker'          => new WP_Bootstrap_Navwalker(),
+					)
+				); ?>
+
+
+        </div>
+      </div>
+    </nav>
+
+
+   
           </div>
         </div>
       </div><!-- /account -->
