@@ -6001,7 +6001,7 @@ a.text-dark:hover {
   visibility: hidden !important; }
 
 body {
-  background-image: "../images/bg.jpg";
+  background-image: url("../images/bg.jpg");
   background-color: #f3f3f3; }
 
 #mainWraaper {
