@@ -332,16 +332,6 @@ add_filter( 'woocommerce_billing_fields', 'wpt_custom_billing_fields' );
 
 remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
 
-/**
- * Header menu.
- *
- * Add link class to menu buttons
- *
- */
-function add_menuclass($ulclass) {
-   return preg_replace('/<a /', '<a class="hvr-shadow"', $ulclass);
-}
-add_filter('wp_nav_menu','add_menuclass');
 
 /**
  * Widget Title.
