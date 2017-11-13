@@ -11,7 +11,7 @@
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">SUper</a>
+            <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
@@ -21,7 +21,7 @@
 
         <div class="col-12 col-lg-9">
           <p class="float-left ">
-            <button type="button" class="btn btn-primary btn-sm d-lg-none" data-toggle="offcanvas">Toggle nav</button>
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
           </p>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
