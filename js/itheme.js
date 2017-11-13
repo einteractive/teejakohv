@@ -1,3 +1,6 @@
+jQuery(document).ready(function($) {
+    // Внутри этой функции $() будет работать как синоним jQuery()
+
 /*!
   * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
   * Copyright 2011-2017 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
@@ -3849,4 +3852,19 @@ return exports;
 }({},$,Popper));
 //# sourceMappingURL=bootstrap.js.map
 
-//# sourceMappingURL=bootstrap.js.map
+jQuery(document).ready(function($) {
+    // Внутри этой функции $() будет работать как синоним jQuery()
+
+    // Off-Canvas Menu in #mainWraaper
+  $(function () {
+    'use strict'
+
+    $('[data-toggle="offcanvas"]').on('click', function () {
+      $('.row-offcanvas').toggleClass('active')
+    })
+  })
+});
+
+});
+
+//# sourceMappingURL=itheme.js.map
