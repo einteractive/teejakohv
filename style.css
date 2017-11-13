@@ -11,3 +11,57 @@ Text Domain: tjkb4
 
 This theme, like WordPress, is licensed under the GPL.
 */
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 992px) {
+  .row-offcanvas {
+    position: relative;
+    transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right .sidebar-offcanvas {
+    right: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-right.active .sidebar-offcanvas {
+    right: -41.6%; /* 5 columns */
+  }
+
+  .row-offcanvas-left .sidebar-offcanvas {
+    left: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -41.6%; /* 5 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 41.6%; /* 5 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 41.6%; /* 5 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 1.25rem;
+    width: 41.6%; /* 5 columns */
+  }
+}
