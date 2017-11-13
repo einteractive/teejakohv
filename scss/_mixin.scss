@@ -1,0 +1,10 @@
+@mixin bgMixin ($imgpath,$position:0 0,$repeat: no-repeat, $bgsize: 100% auto) {
+    background: url(#{$imgpath}) $repeat $position;
+    background-size: $bgsize;
+}
+
+@mixin themefont {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  
+}

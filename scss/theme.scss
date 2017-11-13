@@ -1,5 +1,7 @@
 // Bootstrap 4
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Theme scss mixin
+@import "mixin";
 // Theme scss styles
 @import "global";
 @import "header";
