@@ -1,5 +1,5 @@
 body {
-  @include bgMixin("../images/bg.jpg");
+  background-image:("../images/bg.jpg");
   background-color: #f3f3f3;
 }
 #mainWraaper {
