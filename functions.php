@@ -400,4 +400,7 @@ add_action('woocommerce_before_single_product_intro','woocommerce_template_singl
 remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_single_price', 10 );
 remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_single_add_to_cart', 30 );
 
-require_once('wp_bootstrap_navwalker.php');
+/**
+ * Load custom WordPress nav walker.
+ */
+require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
