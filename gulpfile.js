@@ -21,12 +21,15 @@ gulp.task('watch', function () {
     gulp.watch('./scss/*.scss', ['scss',]);
 });
 
-gulp.task("bs-js", function(){
+gulp.task("js", function(){
 	return gulp.src([
-		'node_modules/bootstrap/dist/js/bootstrap.js'
+		'js/wp-wraaper-start.js',
+		'node_modules/bootstrap/dist/js/bootstrap.js',
+		'js/theme.js',
+		'js/wp-wraaper-end.js',
 	])
 	.pipe(maps.init())
-	.pipe(concat("bootstrap.js"))
+	.pipe(concat("itheme.js"))
 	.pipe(maps.write('./'))
 	.pipe(gulp.dest('js'))
 });
