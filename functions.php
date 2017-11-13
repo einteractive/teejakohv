@@ -59,8 +59,8 @@ add_theme_support( 'wc-product-gallery-lightbox' );
 function register_theme_menus() {
 	register_nav_menus(
 		array(
-			'primary'	=> __( 'Primary Menu' ),
-			'topmenu'	=> __( 'Top Menu' )
+			'primary'	=> __( 'Primary Menu', 'teejakohv' ),
+			'topmenu'	=> __( 'Top Menu', 'teejakohv' )
 		)
 	);
 }
@@ -399,3 +399,5 @@ add_action('woocommerce_before_single_product_intro','woocommerce_template_singl
  */
 remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_single_price', 10 );
 remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_single_add_to_cart', 30 );
+
+require_once('wp_bootstrap_navwalker.php');

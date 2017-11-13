@@ -72,16 +72,21 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
 	      
-	             <?php 
-            $args = array(
-              'menu'        => 'primary-menu',
-              'menu_class'  => 'navbar-nav mr-auto',
-              'container'   => 'false',
-              'theme_location' => 'primary'
-            );
-            wp_nav_menu( $args );
-          ?>
 	      
+	      
+	       <?php
+            wp_nav_menu( array(
+                'menu'              => 'primary-menu',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+		'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        ?>
 	      
 	      
 <!--
