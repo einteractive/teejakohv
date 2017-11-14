@@ -399,8 +399,7 @@ add_action('woocommerce_before_single_product_intro','woocommerce_template_singl
  *
  * Custom hook for Product Single. Remove Price and add to cart.
  */
-remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_single_price', 10 );
-remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_single_add_to_cart', 30 );
+
 
 /**
  * Load custom WordPress nav walker.
