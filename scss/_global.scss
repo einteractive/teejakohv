@@ -1,8 +1,20 @@
 body {
   background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
   background-color: #f3f3f3;
+
+  ul {
+    @extend .nav;
+    li {
+      @extend .nav-item;
+      a {
+        @extend .nav-link;
+
+      }
+    }
+  }
 }
-#mainWraaper {
+#mainWraaper .container {
   background-color: white;
   overflow: hidden;
 }

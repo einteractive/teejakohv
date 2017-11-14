@@ -7,3 +7,17 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+	border-top-left-radius: $topleft !important;
+	border-top-right-radius: $topright !important;
+	border-bottom-right-radius: $bottomright !important;
+	border-bottom-left-radius: $bottomleft !important;
+	-webkit-border-top-left-radius: $topleft !important;
+	-webkit-border-top-right-radius: $topright !important;
+	-webkit-border-bottom-right-radius: $bottomright !important;
+	-webkit-border-bottom-left-radius: $bottomleft !important;
+	-moz-border-radius-topleft: $topleft !important;
+	-moz-border-radius-topright: $topright !important;
+	-moz-border-radius-bottomright: $bottomright !important;
+	-moz-border-radius-bottomleft: $bottomleft !important;
+}
