@@ -19,23 +19,20 @@
     <nav id="topMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <div class="navbar" id="header">
-	        
+          <!-- The WordPress Menu goes here -->
+  				<?php wp_nav_menu(
+  					array(
+  						'theme_location'  => 'topmenu',
+  						'container_class' => 'collapse navbar-collapse',
+  						'container_id'    => 'navbarNavDropdown',
+  						'menu_class'      => 'navbar-nav mr-auto',
+  						'fallback_cb'     => '',
+  						'menu_id'         => 'main-menu',
+  						'walker'          => new WP_Bootstrap_Navwalker(),
+  					)
+  				); ?>
 
-
-		<!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'topmenu',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav mr-auto',
-						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
-						'walker'          => new WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-
-<?php do_action('icl_language_selector'); ?>
+          <?php do_action('icl_language_selector'); ?>
 
         </div>
       </div>
@@ -46,12 +43,12 @@
       <div class="row">
         <div class="col-md-6 ml-auto">
           <div class="row">
-              
+
 
  <nav id="topMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <div class="navbar" id="header">
-	        
+
 
 
 		<!-- The WordPress Menu goes here -->
@@ -73,7 +70,7 @@
     </nav>
 
 
-   
+
           </div>
         </div>
       </div><!-- /account -->
@@ -88,20 +85,20 @@
               <?php get_product_search_form() ?>
             </div>
             <div class="col-sm-6">
-              
-              
+
+
               <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
-              
-              
+
+
             </div>
           </div>
         </div>
       </div><!-- /search -->
-      
-      
 
-      
-      
+
+
+
+
 
       <nav id="mainMenu" class="navbar navbar-expand-md navbar-dark bg-dark">
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,9 +117,9 @@
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-	      
-	      	      
-	      
+
+
+
 <!--
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">

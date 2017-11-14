@@ -9,7 +9,7 @@
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
+            <a href="#" class="list-group-item">Link to link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
