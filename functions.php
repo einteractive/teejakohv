@@ -386,22 +386,6 @@ function custom_fix_thumbnail() {
 	}
 }
 /**
- * Woocommerce.
- *
- * Custom hook for Product Single
- *
- */
-add_action('woocommerce_before_single_product_intro','woocommerce_template_single_price',10);
-add_action('woocommerce_before_single_product_intro','woocommerce_template_single_add_to_cart',20);
-
-/**
- * Woocommerce.
- *
- * Custom hook for Product Single. Remove Price and add to cart.
- */
-
-
-/**
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
