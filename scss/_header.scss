@@ -1,0 +1,109 @@
+#topMenu {
+  padding: 0;
+  a {
+    @include themefont;
+    font-size: 1rem;
+    color: $light;
+  }
+}
+
+#accountLog {
+  div ul {
+    background: rgba(white, 0.5);
+    @extend .pl-5;
+    @extend .p-2;
+    @include border-radius(0px 0px 8px 8px);
+
+    li {
+      @extend .btn;
+      @extend .p-0;
+      @extend .ml-2;
+      @include themefont;
+      a {
+        padding: 0.3rem;
+      }
+
+    }
+    li:first-child {
+      @extend .btn-light;
+      background: transparent;
+      a {
+        color: $dark;
+      }
+    }
+
+    li:last-child {
+
+      @extend .btn-danger;
+      a {
+        color: $light;
+      }
+    }
+  }
+}
+
+#searchBar {
+  @include themefont;
+
+    form {
+      @extend .input-group;
+
+      input.search-field {
+        @extend .form-control;
+        @include border-radii(8px, 0, 0, 0);
+        @include themefont;
+      }
+
+      input[type="submit"] {
+        @include themefont;
+        @extend .input-group-addon;
+      }
+    }
+
+  #cart {
+    @extend .pl-0;
+    .dropdown {
+      &::after{
+         content: '';
+         display: inline-block;
+         width: 15px;
+         height: 15px;
+         position: absolute;
+         background-color: $success;
+         right: 0;
+      }
+      button {
+        @include border-radius(0px 8px 0px 0px);
+        @include themefont;
+      }
+    }
+  }
+}
+
+
+#mainMenu {
+  @include border-radii(8px, 8px, 0, 0);
+
+  #mainMenu-id {
+
+    li {
+
+
+      a {
+        @include themefont
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        color: $white;
+        font-style: normal;
+
+        &:hover,
+        &:active {
+        color: $success;
+        }
+      }
+    }
+
+
+  }
+
+}

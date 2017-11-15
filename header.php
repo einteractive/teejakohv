@@ -10,101 +10,93 @@
       <?php wp_title( '|', true, 'right' ); ?>
       <?php bloginfo( 'name' ); ?>
     </title>
+    <script type="text/javascript">
+    (function($) {
+    // Внутри этой функции $() будет работать как синоним jQuery()
+    })(jQuery);
+  </script>
 
     <?php wp_head(); ?>
+
+
     </head>
 
   <body <?php body_class(); ?>>
 
-    <nav id="topMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <div class="navbar" id="header">
-	        
 
+  <nav id="topMenu" class="navbar navbar-dark bg-dark">
+    <div class="container">
 
-		<!-- The WordPress Menu goes here -->
+        <!-- The WordPress Menu  -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'topmenu',
-						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav mr-auto',
+						'container_class' => '',
+						'container'    => false,
+            'link_before'     => '<i class="fa fa-angle-right text-success" aria-hidden="true"></i> ',
+						'menu_class'      => 'navbar-nav mr-auto pl-3',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
 
-<?php do_action('icl_language_selector'); ?>
+        <!-- The WPML Menu  -->
+        <?php do_action('icl_language_selector'); ?>
 
-        </div>
-      </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="container">
-      <!-- Account section -->
-      <div class="row">
-        <div class="col-md-6 ml-auto">
-          <div class="row">
-              
+  <!-- Main Container -->
+  <div id="mainCont" class="container">
 
- <nav id="topMenu" class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <div class="navbar" id="header">
-	        
+    <!-- Account section -->
+    <div id="accountLog" class="row">
+      <div class="col-md-6 ml-auto d-flex flex-row-reverse">
 
-
-		<!-- The WordPress Menu goes here -->
+        <!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'topmenulogin',
-						'container_class' => 'navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav mr-auto',
+						'container_class' => '',
+						'container_id'    => '',
+						'menu_class'      => '',
 						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
+						'menu_id'         => '',
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
 
-
-        </div>
       </div>
-    </nav>
+    </div><!-- /account -->
 
+    <a class="" href="<?php echo esc_url( home_url() ); ?>"><img id="site-logo" class="brand img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/teejakohv_logo.png" alt="" /></a>
 
-   
+    <!-- Search section -->
+    <div id="searchBar" class="row">
+      <div class="ml-auto d-flex">
+        <?php get_product_search_form() ?>
+
+        <div id="cart" class="col">
+          <div class="dropdown">
+            <button class="btn btn-success px-3 btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cart
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+              <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
+            </div>
           </div>
         </div>
-      </div><!-- /account -->
-
-      <a class="" href="<?php echo esc_url( home_url() ); ?>"><img id="site-logo" class="brand img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/teejakohv_logo.png" alt="" /></a>
-
-      <!-- Search section -->
-      <div class="row">
-        <div class="col-md-6 ml-auto">
-          <div class="row">
-            <div class="col-sm-6">
-              <?php get_product_search_form() ?>
-            </div>
-            <div class="col-sm-6">
-              
-              
-              <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
-              
-              
-            </div>
-          </div>
         </div>
       </div><!-- /search -->
-      
-      
 
-      
-      
+  <!-- Page Wraaper #mainWraaper -->
+  <div id="mainWraaper"  role="main">
 
+      <!-- Primary Menu or Main Menu -->
       <nav id="mainMenu" class="navbar navbar-expand-md navbar-dark bg-dark">
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
@@ -116,30 +108,10 @@
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav',
 						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
+						'menu_id'         => 'mainMenu-id',
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
-	      
-	      	      
-	      
-<!--
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
--->
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-
-        </nav>
-<div id="mainWraaper" class="container" role="main">
+</nav>
+<!-- Main .container Start-->
+ <div class="container">
