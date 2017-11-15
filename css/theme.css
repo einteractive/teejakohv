@@ -5953,8 +5953,7 @@ body {
   #topMenu a {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
-    font-size: 1rem;
-    color: #f8f9fa; }
+    font-size: 1rem; }
 
 #accountLog div ul {
   background: rgba(255, 255, 255, 0.5);

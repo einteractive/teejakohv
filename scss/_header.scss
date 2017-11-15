@@ -3,8 +3,26 @@
   a {
     @include themefont;
     font-size: 1rem;
-    color: $light;
+    // color: $light;
+    //
+    // &:hover,
+    // &:active,
+    // &visited,
+    // &:link {
+    // color: $success;
+    // }
+    // & span {
+    //   color: $light;
+    //
+    //   &:hover,
+    //   &:active,
+    //   &visited,
+    //   &:link {
+    //   color: $success;
+    //   }
+    // }
   }
+
 }
 
 #accountLog {
@@ -90,7 +108,7 @@
 
 
       a {
-        @include themefont
+        @include themefont;
         text-transform: uppercase;
         font-size: 1.1rem;
         color: $white;

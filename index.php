@@ -1,6 +1,12 @@
 <?php get_header(); ?>
+<!-- Front page Slider with Bootstrap Carusel -->
+<?php if ( is_front_page() ) : ?>
+	<?php get_template_part( 'inc/itemplate/carusel', 'front' ); ?>
+<?php endif; ?>
 
 
+<!-- Main .container Start-->
+ <div class="container">
     <div class="row row-offcanvas row-offcanvas-left pt-3">
 
 
@@ -52,5 +58,5 @@
 <?php get_sidebar(); ?>
       </div><!--/row-->
 
-
+      </div> <!-- /.container -->
 <?php get_footer(); ?>

@@ -32,7 +32,7 @@
 						'container_class' => '',
 						'container'    => false,
             'link_before'     => '<i class="fa fa-angle-right text-success" aria-hidden="true"></i> ',
-						'menu_class'      => 'navbar-nav mr-auto pl-3',
+						'menu_class'      => 'mr-auto pl-3',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
 						'walker'          => new WP_Bootstrap_Navwalker(),
@@ -111,5 +111,3 @@
 					)
 				); ?>
 </nav>
-<!-- Main .container Start-->
- <div class="container">
