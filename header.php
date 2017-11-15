@@ -18,9 +18,11 @@
 
     <?php wp_head(); ?>
 
+
     </head>
 
-<body>
+  <body <?php body_class(); ?>>
+
 
   <nav id="topMenu" class="navbar navbar-dark bg-dark">
     <div class="container">
