@@ -54,6 +54,17 @@
     <div id="accountLog" class="row">
       <div class="col-md-6 ml-auto d-flex flex-row-reverse">
 
+<?php 
+	
+	if ( is_user_logged_in() ) {
+    $current_user = wp_get_current_user();
+    echo _e('Welcome, ','teejakohv') . $current_user->user_firstname;
+} else {
+    echo 'Welcome, visitor!';
+}
+
+?>
+
         <!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
