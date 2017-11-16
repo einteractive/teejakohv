@@ -17,9 +17,7 @@ gulp.task('scss', function() {
 		.pipe(gulp.dest('css'));
 });
 
-gulp.task('watch', function () {
-    gulp.watch('./scss/*.scss', ['scss',]);
-});
+
 
 gulp.task("js", function(){
 	return gulp.src([
@@ -32,4 +30,9 @@ gulp.task("js", function(){
 	.pipe(concat("itheme.js"))
 	.pipe(maps.write('./'))
 	.pipe(gulp.dest('js'))
+});
+
+gulp.task('watch', function () {
+    gulp.watch('./scss/*.scss', ['scss',]);
+		gulp.watch('./js/*.js', ['js',]);
 });

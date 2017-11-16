@@ -1,15 +1,30 @@
 #topMenu {
   padding: 0;
-  a {
-    @include themefont;
-    font-size: 1rem;
+    a {
+      @include themefont;
+      font-size: 1rem;
 
-  }
+    }
+    ul#topMenu-id {
+      a {
+
+        color: $white !important;
+      }
+      a:hover,
+      a:active,
+      li.active a {
+
+        color: $green !important;
+
+      }
+    }
+
 
 }
 
 #accountLog {
-  div ul {
+  div.row  {
+    @include themefont;
     background: rgba(white, 0.5);
     @extend .pl-5;
     @extend .p-2;
@@ -26,19 +41,23 @@
 
     }
     li:first-child {
-      @extend .btn-light;
-      background: transparent;
+
+      @extend .btn-danger;
       a {
-        color: $dark;
+                color: $light;
       }
     }
 
     li:last-child {
 
-      @extend .btn-danger;
+      //@extend .btn-light;
+
       a {
-        color: $light;
+        color: $dark;
       }
+    }
+    li.btn-two {
+      //@extend .btn-success;
     }
   }
 }
@@ -85,26 +104,34 @@
 #mainMenu {
   @include border-radii(8px, 8px, 0, 0);
 
-  #mainMenu-id {
-
-    li {
 
 
-      a {
-        @include themefont;
-        text-transform: uppercase;
-        font-size: 1.1rem;
-        color: $white;
-        font-style: normal;
+li {
 
-        &:hover,
-        &:active {
-        color: $success;
-        }
+    a {
+      @include themefont;
+      @extend .text-white;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      font-style: normal;
       }
+
+      a:hover,
+      a:active,
+      &.active a {
+        background-color: $green;
+        color: $white !important;
+        //@extend .bg-success;
+        @extend .text-light;
+
+      }
+
     }
 
 
-  }
+
+
+
+
 
 }
