@@ -5944,21 +5944,37 @@ body {
   background-color: #f3f3f3; }
 
 #mainWraaper .container {
+  position: relative;
+  z-index: 9;
   background-color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  -webkit-border-top-left-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important;
+  -webkit-border-bottom-right-radius: 8px !important;
+  -webkit-border-bottom-left-radius: 8px !important;
+  -moz-border-radius-topleft: 0px !important;
+  -moz-border-radius-topright: 0px !important;
+  -moz-border-radius-bottomright: 8px !important;
+  -moz-border-radius-bottomleft: 8px !important; }
 
 #topMenu {
   padding: 0; }
-  #topMenu a {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
-    font-size: 1rem; }
-  #topMenu ul#topMenu-id a {
-    color: #fff !important; }
-  #topMenu ul#topMenu-id a:hover,
-  #topMenu ul#topMenu-id a:active,
-  #topMenu ul#topMenu-id li.active a {
-    color: #28a745 !important; }
+  #topMenu div {
+    padding: 0 5px; }
+    #topMenu div a {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-style: italic;
+      font-size: 1rem; }
+    #topMenu div ul#topMenu-id a {
+      color: #fff !important; }
+    #topMenu div ul#topMenu-id a:hover,
+    #topMenu div ul#topMenu-id a:active,
+    #topMenu div ul#topMenu-id li.active a {
+      color: #28a745 !important; }
 
 #accountLog div.row {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -6033,23 +6049,22 @@ body {
   #mainMenu li.active a {
     color: #28a745 !important; }
 
-body.woocommerce #wooWraaper span.onsale {
-  min-height: 3.235em;
-  min-width: 3.236em;
-  padding: 0rem !important;
-  font-size: 1rem;
-  font-weight: 700;
-  position: absolute;
-  text-align: center;
-  line-height: 3.236;
-  top: -.5em;
-  left: -.5em;
-  margin: 0;
-  border-radius: 0;
-  background-color: #28a745 !important;
-  color: #fff;
-  font-size: .857em;
-  -webkit-font-smoothing: antialiased;
-  z-index: 7; }
+footer {
+  background-image: url("../images/texture-bg.gif");
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-top: -4rem;
+  z-index: 1;
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 1rem; }
+  footer h4 {
+    color: #28a745; }
+  footer .facebook span:first-child {
+    color: #007bff; }
+  footer .twitter span:first-child {
+    color: #17a2b8; }
+  footer .rss span:first-child {
+    color: #fd7e14; }
 
 /*# sourceMappingURL=theme.css.map */

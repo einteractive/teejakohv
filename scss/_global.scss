@@ -15,6 +15,9 @@ body {
   }
 }
 #mainWraaper .container {
+  position: relative;
+  z-index: 9;
   background-color: white;
   overflow: hidden;
+  @include border-radii(0px, 0px, 8px, 8px);
 }

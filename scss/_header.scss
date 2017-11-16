@@ -1,24 +1,26 @@
 #topMenu {
   padding: 0;
+  div {
+    padding: 0 5px;
+  a {
+    @include themefont;
+    font-size: 1rem;
+
+  }
+  ul#topMenu-id {
     a {
-      @include themefont;
-      font-size: 1rem;
+
+      color: $white !important;
+    }
+    a:hover,
+    a:active,
+    li.active a {
+
+      color: $green !important;
 
     }
-    ul#topMenu-id {
-      a {
-
-        color: $white !important;
-      }
-      a:hover,
-      a:active,
-      li.active a {
-
-        color: $green !important;
-
-      }
-    }
-
+  }
+  }
 
 }
 
