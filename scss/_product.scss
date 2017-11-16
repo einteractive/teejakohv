@@ -1,0 +1,28 @@
+body.woocommerce {
+
+  #wooWraaper {
+
+    span.onsale {
+      min-height: 3.235em;
+      min-width: 3.236em;
+      padding: 0rem !important;
+      font-size: 1rem;
+      font-weight: 700;
+      position: absolute;
+      text-align: center;
+      line-height: 3.236;
+      top: -.5em;
+      left: -.5em;
+      margin: 0;
+      border-radius: 0;
+      background-color: $green !important;
+      color: #fff;
+      font-size: .857em;
+      -webkit-font-smoothing: antialiased;
+      z-index: 7;
+
+
+      }
+    }
+
+}
