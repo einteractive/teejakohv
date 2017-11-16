@@ -384,3 +384,12 @@ function add_loginout_link( $items, $args ) {
    return $items;
 
 }
+
+/**
+ * Woocommerce OnSale.
+ * Author: DJ
+ * Change position OnSale in main shop page product loop.
+ *
+ */
+remove_action( 'woocommerce_before_shop_loop_item_title' , 'woocommerce_show_product_loop_sale_flash', 10 );
+add_action( 'woocommerce_before_shop_loop_item_title' , 'woocommerce_show_product_loop_sale_flash', 15 );
