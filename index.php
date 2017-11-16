@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- Front page Slider with Bootstrap Carusel -->
 <?php if ( is_front_page() ) : ?>
-	<?php get_template_part( 'inc/itemplate/carusel', 'front' ); ?>
+	<?php get_template_part( 'itemplate/carusel', 'front' ); ?>
 <?php endif; ?>
 
 
