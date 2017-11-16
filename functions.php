@@ -245,28 +245,6 @@ add_filter('loop_shop_columns', 'loop_columns', 999);
  */
 remove_action( 'woocommerce_after_shop_loop_item_title' , 'woocommerce_template_loop_rating', 5 );
 /**
- * Woocommerce Disable Rating.
- *
- * Disable rating in Single shop page.
- *
- */
- remove_action( 'woocommerce_single_product_summary' , 'woocommerce_template_single_rating', 10 );
-/**
- * Woocommerce Reviews.
- *
- * Move Reviews under photo in another hook.
- *
- */
- add_action( 'woocommerce_before_single_product_summary', 'comments_template', 30);
-
-  /**
- * Woocommerce Single upsells.
- *
- * Remove all Single Page upsells.
- *
- */
- remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
-/**
  * Woocommerce.
  *
  * Disable Checkout Cross Sales.
