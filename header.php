@@ -36,7 +36,7 @@
             'link_before'     => '<i class="fa fa-angle-right text-success" aria-hidden="true"></i> ',
 						'menu_class'      => 'mr-auto pl-3',
 						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
+						'menu_id'         => 'topMenu-id',
 						'walker'          => new WP_Bootstrap_Navwalker(),
 					)
 				); ?>
@@ -51,33 +51,36 @@
   <div id="mainCont" class="container">
 
     <!-- Account section -->
-    <div id="accountLog" class="row">
-      <div class="col-md-6 ml-auto d-flex flex-row-reverse">
+    <div id="accountLog" class="container">
 
-<?php 
-	
-	if ( is_user_logged_in() ) {
-    $current_user = wp_get_current_user();
-    echo _e('Welcome, ','teejakohv') . $current_user->user_firstname;
-} else {
-    echo 'Welcome, visitor!';
-}
+      <div class=" ml-auto d-flex flex-row-reverse">
+        <div class="row">
+          <span class="navbar-text px-2">
+            <?php if ( is_user_logged_in() ) {
+                $current_user = wp_get_current_user();
+                echo _e('Welcome, ','teejakohv') . $current_user->user_firstname;
+            } else {
+                echo 'Welcome, ';
+                echo '<span>';
+                echo 'visitor!';
+                echo '</span>';
+            } ?>
+          </span>
 
-?>
-
-        <!-- The WordPress Menu goes here -->
-				<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'topmenulogin',
-						'container_class' => '',
-						'container_id'    => '',
-						'menu_class'      => '',
-						'fallback_cb'     => '',
-						'menu_id'         => '',
-						'walker'          => new WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-
+          <!-- The WordPress Menu goes here -->
+  				<?php wp_nav_menu(
+  					array(
+  						'theme_location'  => 'topmenulogin',
+  						'container_class' => '',
+  						'container_id'    => '',
+              'container'    => false,
+  						'menu_class'      => '',
+  						'fallback_cb'     => '',
+  						'menu_id'         => '',
+  						'walker'          => new WP_Bootstrap_Navwalker(),
+  					)
+  				); ?>
+        </div>
       </div>
     </div><!-- /account -->
 
@@ -117,7 +120,7 @@
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
-						'menu_class'      => 'navbar-nav',
+						'menu_class'      => 'navbar-nav ',
 						'fallback_cb'     => '',
 						'menu_id'         => 'mainMenu-id',
 						'walker'          => new WP_Bootstrap_Navwalker(),
