@@ -5910,14 +5910,10 @@ a.text-warning:focus, a.text-warning:hover {
 a.text-danger:focus, a.text-danger:hover {
   color: #bd2130 !important; }
 
-.text-light, #mainMenu li a:hover,
-#mainMenu li a:active,
-#mainMenu li.active a {
+.text-light {
   color: #f8f9fa !important; }
 
-a.text-light:focus, #mainMenu li a:focus:hover,
-#mainMenu li a:focus:active,
-#mainMenu li.active a:focus, a.text-light:hover, #mainMenu li a:hover {
+a.text-light:focus, a.text-light:hover {
   color: #dae0e5 !important; }
 
 .text-dark {
@@ -6035,7 +6031,6 @@ body {
   #mainMenu li a:hover,
   #mainMenu li a:active,
   #mainMenu li.active a {
-    background-color: #28a745;
-    color: #fff !important; }
+    color: #28a745 !important; }
 
 /*# sourceMappingURL=theme.css.map */

@@ -119,10 +119,7 @@ li {
       a:hover,
       a:active,
       &.active a {
-        background-color: $green;
-        color: $white !important;
-        //@extend .bg-success;
-        @extend .text-light;
+      color: $green !important;
 
       }
 
