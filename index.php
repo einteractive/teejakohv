@@ -11,6 +11,7 @@
 
 
         <div class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
+					<?php get_sidebar(); ?>
           <div class="list-group " role="tablist">
             <a href="#" class="list-group-item">Link</a>
             <a href="#" class="list-group-item">Link</a>
@@ -55,7 +56,7 @@
 
     </div>
 
-<?php get_sidebar(); ?>
+
       </div><!--/row-->
 
       </div> <!-- /.container -->
