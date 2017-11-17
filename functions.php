@@ -233,7 +233,7 @@ remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 
  *
  */
 function loop_columns() {
-return 4; // 2 products per row
+return 3; // 2 products per row
 }
 add_filter('loop_shop_columns', 'loop_columns', 999);
 

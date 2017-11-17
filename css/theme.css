@@ -6042,12 +6042,13 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    font-style: normal; }
+    font-size: 1.1rem; }
   #mainMenu li a:hover,
   #mainMenu li a:active,
   #mainMenu li.active a {
     color: #28a745 !important; }
+  #mainMenu li ul.dropdown-menu {
+    background-color: #343a40; }
 
 body.woocommerce-page div.woocommerce #customer_login .col-1,
 body.woocommerce-page div.woocommerce #customer_login .col-2 {
