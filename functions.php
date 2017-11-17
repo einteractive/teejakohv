@@ -211,6 +211,8 @@ create_widget( 'Info Footer', 'info-footer', 'Displays info in footer' );
 create_widget( 'Shop Sidebar', 'shop-sidebar', 'Displays sidebar in Shop page' );
 create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
 create_widget( 'Cart menu', 'cart-menu', 'Cart menu' );
+create_widget( 'Page Sidebar', 'page-sidebar', 'Displays sidebar in Page page' );
+
 
 /**
  * Auto Update.
