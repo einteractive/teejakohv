@@ -232,10 +232,17 @@ remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 
  * Control number of product columns, default woocommerce Snippet.
  *
  */
-function loop_columns() {
-return 3; // 2 products per row
+// function loop_columns() {
+// return 3; // 2 products per row
+// }
+// add_filter('loop_shop_columns', 'loop_columns', 999);
+// Change number or products per row to 3
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 3; // 3 products per row
+	}
 }
-add_filter('loop_shop_columns', 'loop_columns', 999);
 
 /**
  * Woocommerce Disable Rating.

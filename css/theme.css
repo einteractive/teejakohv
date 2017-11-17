@@ -538,7 +538,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row {
+.row, body.woocommerce #wooWraaper ul.products {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
@@ -547,12 +547,12 @@ pre {
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
-  .no-gutters > .col,
+  .no-gutters > .col, body.woocommerce #wooWraaper ul.products .no-gutters > li,
   .no-gutters > [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, body.woocommerce #wooWraaper ul.products li,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -564,7 +564,7 @@ pre {
   padding-right: 15px;
   padding-left: 15px; }
 
-.col {
+.col, body.woocommerce #wooWraaper ul.products li {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%; }
@@ -718,7 +718,7 @@ pre {
   .col-sm-5 {
     flex: 0 0 41.66667%;
     max-width: 41.66667%; }
-  .col-sm-6 {
+  .col-sm-6, body.woocommerce #wooWraaper ul.products li {
     flex: 0 0 50%;
     max-width: 50%; }
   .col-sm-7 {
@@ -904,7 +904,7 @@ pre {
   .col-lg-3 {
     flex: 0 0 25%;
     max-width: 25%; }
-  .col-lg-4 {
+  .col-lg-4, body.woocommerce #wooWraaper ul.products li {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
   .col-lg-5 {
@@ -1413,7 +1413,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px; }
-  .form-row > .col,
+  .form-row > .col, body.woocommerce #wooWraaper ul.products .form-row > li,
   .form-row > [class*="col-"] {
     padding-right: 5px;
     padding-left: 5px; }
@@ -5941,7 +5941,9 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   background-image: url("../images/bg2.jpg");
   background-repeat: no-repeat;
-  background-color: #f3f3f3; }
+  background-color: #f3f3f3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic; }
 
 #mainWraaper .container {
   position: relative;
@@ -6049,6 +6051,9 @@ body {
     color: #28a745 !important; }
   #mainMenu li ul.dropdown-menu {
     background-color: #343a40; }
+
+body.woocommerce #wooWraaper ul.products {
+  display: inherit; }
 
 body.woocommerce-page div.woocommerce #customer_login .col-1,
 body.woocommerce-page div.woocommerce #customer_login .col-2 {
