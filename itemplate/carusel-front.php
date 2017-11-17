@@ -1,4 +1,4 @@
-<!-- Front page Slider with Bootstrap Carusel -->
+<!-- Front page Slider with Bootstrap Carusel #carouselFront in _itemplate.scss -->
 <?php
   $args = array(
     'post_type'     => 'slider',
@@ -7,13 +7,13 @@
   $the_query = new WP_Query( $args );
 ?>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselFront" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-    <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $the_query->current_post; ?>" class="<?php if( $the_query->current_post == 0 ):?>active<?php endif; ?>"></li>
+    <li data-target="#carouselFront" data-slide-to="<?php echo $the_query->current_post; ?>" class="<?php if( $the_query->current_post == 0 ):?>active<?php endif; ?>"></li>
 
     <?php endwhile; endif; ?>
   </ol>
@@ -43,13 +43,13 @@
     </div>
     <?php endwhile; endif; ?>
   </div>
-  
+
   <!-- Control arrow button -->
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselFront" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselFront" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>

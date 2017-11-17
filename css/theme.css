@@ -6049,6 +6049,13 @@ body {
   #mainMenu li.active a {
     color: #28a745 !important; }
 
+#carouselFront .carousel-inner .carousel-item {
+  max-height: 429px; }
+  #carouselFront .carousel-inner .carousel-item img {
+    object-fit: cover;
+    -o-object-fit: cover;
+    max-height: 429px; }
+
 footer {
   background-image: url("../images/texture-bg.gif");
   font-family: Georgia, "Times New Roman", Times, serif;
