@@ -10,3 +10,13 @@ body.woocommerce {
     }
 
 }
+body.woocommerce-page {
+  div.woocommerce {
+    #customer_login {
+      .col-1,
+      .col-2 {
+        max-width: 100% !important;
+      }
+    }
+  }
+}

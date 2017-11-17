@@ -6049,6 +6049,10 @@ body {
   #mainMenu li.active a {
     color: #28a745 !important; }
 
+body.woocommerce-page div.woocommerce #customer_login .col-1,
+body.woocommerce-page div.woocommerce #customer_login .col-2 {
+  max-width: 100% !important; }
+
 #carouselFront .carousel-inner .carousel-item {
   max-height: 429px; }
   #carouselFront .carousel-inner .carousel-item img {
