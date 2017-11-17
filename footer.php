@@ -1,6 +1,6 @@
-
-
-  </div> <!-- /#mainWraaper -->
+<!-- Start Footer.php -->
+</div> <!-- /#mainWraaper -->
+</div> <!-- /#mainCont -->
 
   <!-- Footer -->
   <footer class="bg-dark text-light" >

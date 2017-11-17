@@ -42,7 +42,7 @@ switch ( $template ) {
 		echo '</div></div>';
 		break;
 	case 'teejakohv' :
-		echo '</main></div>';
+		echo '</div>';
 		break;
 	default :
 		echo '</div></div>';
