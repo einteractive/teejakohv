@@ -1,6 +1,15 @@
 body.woocommerce {
 
   #wooWraaper {
+    ul.products {
+      display: inherit;
+      @extend .row;
+      li {
+        @extend .col;
+        @extend .col-sm-6;
+        @extend .col-lg-4;
+      }
+    }
     span.onsale {
 
       }
