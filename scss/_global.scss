@@ -10,6 +10,7 @@ body {
       @extend .nav-item;
       a {
         @extend .nav-link;
+        transition: color 300ms 0s ease;
 
       }
     }
