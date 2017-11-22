@@ -205,7 +205,7 @@ function create_widget( $name, $id, $description ) {
 	));
 
 }
-create_widget( 'Slider', 'slider', 'Displays slider on homepage' );
+create_widget( 'Page Sidebar', 'page-sidebar', 'Displays Page Sidebar' );
 create_widget( 'Menu Footer', 'menu-footer', 'Displays menu in footer' );
 create_widget( 'Info Footer', 'info-footer', 'Displays info in footer' );
 create_widget( 'Shop Sidebar', 'shop-sidebar', 'Displays sidebar in Shop page' );
@@ -333,7 +333,7 @@ function widget( $args, $instance ) {
  *
  */
 
-add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 6 );
 
 function new_loop_shop_per_page( $cols ) {
   // $cols contains the current number of products per page based on the value stored on Options -> Reading
