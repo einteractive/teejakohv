@@ -1,7 +1,8 @@
 body {
-  background-image: url("../images/bg2.jpg");
+  background-image: url("../images/bg2G.jpg");
   background-repeat: no-repeat;
-  background-color: #f3f3f3;
+  background-color: #c1c1c1;
+  @include themefont;
 
   ul {
     @extend .nav;
@@ -9,6 +10,7 @@ body {
       @extend .nav-item;
       a {
         @extend .nav-link;
+        transition: color 300ms 0s ease;
 
       }
     }
@@ -20,4 +22,10 @@ body {
   background-color: white;
   overflow: hidden;
   @include border-radii(0px, 0px, 8px, 8px);
+}
+
+#wpadminbar {
+  ul {
+    display: inherit;
+  }
 }
