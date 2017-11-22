@@ -205,7 +205,7 @@ function create_widget( $name, $id, $description ) {
 	));
 
 }
-create_widget( 'Slider', 'slider', 'Displays slider on homepage' );
+create_widget( 'Page Sidebar', 'page-sidebar', 'Displays Page Sidebar' );
 create_widget( 'Menu Footer', 'menu-footer', 'Displays menu in footer' );
 create_widget( 'Info Footer', 'info-footer', 'Displays info in footer' );
 create_widget( 'Shop Sidebar', 'shop-sidebar', 'Displays sidebar in Shop page' );
@@ -220,13 +220,6 @@ create_widget( 'Page Sidebar', 'page-sidebar', 'Displays sidebar in Page page' )
  * All Plugins.
  */
 add_filter( 'auto_update_plugin', '__return_true' );
-
-/**
- * Orderby.
- *
- * Remove the Orderby Dropdown for Products in WooCommerce.
- */
-remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 30 );
 
 /**
  * Woocommerce Product Columns.
@@ -338,7 +331,7 @@ add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 function new_loop_shop_per_page( $cols ) {
   // $cols contains the current number of products per page based on the value stored on Options -> Reading
   // Return the number of products you wanna show per page.
-  $cols = 40;
+  $cols = 6;
   return $cols;
 }
 
@@ -380,13 +373,13 @@ function add_loginout_link( $items, $args ) {
 
    if (is_user_logged_in() && $args->theme_location == 'topmenulogin') {
 
-       $items .= '<li class="log-one btn btn-light"><a class="nav-link text-dark" href="'. wp_logout_url( get_permalink( woocommerce_get_page_id( 'myaccount' ) ) ) .'"> ' . __( 'Log Out', 'teejakohv' ) . ' </a></li>';
+       $items .= '<li class="log-one btn btn-light"><a class="nav-link text-dark" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'"> ' . __( 'Log Out', 'teejakohv' ) . ' </a></li>';
 
    }
 
    elseif (!is_user_logged_in() && $args->theme_location == 'topmenulogin') {
 
-       $items .= '<li class="log-two btn btn-success"><a class="nav-link text-light" href="' . get_permalink( woocommerce_get_page_id( 'myaccount' ) ) . '"> ' . __( 'Login', 'teejakohv' ) . ' </a></li>';
+       $items .= '<li class="log-two btn btn-success"><a class="nav-link text-light" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"> ' . __( 'Login', 'teejakohv' ) . ' </a></li>';
 
    }
 
