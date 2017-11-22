@@ -1,8 +1,8 @@
 #topMenu {
 
   div {
-    @extend .pl-1;
-    @extend .pr-2;
+
+    @extend .pr-1;
     ul { // Bootstrap ul standart integrate to wp menu
       @extend .nav;
       li {
@@ -11,6 +11,10 @@
           @extend .nav-link;
           font-size: 1rem;
           padding: 0rem 0.4rem;
+
+          &:first-child { // Align firts elentf #topMenu to left corner #mainWraaper container
+            padding-left: 0;
+          }
         }
       }
     }
