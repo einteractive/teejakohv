@@ -1,20 +1,10 @@
 body {
   background-image: url("../images/bg2G.jpg");
   background-repeat: no-repeat;
-  background-color: #c1c1c1;
+  background-color: #f3f3f3;
   @include themefont;
 
-  ul {
-    @extend .nav;
-    li {
-      @extend .nav-item;
-      a {
-        @extend .nav-link;
-        transition: color 300ms 0s ease;
-
-      }
-    }
-  }
+  
 }
 #mainWraaper .container {
   position: relative;

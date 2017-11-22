@@ -1,36 +1,44 @@
 #topMenu {
   padding: 0;
   div {
-    padding: 0 5px;
-  a {
-    @include themefont;
-    font-size: 1rem;
-
-  }
-  ul#topMenu-id {
+    padding: 0px 5px 0px 10px;
     a {
+      font-size: 1rem;
+      padding: 0.4rem;
+      }
+    ul#topMenu-id {
+      a {
+        color: $white !important;
+        }
+      a:hover,
+      a:active,
+      li.active a {
 
-      color: $white !important;
-    }
-    a:hover,
-    a:active,
-    li.active a {
+        color: $green !important;
 
-      color: $green !important;
-
+        }
     }
   }
-  }
+  ul {
+    @extend .nav;
+    li {
+      @extend .nav-item;
+      a {
+        @extend .nav-link;
+        transition: color 300ms 0s ease;
 
-}
+      }
+    }
+  }
+} // #topMenu End
 
 #accountLog {
   div.row  {
     @include themefont;
-    background: rgba(white, 0.5);
+    background: rgba(white, 0.8);
     @extend .pl-5;
     @extend .p-2;
-    @include border-radius(0px 0px 8px 8px);
+    @include border-radius(0rem 0rem 1rem 1rem);
 
     li {
       @extend .btn;
