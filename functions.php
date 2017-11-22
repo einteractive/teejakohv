@@ -373,13 +373,13 @@ function add_loginout_link( $items, $args ) {
 
    if (is_user_logged_in() && $args->theme_location == 'topmenulogin') {
 
-       $items .= '<li class="log-one btn btn-light"><a class="nav-link text-dark" href="'. wp_logout_url( get_permalink( woocommerce_get_page_id( 'myaccount' ) ) ) .'"> ' . __( 'Log Out', 'teejakohv' ) . ' </a></li>';
+       $items .= '<li class="log-one btn btn-light"><a class="nav-link text-dark" href="'. wp_logout_url( get_permalink( wc_get_page_id( 'myaccount' ) ) ) .'"> ' . __( 'Log Out', 'teejakohv' ) . ' </a></li>';
 
    }
 
    elseif (!is_user_logged_in() && $args->theme_location == 'topmenulogin') {
 
-       $items .= '<li class="log-two btn btn-success"><a class="nav-link text-light" href="' . get_permalink( woocommerce_get_page_id( 'myaccount' ) ) . '"> ' . __( 'Login', 'teejakohv' ) . ' </a></li>';
+       $items .= '<li class="log-two btn btn-success"><a class="nav-link text-light" href="' . get_permalink( wc_get_page_id( 'myaccount' ) ) . '"> ' . __( 'Login', 'teejakohv' ) . ' </a></li>';
 
    }
 
