@@ -1,11 +1,19 @@
 #topMenu {
-  padding: 0;
+
   div {
-    padding: 0px 5px 0px 10px;
-    a {
-      font-size: 1rem;
-      padding: 0.4rem;
+    @extend .pl-1;
+    @extend .pr-2;
+    ul { // Bootstrap ul standart integrate to wp menu
+      @extend .nav;
+      li {
+        @extend .nav-item;
+        a {
+          @extend .nav-link;
+          font-size: 1rem;
+          padding: 0rem 0.4rem;
+        }
       }
+    }
     ul#topMenu-id {
       a {
         color: $white !important;
@@ -19,17 +27,7 @@
         }
     }
   }
-  ul {
-    @extend .nav;
-    li {
-      @extend .nav-item;
-      a {
-        @extend .nav-link;
-        transition: color 300ms 0s ease;
 
-      }
-    }
-  }
 } // #topMenu End
 
 #accountLog {
@@ -40,6 +38,18 @@
     @extend .p-2;
     @include border-radius(0rem 0rem 1rem 1rem);
 
+    ul { // Bootstrap ul standart integrate to wp menu
+      @extend .nav;
+      li {
+        @extend .nav-item;
+        a {
+          @extend .nav-link;
+
+
+        }
+      }
+    }
+
     li {
       @extend .btn;
       @extend .p-0;
@@ -48,29 +58,21 @@
       a {
         padding: 0.3rem;
       }
-
     }
     li:first-child {
-
       @extend .btn-danger;
       a {
-                color: $light;
+        color: $light;
       }
     }
 
     li:last-child {
-
-      //@extend .btn-light;
-
       a {
         color: $dark;
       }
     }
-    li.btn-two {
-      //@extend .btn-success;
-    }
   }
-}
+} // #accountLog End
 
 #searchBar {
   @include themefont;
@@ -136,7 +138,6 @@ li {
         li {
 
         }
-
       }
     }
 
