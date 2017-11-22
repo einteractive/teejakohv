@@ -222,13 +222,6 @@ create_widget( 'Page Sidebar', 'page-sidebar', 'Displays sidebar in Page page' )
 add_filter( 'auto_update_plugin', '__return_true' );
 
 /**
- * Orderby.
- *
- * Remove the Orderby Dropdown for Products in WooCommerce.
- */
-remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 30 );
-
-/**
  * Woocommerce Product Columns.
  *
  * Control number of product columns, default woocommerce Snippet.
