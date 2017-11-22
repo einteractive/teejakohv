@@ -54,7 +54,7 @@
 
       </div>
 
-<h1>Page.php</h1>
+<h1>Front-page.php</h1>
 
     </div>
 

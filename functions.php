@@ -234,10 +234,17 @@ remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 
  * Control number of product columns, default woocommerce Snippet.
  *
  */
-function loop_columns() {
-return 4; // 2 products per row
+// function loop_columns() {
+// return 3; // 2 products per row
+// }
+// add_filter('loop_shop_columns', 'loop_columns', 999);
+// Change number or products per row to 3
+add_filter('loop_shop_columns', 'loop_columns');
+if (!function_exists('loop_columns')) {
+	function loop_columns() {
+		return 3; // 3 products per row
+	}
 }
-add_filter('loop_shop_columns', 'loop_columns', 999);
 
 /**
  * Woocommerce Disable Rating.
@@ -395,3 +402,11 @@ function add_loginout_link( $items, $args ) {
  */
 remove_action( 'woocommerce_before_shop_loop_item_title' , 'woocommerce_show_product_loop_sale_flash', 10 );
 add_action( 'woocommerce_before_shop_loop_item_title' , 'woocommerce_show_product_loop_sale_flash', 15 );
+/**
+ * Woocommerce widget replace to wooWraaper beetwen wraaper-start.php and wraaper-end.php.
+ * Author: DJ
+ * Change position OnSale in main shop page product loop.
+ *
+ */
+remove_action( 'woocommerce_after_main_content' , 'woocommerce_output_content_wrapper_end', 10 );
+add_action( 'woocommerce_sidebar' , 'woocommerce_output_content_wrapper_end', 15 );

@@ -10,11 +10,7 @@
       <?php wp_title( '|', true, 'right' ); ?>
       <?php bloginfo( 'name' ); ?>
     </title>
-    <script type="text/javascript">
-    (function($) {
-    // Внутри этой функции $() будет работать как синоним jQuery()
-    })(jQuery);
-  </script>
+  
 
     <?php wp_head(); ?>
 
