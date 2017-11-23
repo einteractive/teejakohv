@@ -15,3 +15,27 @@
   width: inherit;
   margin: inherit;
 }
+
+
+.woocommerce ul.products li.product a {
+  color: $green;
+  h2 {
+    width: 97%;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis
+  }
+
+  span {
+    font-size: 1.3rem;
+    color: $dark;
+    font-weight: normal;
+    line-height: normal;
+  }
+
+  &:hover h2 {
+    color: darken($red, 10%);
+    transition: color 300ms 0s ease-in-out;
+
+  } // hover end
+} //.woocommerce

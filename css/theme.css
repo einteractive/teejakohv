@@ -6180,6 +6180,22 @@ body {
   width: inherit;
   margin: inherit; }
 
+.woocommerce ul.products li.product a {
+  color: #28a745; }
+  .woocommerce ul.products li.product a h2 {
+    width: 97%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .woocommerce ul.products li.product a span {
+    font-size: 1.3rem;
+    color: #343a40;
+    font-weight: normal;
+    line-height: normal; }
+  .woocommerce ul.products li.product a:hover h2 {
+    color: #bd2130;
+    transition: color 300ms 0s ease-in-out; }
+
 #carouselFront .carousel-inner .carousel-item {
   max-height: 429px; }
   #carouselFront .carousel-inner .carousel-item img {
