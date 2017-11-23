@@ -6145,7 +6145,7 @@ body {
   font-size: 1.5rem; }
   #pageRowSideBar .widget h3:hover {
     color: #a71d2a;
-    transition: color 300ms 0s linear;
+    transition: color 300ms 0s ease-in-out;
     cursor: pointer; }
 
 #pageRowSideBar .widget ul {
@@ -6156,7 +6156,7 @@ body {
     font-size: 1rem; }
     #pageRowSideBar .widget ul li a:hover {
       color: #19692c;
-      transition: color 300ms 0s linear;
+      transition: color 300ms 0s ease-in-out;
       cursor: pointer; }
 
 body.woocommerce-page div.woocommerce #customer_login .col-1,

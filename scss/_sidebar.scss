@@ -7,7 +7,7 @@
 
       &:hover {
         color: darken($red, 15%);
-        transition: color 300ms 0s linear;
+        transition: color 300ms 0s ease-in-out;
         cursor: pointer;
       }
     } // h3 End
@@ -22,7 +22,7 @@
 
           &:hover {
             color: darken($green, 15%);
-            transition: color 300ms 0s linear;
+            transition: color 300ms 0s ease-in-out;
             cursor: pointer;
           }
         } // a End
