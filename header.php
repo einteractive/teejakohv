@@ -90,7 +90,7 @@
         <div id="cart" class="col">
           <div class="dropdown">
             <button class="btn btn-success px-3 btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Cart
+             <?php _e('Cart','woocommerce') ?>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
