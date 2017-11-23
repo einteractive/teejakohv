@@ -1,0 +1,24 @@
+#pageRowSideBar {
+
+}
+
+#pageRowMain {
+  .nf-form-cont {
+    @include media-breakpoint-up(md) {
+      width: 80%;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 70%;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 60%;
+    }
+
+    #nf-field-8 {
+      @extend .btn-success;
+      @extend .btn;
+    }
+
+
+  }
+}
