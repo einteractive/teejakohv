@@ -56,9 +56,9 @@
                 $current_user = wp_get_current_user();
                 echo _e('Welcome, ','teejakohv') . $current_user->user_firstname;
             } else {
-                echo 'Welcome, ';
+                echo _e('Welcome','teejakohv');
                 echo '<span>';
-                echo 'visitor!';
+                echo '';
                 echo '</span>';
             } ?>
           </span>
