@@ -1363,11 +1363,13 @@ select.form-control:focus::-ms-value {
   .input-group-sm > .form-control-plaintext.input-group-addon, #searchBar form
   .input-group-sm > input.form-control-plaintext[type="submit"],
   .input-group-sm > .input-group-btn > .form-control-plaintext.btn, #accountLog div.row
-  .input-group-sm > .input-group-btn > li.form-control-plaintext, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, #searchBar form .input-group-lg > input.form-control-plaintext.search-field,
+  .input-group-sm > .input-group-btn > li.form-control-plaintext, #pageRowMain .nf-form-cont
+  .input-group-sm > .input-group-btn > .form-control-plaintext#nf-field-8, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, #searchBar form .input-group-lg > input.form-control-plaintext.search-field,
   .input-group-lg > .form-control-plaintext.input-group-addon, #searchBar form
   .input-group-lg > input.form-control-plaintext[type="submit"],
   .input-group-lg > .input-group-btn > .form-control-plaintext.btn, #accountLog div.row
-  .input-group-lg > .input-group-btn > li.form-control-plaintext {
+  .input-group-lg > .input-group-btn > li.form-control-plaintext, #pageRowMain .nf-form-cont
+  .input-group-lg > .input-group-btn > .form-control-plaintext#nf-field-8 {
     padding-right: 0;
     padding-left: 0; }
 
@@ -1375,7 +1377,8 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-addon, #searchBar form
 .input-group-sm > input[type="submit"],
 .input-group-sm > .input-group-btn > .btn, #accountLog div.row
-.input-group-sm > .input-group-btn > li {
+.input-group-sm > .input-group-btn > li, #pageRowMain .nf-form-cont
+.input-group-sm > .input-group-btn > #nf-field-8 {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1383,14 +1386,16 @@ select.form-control:focus::-ms-value {
 
 select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
 .input-group-sm > select.input-group-addon:not([size]):not([multiple]),
-.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
+.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]), #pageRowMain .nf-form-cont
+.input-group-sm > .input-group-btn > select#nf-field-8:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px); }
 
 .form-control-lg, .input-group-lg > .form-control, #searchBar form .input-group-lg > input.search-field,
 .input-group-lg > .input-group-addon, #searchBar form
 .input-group-lg > input[type="submit"],
 .input-group-lg > .input-group-btn > .btn, #accountLog div.row
-.input-group-lg > .input-group-btn > li {
+.input-group-lg > .input-group-btn > li, #pageRowMain .nf-form-cont
+.input-group-lg > .input-group-btn > #nf-field-8 {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1398,7 +1403,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
 .input-group-lg > select.input-group-addon:not([size]):not([multiple]),
-.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
+.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]), #pageRowMain .nf-form-cont
+.input-group-lg > .input-group-btn > select#nf-field-8:not([size]):not([multiple]) {
   height: calc(2.875rem + 2px); }
 
 .form-group {
@@ -1607,7 +1613,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .has-feedback .form-control-feedback {
       top: 0; } }
 
-.btn, #accountLog div.row li {
+.btn, #accountLog div.row li, #pageRowMain .nf-form-cont #nf-field-8 {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -1620,18 +1626,20 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  .btn:focus, #accountLog div.row li:focus, .btn:hover, #accountLog div.row li:hover {
+  .btn:focus, #accountLog div.row li:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .btn:hover, #accountLog div.row li:hover, #pageRowMain .nf-form-cont #nf-field-8:hover {
     text-decoration: none; }
-  .btn:focus, #accountLog div.row li:focus, .btn.focus, #accountLog div.row li.focus {
+  .btn:focus, #accountLog div.row li:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .btn.focus, #accountLog div.row li.focus, #pageRowMain .nf-form-cont .focus#nf-field-8 {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, #accountLog div.row li.disabled, .btn:disabled, #accountLog div.row li:disabled {
+  .btn.disabled, #accountLog div.row li.disabled, #pageRowMain .nf-form-cont .disabled#nf-field-8, .btn:disabled, #accountLog div.row li:disabled, #pageRowMain .nf-form-cont #nf-field-8:disabled {
     opacity: .65; }
-  .btn:not([disabled]):not(.disabled):active, #accountLog div.row li:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active, #accountLog div.row li:not([disabled]):not(.disabled).active {
+  .btn:not([disabled]):not(.disabled):active, #accountLog div.row li:not([disabled]):not(.disabled):active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active, #accountLog div.row li:not([disabled]):not(.disabled).active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled).active {
     background-image: none; }
 
-a.btn.disabled,
-fieldset[disabled] a.btn {
+a.btn.disabled, #pageRowMain .nf-form-cont a.disabled#nf-field-8,
+fieldset[disabled] a.btn,
+fieldset[disabled] #pageRowMain .nf-form-cont a#nf-field-8, #pageRowMain .nf-form-cont
+fieldset[disabled] a#nf-field-8 {
   pointer-events: none; }
 
 .btn-primary {
@@ -1674,21 +1682,22 @@ fieldset[disabled] a.btn {
     border-color: #666e76;
     box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5); }
 
-.btn-success {
+.btn-success, #pageRowMain .nf-form-cont #nf-field-8 {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745; }
-  .btn-success:hover {
+  .btn-success:hover, #pageRowMain .nf-form-cont #nf-field-8:hover {
     color: #fff;
     background-color: #218838;
     border-color: #1e7e34; }
-  .btn-success:focus, .btn-success.focus {
+  .btn-success:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .btn-success.focus, #pageRowMain .nf-form-cont .focus#nf-field-8 {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5); }
-  .btn-success.disabled, .btn-success:disabled {
+  .btn-success.disabled, #pageRowMain .nf-form-cont .disabled#nf-field-8, .btn-success:disabled, #pageRowMain .nf-form-cont #nf-field-8:disabled {
     background-color: #28a745;
     border-color: #28a745; }
-  .btn-success:not([disabled]):not(.disabled):active, .btn-success:not([disabled]):not(.disabled).active,
-  .show > .btn-success.dropdown-toggle {
+  .btn-success:not([disabled]):not(.disabled):active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled):active, .btn-success:not([disabled]):not(.disabled).active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled).active,
+  .show > .btn-success.dropdown-toggle, #pageRowMain .nf-form-cont
+  .show > .dropdown-toggle#nf-field-8 {
     color: #fff;
     background-color: #1e7e34;
     border-color: #1c7430;
@@ -1978,13 +1987,13 @@ fieldset[disabled] a.btn {
   .btn-link:disabled, .btn-link.disabled {
     color: #868e96; }
 
-.btn-lg, .btn-group-lg > .btn, #accountLog div.row .btn-group-lg > li {
+.btn-lg, .btn-group-lg > .btn, #accountLog div.row .btn-group-lg > li, #pageRowMain .nf-form-cont .btn-group-lg > #nf-field-8 {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, #accountLog div.row .btn-group-sm > li {
+.btn-sm, .btn-group-sm > .btn, #accountLog div.row .btn-group-sm > li, #pageRowMain .nf-form-cont .btn-group-sm > #nf-field-8 {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -2127,44 +2136,71 @@ tbody.collapse.show {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, #accountLog div.row .btn-group > li,
+  .btn-group > .btn, #accountLog div.row .btn-group > li, #pageRowMain .nf-form-cont .btn-group > #nf-field-8,
   .btn-group-vertical > .btn, #accountLog div.row
-  .btn-group-vertical > li {
+  .btn-group-vertical > li, #pageRowMain .nf-form-cont
+  .btn-group-vertical > #nf-field-8 {
     position: relative;
     flex: 0 1 auto; }
-    .btn-group > .btn:hover, #accountLog div.row .btn-group > li:hover,
+    .btn-group > .btn:hover, #accountLog div.row .btn-group > li:hover, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:hover,
     .btn-group-vertical > .btn:hover, #accountLog div.row
-    .btn-group-vertical > li:hover {
+    .btn-group-vertical > li:hover, #pageRowMain .nf-form-cont
+    .btn-group-vertical > #nf-field-8:hover {
       z-index: 2; }
-    .btn-group > .btn:focus, #accountLog div.row .btn-group > li:focus, .btn-group > .btn:active, #accountLog div.row .btn-group > li:active, .btn-group > .btn.active, #accountLog div.row .btn-group > li.active,
+    .btn-group > .btn:focus, #accountLog div.row .btn-group > li:focus, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:focus, .btn-group > .btn:active, #accountLog div.row .btn-group > li:active, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:active, .btn-group > .btn.active, #accountLog div.row .btn-group > li.active, #pageRowMain .nf-form-cont .btn-group > .active#nf-field-8,
     .btn-group-vertical > .btn:focus, #accountLog div.row
-    .btn-group-vertical > li:focus,
+    .btn-group-vertical > li:focus, #pageRowMain .nf-form-cont
+    .btn-group-vertical > #nf-field-8:focus,
     .btn-group-vertical > .btn:active, #accountLog div.row
-    .btn-group-vertical > li:active,
+    .btn-group-vertical > li:active, #pageRowMain .nf-form-cont
+    .btn-group-vertical > #nf-field-8:active,
     .btn-group-vertical > .btn.active, #accountLog div.row
-    .btn-group-vertical > li.active {
+    .btn-group-vertical > li.active, #pageRowMain .nf-form-cont
+    .btn-group-vertical > .active#nf-field-8 {
       z-index: 2; }
-  .btn-group .btn + .btn, .btn-group #accountLog div.row li + .btn, #accountLog div.row .btn-group li + .btn, .btn-group #accountLog div.row .btn + li, #accountLog div.row .btn-group .btn + li, .btn-group #accountLog div.row li + li, #accountLog div.row .btn-group li + li,
+  .btn-group .btn + .btn, .btn-group #accountLog div.row li + .btn, #accountLog div.row .btn-group li + .btn, .btn-group #pageRowMain .nf-form-cont #nf-field-8 + .btn, #pageRowMain .nf-form-cont .btn-group #nf-field-8 + .btn, .btn-group #accountLog div.row .btn + li, #accountLog div.row .btn-group .btn + li, .btn-group #accountLog div.row li + li, #accountLog div.row .btn-group li + li, .btn-group #pageRowMain .nf-form-cont #accountLog div.row #nf-field-8 + li, #accountLog div.row .btn-group #pageRowMain .nf-form-cont #nf-field-8 + li, #pageRowMain .nf-form-cont .btn-group #accountLog div.row #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .btn-group #nf-field-8 + li, .btn-group #pageRowMain .nf-form-cont .btn + #nf-field-8, #pageRowMain .nf-form-cont .btn-group .btn + #nf-field-8, .btn-group #accountLog div.row #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont .btn-group #accountLog div.row li + #nf-field-8, #accountLog div.row .btn-group #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .btn-group li + #nf-field-8, .btn-group #pageRowMain .nf-form-cont #nf-field-8 + #nf-field-8, #pageRowMain .nf-form-cont .btn-group #nf-field-8 + #nf-field-8,
   .btn-group .btn + .btn-group,
   .btn-group #accountLog div.row li + .btn-group, #accountLog div.row
   .btn-group li + .btn-group,
+  .btn-group #pageRowMain .nf-form-cont #nf-field-8 + .btn-group, #pageRowMain .nf-form-cont
+  .btn-group #nf-field-8 + .btn-group,
   .btn-group .btn-group + .btn,
   .btn-group #accountLog div.row .btn-group + li, #accountLog div.row
   .btn-group .btn-group + li,
+  .btn-group #pageRowMain .nf-form-cont .btn-group + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group .btn-group + #nf-field-8,
   .btn-group .btn-group + .btn-group,
   .btn-group-vertical .btn + .btn,
   .btn-group-vertical #accountLog div.row li + .btn, #accountLog div.row
   .btn-group-vertical li + .btn,
+  .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + .btn, #pageRowMain .nf-form-cont
+  .btn-group-vertical #nf-field-8 + .btn,
   .btn-group-vertical #accountLog div.row .btn + li, #accountLog div.row
   .btn-group-vertical .btn + li,
   .btn-group-vertical #accountLog div.row li + li, #accountLog div.row
   .btn-group-vertical li + li,
+  .btn-group-vertical #pageRowMain .nf-form-cont #accountLog div.row #nf-field-8 + li, #accountLog div.row
+  .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + li, #pageRowMain .nf-form-cont
+  .btn-group-vertical #accountLog div.row #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont
+  .btn-group-vertical #nf-field-8 + li,
+  .btn-group-vertical #pageRowMain .nf-form-cont .btn + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group-vertical .btn + #nf-field-8,
+  .btn-group-vertical #accountLog div.row #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group-vertical #accountLog div.row li + #nf-field-8, #accountLog div.row
+  .btn-group-vertical #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row
+  .btn-group-vertical li + #nf-field-8,
+  .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group-vertical #nf-field-8 + #nf-field-8,
   .btn-group-vertical .btn + .btn-group,
   .btn-group-vertical #accountLog div.row li + .btn-group, #accountLog div.row
   .btn-group-vertical li + .btn-group,
+  .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + .btn-group, #pageRowMain .nf-form-cont
+  .btn-group-vertical #nf-field-8 + .btn-group,
   .btn-group-vertical .btn-group + .btn,
   .btn-group-vertical #accountLog div.row .btn-group + li, #accountLog div.row
   .btn-group-vertical .btn-group + li,
+  .btn-group-vertical #pageRowMain .nf-form-cont .btn-group + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group-vertical .btn-group + #nf-field-8,
   .btn-group-vertical .btn-group + .btn-group {
     margin-left: -1px; }
 
@@ -2175,16 +2211,16 @@ tbody.collapse.show {
   .btn-toolbar .input-group, .btn-toolbar #searchBar form, #searchBar .btn-toolbar form {
     width: auto; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:not(:first-child):not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, #accountLog div.row .btn-group > li:first-child {
+.btn-group > .btn:first-child, #accountLog div.row .btn-group > li:first-child, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:first-child {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:first-child:not(:last-child):not(.dropdown-toggle) {
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:first-child:not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:first-child:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), #accountLog div.row .btn-group > li:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), #accountLog div.row .btn-group > li:last-child:not(:first-child), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -2192,29 +2228,29 @@ tbody.collapse.show {
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group > .btn-group:not(:first-child):not(:last-child) > li {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group > .btn-group:not(:first-child):not(:last-child) > li, #pageRowMain .nf-form-cont .btn-group > .btn-group:not(:first-child):not(:last-child) > #nf-field-8 {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group > .btn-group:first-child:not(:last-child) > li:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group > .btn-group:first-child:not(:last-child) > li:last-child, #pageRowMain .nf-form-cont .btn-group > .btn-group:first-child:not(:last-child) > #nf-field-8:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group > .btn-group:last-child:not(:first-child) > li:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group > .btn-group:last-child:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .btn-group > .btn-group:last-child:not(:first-child) > #nf-field-8:first-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn + .dropdown-toggle-split, #accountLog div.row li + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, #accountLog div.row li + .dropdown-toggle-split, #pageRowMain .nf-form-cont #nf-field-8 + .dropdown-toggle-split {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem; }
-  .btn + .dropdown-toggle-split::after, #accountLog div.row li + .dropdown-toggle-split::after {
+  .btn + .dropdown-toggle-split::after, #accountLog div.row li + .dropdown-toggle-split::after, #pageRowMain .nf-form-cont #nf-field-8 + .dropdown-toggle-split::after {
     margin-left: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-sm > li + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-sm > li + .dropdown-toggle-split, #pageRowMain .nf-form-cont .btn-group-sm > #nf-field-8 + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-lg > li + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-lg > li + .dropdown-toggle-split, #pageRowMain .nf-form-cont .btn-group-lg > #nf-field-8 + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2222,42 +2258,47 @@ tbody.collapse.show {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-  .btn-group-vertical .btn, .btn-group-vertical #accountLog div.row li, #accountLog div.row .btn-group-vertical li,
+  .btn-group-vertical .btn, .btn-group-vertical #accountLog div.row li, #accountLog div.row .btn-group-vertical li, .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8, #pageRowMain .nf-form-cont .btn-group-vertical #nf-field-8,
   .btn-group-vertical .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn + .btn, #accountLog div.row .btn-group-vertical > li + .btn, #accountLog div.row .btn-group-vertical > .btn + li, #accountLog div.row .btn-group-vertical > li + li,
+  .btn-group-vertical > .btn + .btn, #accountLog div.row .btn-group-vertical > li + .btn, #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + .btn, #accountLog div.row .btn-group-vertical > .btn + li, #accountLog div.row .btn-group-vertical > li + li, #pageRowMain .nf-form-cont #accountLog div.row .btn-group-vertical > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + li, #pageRowMain .nf-form-cont .btn-group-vertical > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .btn-group-vertical > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .btn-group-vertical > li + #nf-field-8, #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + #nf-field-8,
   .btn-group-vertical > .btn + .btn-group, #accountLog div.row
-  .btn-group-vertical > li + .btn-group,
+  .btn-group-vertical > li + .btn-group, #pageRowMain .nf-form-cont
+  .btn-group-vertical > #nf-field-8 + .btn-group,
   .btn-group-vertical > .btn-group + .btn, #accountLog div.row
-  .btn-group-vertical > .btn-group + li,
+  .btn-group-vertical > .btn-group + li, #pageRowMain .nf-form-cont
+  .btn-group-vertical > .btn-group + #nf-field-8,
   .btn-group-vertical > .btn-group + .btn-group {
     margin-top: -1px;
     margin-left: 0; }
-  .btn-group-vertical > .btn:not(:first-child):not(:last-child), #accountLog div.row .btn-group-vertical > li:not(:first-child):not(:last-child) {
+  .btn-group-vertical > .btn:not(:first-child):not(:last-child), #accountLog div.row .btn-group-vertical > li:not(:first-child):not(:last-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:not(:first-child):not(:last-child) {
     border-radius: 0; }
-  .btn-group-vertical > .btn:first-child:not(:last-child), #accountLog div.row .btn-group-vertical > li:first-child:not(:last-child) {
+  .btn-group-vertical > .btn:first-child:not(:last-child), #accountLog div.row .btn-group-vertical > li:first-child:not(:last-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:first-child:not(:last-child) {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:last-child:not(:first-child), #accountLog div.row .btn-group-vertical > li:last-child:not(:first-child) {
+  .btn-group-vertical > .btn:last-child:not(:first-child), #accountLog div.row .btn-group-vertical > li:last-child:not(:first-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:last-child:not(:first-child) {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > li {
+  .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > li, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > #nf-field-8 {
     border-radius: 0; }
-  .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group-vertical > .btn-group:first-child:not(:last-child) > li:last-child,
+  .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group-vertical > .btn-group:first-child:not(:last-child) > li:last-child, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:first-child:not(:last-child) > #nf-field-8:last-child,
   .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group-vertical > .btn-group:last-child:not(:first-child) > li:first-child {
+  .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group-vertical > .btn-group:last-child:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:last-child:not(:first-child) > #nf-field-8:first-child {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], #accountLog div.row [data-toggle="buttons"] > li input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], #accountLog div.row [data-toggle="buttons"] > li input[type="radio"], #pageRowMain .nf-form-cont [data-toggle="buttons"] > #nf-field-8 input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"], #accountLog div.row
-[data-toggle="buttons"] > li input[type="checkbox"],
+[data-toggle="buttons"] > li input[type="checkbox"], #pageRowMain .nf-form-cont
+[data-toggle="buttons"] > #nf-field-8 input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"], #accountLog div.row
-[data-toggle="buttons"] > .btn-group > li input[type="radio"],
+[data-toggle="buttons"] > .btn-group > li input[type="radio"], #pageRowMain .nf-form-cont
+[data-toggle="buttons"] > .btn-group > #nf-field-8 input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], #accountLog div.row
-[data-toggle="buttons"] > .btn-group > li input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > li input[type="checkbox"], #pageRowMain .nf-form-cont
+[data-toggle="buttons"] > .btn-group > #nf-field-8 input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -2306,7 +2347,10 @@ tbody.collapse.show {
   .input-group-sm > input[type="submit"],
   .input-group-sm > .input-group-btn > .input-group-addon.btn, #accountLog div.row
   .input-group-sm > .input-group-btn > li.input-group-addon, #searchBar form
-  .input-group-sm > .input-group-btn > input.btn[type="submit"], #searchBar form input.form-control-sm[type="submit"] {
+  .input-group-sm > .input-group-btn > input.btn[type="submit"], #searchBar form #pageRowMain .nf-form-cont
+  .input-group-sm > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont #searchBar form
+  .input-group-sm > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont
+  .input-group-sm > .input-group-btn > .input-group-addon#nf-field-8, #searchBar form input.form-control-sm[type="submit"] {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
@@ -2315,7 +2359,10 @@ tbody.collapse.show {
   .input-group-lg > input[type="submit"],
   .input-group-lg > .input-group-btn > .input-group-addon.btn, #accountLog div.row
   .input-group-lg > .input-group-btn > li.input-group-addon, #searchBar form
-  .input-group-lg > .input-group-btn > input.btn[type="submit"], #searchBar form input.form-control-lg[type="submit"] {
+  .input-group-lg > .input-group-btn > input.btn[type="submit"], #searchBar form #pageRowMain .nf-form-cont
+  .input-group-lg > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont #searchBar form
+  .input-group-lg > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont
+  .input-group-lg > .input-group-btn > .input-group-addon#nf-field-8, #searchBar form input.form-control-lg[type="submit"] {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     border-radius: 0.3rem; }
@@ -2327,14 +2374,18 @@ tbody.collapse.show {
 .input-group-addon:not(:last-child),
 #searchBar form input[type="submit"]:not(:last-child),
 .input-group-btn:not(:last-child) > .btn, #accountLog div.row
-.input-group-btn:not(:last-child) > li,
+.input-group-btn:not(:last-child) > li, #pageRowMain .nf-form-cont
+.input-group-btn:not(:last-child) > #nf-field-8,
 .input-group-btn:not(:last-child) > .btn-group > .btn, #accountLog div.row
-.input-group-btn:not(:last-child) > .btn-group > li,
+.input-group-btn:not(:last-child) > .btn-group > li, #pageRowMain .nf-form-cont
+.input-group-btn:not(:last-child) > .btn-group > #nf-field-8,
 .input-group-btn:not(:last-child) > .dropdown-toggle,
 .input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle), #accountLog div.row
-.input-group-btn:not(:first-child) > li:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > li:not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont
+.input-group-btn:not(:first-child) > #nf-field-8:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn, #accountLog div.row
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > li {
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > li, #pageRowMain .nf-form-cont
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > #nf-field-8 {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -2345,14 +2396,18 @@ tbody.collapse.show {
 .input-group-addon:not(:first-child),
 #searchBar form input[type="submit"]:not(:first-child),
 .input-group-btn:not(:first-child) > .btn, #accountLog div.row
-.input-group-btn:not(:first-child) > li,
+.input-group-btn:not(:first-child) > li, #pageRowMain .nf-form-cont
+.input-group-btn:not(:first-child) > #nf-field-8,
 .input-group-btn:not(:first-child) > .btn-group > .btn, #accountLog div.row
-.input-group-btn:not(:first-child) > .btn-group > li,
+.input-group-btn:not(:first-child) > .btn-group > li, #pageRowMain .nf-form-cont
+.input-group-btn:not(:first-child) > .btn-group > #nf-field-8,
 .input-group-btn:not(:first-child) > .dropdown-toggle,
 .input-group-btn:not(:last-child) > .btn:not(:first-child), #accountLog div.row
-.input-group-btn:not(:last-child) > li:not(:first-child),
+.input-group-btn:not(:last-child) > li:not(:first-child), #pageRowMain .nf-form-cont
+.input-group-btn:not(:last-child) > #nf-field-8:not(:first-child),
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn, #accountLog div.row
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > li {
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > li, #pageRowMain .nf-form-cont
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > #nf-field-8 {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2364,25 +2419,25 @@ tbody.collapse.show {
   align-items: stretch;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, #accountLog div.row .input-group-btn > li {
+  .input-group-btn > .btn, #accountLog div.row .input-group-btn > li, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 {
     position: relative; }
-    .input-group-btn > .btn + .btn, #accountLog div.row .input-group-btn > li + .btn, #accountLog div.row .input-group-btn > .btn + li, #accountLog div.row .input-group-btn > li + li {
+    .input-group-btn > .btn + .btn, #accountLog div.row .input-group-btn > li + .btn, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + .btn, #accountLog div.row .input-group-btn > .btn + li, #accountLog div.row .input-group-btn > li + li, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + li, #pageRowMain .nf-form-cont .input-group-btn > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn > li + #nf-field-8, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + #nf-field-8 {
       margin-left: -1px; }
-    .input-group-btn > .btn:focus, #accountLog div.row .input-group-btn > li:focus, .input-group-btn > .btn:active, #accountLog div.row .input-group-btn > li:active, .input-group-btn > .btn:hover, #accountLog div.row .input-group-btn > li:hover {
+    .input-group-btn > .btn:focus, #accountLog div.row .input-group-btn > li:focus, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:focus, .input-group-btn > .btn:active, #accountLog div.row .input-group-btn > li:active, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:active, .input-group-btn > .btn:hover, #accountLog div.row .input-group-btn > li:hover, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:hover {
       z-index: 3; }
-  .input-group-btn:first-child > .btn + .btn, #accountLog div.row .input-group-btn:first-child > li + .btn, #accountLog div.row .input-group-btn:first-child > .btn + li, #accountLog div.row .input-group-btn:first-child > li + li {
+  .input-group-btn:first-child > .btn + .btn, #accountLog div.row .input-group-btn:first-child > li + .btn, #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + .btn, #accountLog div.row .input-group-btn:first-child > .btn + li, #accountLog div.row .input-group-btn:first-child > li + li, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn:first-child > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + li, #pageRowMain .nf-form-cont .input-group-btn:first-child > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn:first-child > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn:first-child > li + #nf-field-8, #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + #nf-field-8 {
     margin-left: 0; }
-  .input-group-btn:not(:last-child) > .btn, #accountLog div.row .input-group-btn:not(:last-child) > li,
+  .input-group-btn:not(:last-child) > .btn, #accountLog div.row .input-group-btn:not(:last-child) > li, #pageRowMain .nf-form-cont .input-group-btn:not(:last-child) > #nf-field-8,
   .input-group-btn:not(:last-child) > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn, #accountLog div.row .input-group-btn:not(:first-child) > li,
+  .input-group-btn:not(:first-child) > .btn, #accountLog div.row .input-group-btn:not(:first-child) > li, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8,
   .input-group-btn:not(:first-child) > .btn-group {
     z-index: 2;
     margin-left: 0; }
-    .input-group-btn:not(:first-child) > .btn:first-child, #accountLog div.row .input-group-btn:not(:first-child) > li:first-child,
+    .input-group-btn:not(:first-child) > .btn:first-child, #accountLog div.row .input-group-btn:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:first-child,
     .input-group-btn:not(:first-child) > .btn-group:first-child {
       margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, #accountLog div.row .input-group-btn:not(:first-child) > li:focus, .input-group-btn:not(:first-child) > .btn:active, #accountLog div.row .input-group-btn:not(:first-child) > li:active, .input-group-btn:not(:first-child) > .btn:hover, #accountLog div.row .input-group-btn:not(:first-child) > li:hover,
+    .input-group-btn:not(:first-child) > .btn:focus, #accountLog div.row .input-group-btn:not(:first-child) > li:focus, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:focus, .input-group-btn:not(:first-child) > .btn:active, #accountLog div.row .input-group-btn:not(:first-child) > li:active, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:active, .input-group-btn:not(:first-child) > .btn:hover, #accountLog div.row .input-group-btn:not(:first-child) > li:hover, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:hover,
     .input-group-btn:not(:first-child) > .btn-group:focus,
     .input-group-btn:not(:first-child) > .btn-group:active,
     .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -2534,42 +2589,48 @@ tbody.collapse.show {
   .custom-file-control:lang(en)::before {
     content: "Browse"; }
 
-.nav, #topMenu ul {
+.nav, #topMenu div ul, #accountLog div.row ul {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
 
-.nav-link, #topMenu ul li a {
+.nav-link, #topMenu div ul li a, #accountLog div.row ul li a {
   display: block;
   padding: 0.5rem 1rem; }
-  .nav-link:focus, #topMenu ul li a:focus, .nav-link:hover, #topMenu ul li a:hover {
+  .nav-link:focus, #topMenu div ul li a:focus, #accountLog div.row ul li a:focus, .nav-link:hover, #topMenu div ul li a:hover, #accountLog div.row ul li a:hover {
     text-decoration: none; }
-  .nav-link.disabled, #topMenu ul li a.disabled {
+  .nav-link.disabled, #topMenu div ul li a.disabled, #accountLog div.row ul li a.disabled {
     color: #868e96; }
 
 .nav-tabs {
   border-bottom: 1px solid #ddd; }
-  .nav-tabs .nav-item, .nav-tabs #topMenu ul li, #topMenu ul .nav-tabs li {
+  .nav-tabs .nav-item, .nav-tabs #topMenu div ul li, #topMenu div ul .nav-tabs li, .nav-tabs #accountLog div.row ul li, #accountLog div.row ul .nav-tabs li {
     margin-bottom: -1px; }
-  .nav-tabs .nav-link, .nav-tabs #topMenu ul li a, #topMenu ul li .nav-tabs a {
+  .nav-tabs .nav-link, .nav-tabs #topMenu div ul li a, #topMenu div ul li .nav-tabs a, .nav-tabs #accountLog div.row ul li a, #accountLog div.row ul li .nav-tabs a {
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
-    .nav-tabs .nav-link:focus, .nav-tabs #topMenu ul li a:focus, #topMenu ul li .nav-tabs a:focus, .nav-tabs .nav-link:hover, .nav-tabs #topMenu ul li a:hover, #topMenu ul li .nav-tabs a:hover {
+    .nav-tabs .nav-link:focus, .nav-tabs #topMenu div ul li a:focus, #topMenu div ul li .nav-tabs a:focus, .nav-tabs #accountLog div.row ul li a:focus, #accountLog div.row ul li .nav-tabs a:focus, .nav-tabs .nav-link:hover, .nav-tabs #topMenu div ul li a:hover, #topMenu div ul li .nav-tabs a:hover, .nav-tabs #accountLog div.row ul li a:hover, #accountLog div.row ul li .nav-tabs a:hover {
       border-color: #e9ecef #e9ecef #ddd; }
-    .nav-tabs .nav-link.disabled, .nav-tabs #topMenu ul li a.disabled, #topMenu ul li .nav-tabs a.disabled {
+    .nav-tabs .nav-link.disabled, .nav-tabs #topMenu div ul li a.disabled, #topMenu div ul li .nav-tabs a.disabled, .nav-tabs #accountLog div.row ul li a.disabled, #accountLog div.row ul li .nav-tabs a.disabled {
       color: #868e96;
       background-color: transparent;
       border-color: transparent; }
-  .nav-tabs .nav-link.active, .nav-tabs #topMenu ul li a.active, #topMenu ul li .nav-tabs a.active,
+  .nav-tabs .nav-link.active, .nav-tabs #topMenu div ul li a.active, #topMenu div ul li .nav-tabs a.active, .nav-tabs #accountLog div.row ul li a.active, #accountLog div.row ul li .nav-tabs a.active,
   .nav-tabs .nav-item.show .nav-link,
-  .nav-tabs #topMenu ul li.show .nav-link, #topMenu ul
+  .nav-tabs #topMenu div ul li.show .nav-link, #topMenu div ul
   .nav-tabs li.show .nav-link,
-  .nav-tabs .nav-item.show #topMenu ul li a, #topMenu ul li
+  .nav-tabs #accountLog div.row ul li.show .nav-link, #accountLog div.row ul
+  .nav-tabs li.show .nav-link,
+  .nav-tabs .nav-item.show #topMenu div ul li a, #topMenu div ul li
   .nav-tabs .nav-item.show a,
-  .nav-tabs #topMenu ul li.show a, #topMenu ul
+  .nav-tabs #topMenu div ul li.show a, #topMenu div ul
+  .nav-tabs li.show a,
+  .nav-tabs .nav-item.show #accountLog div.row ul li a, #accountLog div.row ul li
+  .nav-tabs .nav-item.show a,
+  .nav-tabs #accountLog div.row ul li.show a, #accountLog div.row ul
   .nav-tabs li.show a {
     color: #495057;
     background-color: #fff;
@@ -2579,21 +2640,23 @@ tbody.collapse.show {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.nav-pills .nav-link, .nav-pills #topMenu ul li a, #topMenu ul li .nav-pills a {
+.nav-pills .nav-link, .nav-pills #topMenu div ul li a, #topMenu div ul li .nav-pills a, .nav-pills #accountLog div.row ul li a, #accountLog div.row ul li .nav-pills a {
   border-radius: 0.25rem; }
 
-.nav-pills .nav-link.active, .nav-pills #topMenu ul li a.active, #topMenu ul li .nav-pills a.active,
+.nav-pills .nav-link.active, .nav-pills #topMenu div ul li a.active, #topMenu div ul li .nav-pills a.active, .nav-pills #accountLog div.row ul li a.active, #accountLog div.row ul li .nav-pills a.active,
 .nav-pills .show > .nav-link,
-.nav-pills #topMenu ul li .show > a, #topMenu ul li
+.nav-pills #topMenu div ul li .show > a, #topMenu div ul li
+.nav-pills .show > a,
+.nav-pills #accountLog div.row ul li .show > a, #accountLog div.row ul li
 .nav-pills .show > a {
   color: #fff;
   background-color: #007bff; }
 
-.nav-fill .nav-item, .nav-fill #topMenu ul li, #topMenu ul .nav-fill li {
+.nav-fill .nav-item, .nav-fill #topMenu div ul li, #topMenu div ul .nav-fill li, .nav-fill #accountLog div.row ul li, #accountLog div.row ul .nav-fill li {
   flex: 1 1 auto;
   text-align: center; }
 
-.nav-justified .nav-item, .nav-justified #topMenu ul li, #topMenu ul .nav-justified li {
+.nav-justified .nav-item, .nav-justified #topMenu div ul li, #topMenu div ul .nav-justified li, .nav-justified #accountLog div.row ul li, #accountLog div.row ul .nav-justified li {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center; }
@@ -2635,7 +2698,7 @@ tbody.collapse.show {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
-  .navbar-nav .nav-link, .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-nav a {
+  .navbar-nav .nav-link, .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-nav a, .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-nav a {
     padding-right: 0;
     padding-left: 0; }
   .navbar-nav .dropdown-menu {
@@ -2688,7 +2751,7 @@ tbody.collapse.show {
       .navbar-expand-sm .navbar-nav .dropdown-menu-right {
         right: 0;
         left: auto; }
-      .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-expand-sm .navbar-nav a {
+      .navbar-expand-sm .navbar-nav .nav-link, .navbar-expand-sm .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-expand-sm .navbar-nav a, .navbar-expand-sm .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-expand-sm .navbar-nav a {
         padding-right: .5rem;
         padding-left: .5rem; }
     .navbar-expand-sm > .container,
@@ -2720,7 +2783,7 @@ tbody.collapse.show {
       .navbar-expand-md .navbar-nav .dropdown-menu-right {
         right: 0;
         left: auto; }
-      .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-expand-md .navbar-nav a {
+      .navbar-expand-md .navbar-nav .nav-link, .navbar-expand-md .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-expand-md .navbar-nav a, .navbar-expand-md .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-expand-md .navbar-nav a {
         padding-right: .5rem;
         padding-left: .5rem; }
     .navbar-expand-md > .container,
@@ -2752,7 +2815,7 @@ tbody.collapse.show {
       .navbar-expand-lg .navbar-nav .dropdown-menu-right {
         right: 0;
         left: auto; }
-      .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-expand-lg .navbar-nav a {
+      .navbar-expand-lg .navbar-nav .nav-link, .navbar-expand-lg .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-expand-lg .navbar-nav a, .navbar-expand-lg .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-expand-lg .navbar-nav a {
         padding-right: .5rem;
         padding-left: .5rem; }
     .navbar-expand-lg > .container,
@@ -2784,7 +2847,7 @@ tbody.collapse.show {
       .navbar-expand-xl .navbar-nav .dropdown-menu-right {
         right: 0;
         left: auto; }
-      .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-expand-xl .navbar-nav a {
+      .navbar-expand-xl .navbar-nav .nav-link, .navbar-expand-xl .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-expand-xl .navbar-nav a, .navbar-expand-xl .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-expand-xl .navbar-nav a {
         padding-right: .5rem;
         padding-left: .5rem; }
     .navbar-expand-xl > .container,
@@ -2813,7 +2876,7 @@ tbody.collapse.show {
     .navbar-expand .navbar-nav .dropdown-menu-right {
       right: 0;
       left: auto; }
-    .navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-expand .navbar-nav a {
+    .navbar-expand .navbar-nav .nav-link, .navbar-expand .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-expand .navbar-nav a, .navbar-expand .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-expand .navbar-nav a {
       padding-right: .5rem;
       padding-left: .5rem; }
   .navbar-expand > .container,
@@ -2833,22 +2896,28 @@ tbody.collapse.show {
   .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: rgba(0, 0, 0, 0.9); }
 
-.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-light .navbar-nav a {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-light .navbar-nav a, .navbar-light .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-light .navbar-nav a {
   color: rgba(0, 0, 0, 0.5); }
-  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav #topMenu ul li a:focus, #topMenu ul li .navbar-light .navbar-nav a:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav #topMenu ul li a:hover, #topMenu ul li .navbar-light .navbar-nav a:hover {
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav #topMenu div ul li a:focus, #topMenu div ul li .navbar-light .navbar-nav a:focus, .navbar-light .navbar-nav #accountLog div.row ul li a:focus, #accountLog div.row ul li .navbar-light .navbar-nav a:focus, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav #topMenu div ul li a:hover, #topMenu div ul li .navbar-light .navbar-nav a:hover, .navbar-light .navbar-nav #accountLog div.row ul li a:hover, #accountLog div.row ul li .navbar-light .navbar-nav a:hover {
     color: rgba(0, 0, 0, 0.7); }
-  .navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav #topMenu ul li a.disabled, #topMenu ul li .navbar-light .navbar-nav a.disabled {
+  .navbar-light .navbar-nav .nav-link.disabled, .navbar-light .navbar-nav #topMenu div ul li a.disabled, #topMenu div ul li .navbar-light .navbar-nav a.disabled, .navbar-light .navbar-nav #accountLog div.row ul li a.disabled, #accountLog div.row ul li .navbar-light .navbar-nav a.disabled {
     color: rgba(0, 0, 0, 0.3); }
 
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav #topMenu ul li .show > a, #topMenu ul li .navbar-light .navbar-nav .show > a,
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav #topMenu div ul li .show > a, #topMenu div ul li .navbar-light .navbar-nav .show > a, .navbar-light .navbar-nav #accountLog div.row ul li .show > a, #accountLog div.row ul li .navbar-light .navbar-nav .show > a,
 .navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav #topMenu ul li .active > a, #topMenu ul li
+.navbar-light .navbar-nav #topMenu div ul li .active > a, #topMenu div ul li
+.navbar-light .navbar-nav .active > a,
+.navbar-light .navbar-nav #accountLog div.row ul li .active > a, #accountLog div.row ul li
 .navbar-light .navbar-nav .active > a,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav #topMenu ul li a.show, #topMenu ul li
+.navbar-light .navbar-nav #topMenu div ul li a.show, #topMenu div ul li
+.navbar-light .navbar-nav a.show,
+.navbar-light .navbar-nav #accountLog div.row ul li a.show, #accountLog div.row ul li
 .navbar-light .navbar-nav a.show,
 .navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav #topMenu ul li a.active, #topMenu ul li
+.navbar-light .navbar-nav #topMenu div ul li a.active, #topMenu div ul li
+.navbar-light .navbar-nav a.active,
+.navbar-light .navbar-nav #accountLog div.row ul li a.active, #accountLog div.row ul li
 .navbar-light .navbar-nav a.active {
   color: rgba(0, 0, 0, 0.9); }
 
@@ -2871,22 +2940,28 @@ tbody.collapse.show {
   .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
     color: #fff; }
 
-.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav #topMenu ul li a, #topMenu ul li .navbar-dark .navbar-nav a {
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav #topMenu div ul li a, #topMenu div ul li .navbar-dark .navbar-nav a, .navbar-dark .navbar-nav #accountLog div.row ul li a, #accountLog div.row ul li .navbar-dark .navbar-nav a {
   color: rgba(255, 255, 255, 0.5); }
-  .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav #topMenu ul li a:focus, #topMenu ul li .navbar-dark .navbar-nav a:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav #topMenu ul li a:hover, #topMenu ul li .navbar-dark .navbar-nav a:hover {
+  .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav #topMenu div ul li a:focus, #topMenu div ul li .navbar-dark .navbar-nav a:focus, .navbar-dark .navbar-nav #accountLog div.row ul li a:focus, #accountLog div.row ul li .navbar-dark .navbar-nav a:focus, .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav #topMenu div ul li a:hover, #topMenu div ul li .navbar-dark .navbar-nav a:hover, .navbar-dark .navbar-nav #accountLog div.row ul li a:hover, #accountLog div.row ul li .navbar-dark .navbar-nav a:hover {
     color: rgba(255, 255, 255, 0.75); }
-  .navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav #topMenu ul li a.disabled, #topMenu ul li .navbar-dark .navbar-nav a.disabled {
+  .navbar-dark .navbar-nav .nav-link.disabled, .navbar-dark .navbar-nav #topMenu div ul li a.disabled, #topMenu div ul li .navbar-dark .navbar-nav a.disabled, .navbar-dark .navbar-nav #accountLog div.row ul li a.disabled, #accountLog div.row ul li .navbar-dark .navbar-nav a.disabled {
     color: rgba(255, 255, 255, 0.25); }
 
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav #topMenu ul li .show > a, #topMenu ul li .navbar-dark .navbar-nav .show > a,
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav #topMenu div ul li .show > a, #topMenu div ul li .navbar-dark .navbar-nav .show > a, .navbar-dark .navbar-nav #accountLog div.row ul li .show > a, #accountLog div.row ul li .navbar-dark .navbar-nav .show > a,
 .navbar-dark .navbar-nav .active > .nav-link,
-.navbar-dark .navbar-nav #topMenu ul li .active > a, #topMenu ul li
+.navbar-dark .navbar-nav #topMenu div ul li .active > a, #topMenu div ul li
+.navbar-dark .navbar-nav .active > a,
+.navbar-dark .navbar-nav #accountLog div.row ul li .active > a, #accountLog div.row ul li
 .navbar-dark .navbar-nav .active > a,
 .navbar-dark .navbar-nav .nav-link.show,
-.navbar-dark .navbar-nav #topMenu ul li a.show, #topMenu ul li
+.navbar-dark .navbar-nav #topMenu div ul li a.show, #topMenu div ul li
+.navbar-dark .navbar-nav a.show,
+.navbar-dark .navbar-nav #accountLog div.row ul li a.show, #accountLog div.row ul li
 .navbar-dark .navbar-nav a.show,
 .navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav #topMenu ul li a.active, #topMenu ul li
+.navbar-dark .navbar-nav #topMenu div ul li a.active, #topMenu div ul li
+.navbar-dark .navbar-nav a.active,
+.navbar-dark .navbar-nav #accountLog div.row ul li a.active, #accountLog div.row ul li
 .navbar-dark .navbar-nav a.active {
   color: #fff; }
 
@@ -2917,10 +2992,12 @@ tbody.collapse.show {
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
-  .card > .list-group:first-child .list-group-item:first-child {
+  .card > .list-group:first-child .list-group-item:first-child, #pageRowSideBar .widget .card > ul:first-child .list-group-item:first-child,
+  #shopRowSideBar .widget .card > ul:first-child .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
-  .card > .list-group:last-child .list-group-item:last-child {
+  .card > .list-group:last-child .list-group-item:last-child, #pageRowSideBar .widget .card > ul:last-child .list-group-item:last-child,
+  #shopRowSideBar .widget .card > ul:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
 
@@ -2951,7 +3028,8 @@ tbody.collapse.show {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
-  .card-header + .list-group .list-group-item:first-child {
+  .card-header + .list-group .list-group-item:first-child, #pageRowSideBar .widget .card-header + ul .list-group-item:first-child,
+  #shopRowSideBar .widget .card-header + ul .list-group-item:first-child {
     border-top: 0; }
 
 .card-footer {
@@ -3170,7 +3248,7 @@ tbody.collapse.show {
   .badge:empty {
     display: none; }
 
-.btn .badge, #accountLog div.row li .badge {
+.btn .badge, #accountLog div.row li .badge, #pageRowMain .nf-form-cont #nf-field-8 .badge {
   position: relative;
   top: -1px; }
 
@@ -3384,7 +3462,8 @@ tbody.collapse.show {
 .media-body {
   flex: 1; }
 
-.list-group {
+.list-group, #pageRowSideBar .widget ul,
+#shopRowSideBar .widget ul {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -4955,7 +5034,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .py-1 {
   padding-top: 0.25rem !important; }
 
-.pr-1,
+.pr-1, #topMenu div,
 .px-1 {
   padding-right: 0.25rem !important; }
 
@@ -4970,7 +5049,8 @@ a.bg-dark:focus, a.bg-dark:hover {
 .p-2, #accountLog div.row {
   padding: 0.5rem !important; }
 
-.pt-2,
+.pt-2, #pageRowSideBar,
+#shopRowSideBar,
 .py-2 {
   padding-top: 0.5rem !important; }
 
@@ -4994,7 +5074,9 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-top: 1rem !important; }
 
 .pr-3,
-.px-3 {
+.px-3,
+#pageRowSideBar,
+#shopRowSideBar {
   padding-right: 1rem !important; }
 
 .pb-3,
@@ -5002,7 +5084,9 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-bottom: 1rem !important; }
 
 .pl-3,
-.px-3 {
+.px-3,
+#pageRowSideBar,
+#shopRowSideBar {
   padding-left: 1rem !important; }
 
 .p-4 {
@@ -5938,49 +6022,20 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-body {
-  background-image: url("../images/bg2K.jpg");
-  background-repeat: no-repeat;
-  background-color: #f3f3f3;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-style: italic; }
+#topMenu div ul li a {
+  font-size: 1rem;
+  padding: 0rem 0.4rem; }
 
-#mainWraaper .container {
-  position: relative;
-  z-index: 9;
-  background-color: white;
-  overflow: hidden;
-  border-top-left-radius: 0px !important;
-  border-top-right-radius: 0px !important;
-  border-bottom-right-radius: 8px !important;
-  border-bottom-left-radius: 8px !important;
-  -webkit-border-top-left-radius: 0px !important;
-  -webkit-border-top-right-radius: 0px !important;
-  -webkit-border-bottom-right-radius: 8px !important;
-  -webkit-border-bottom-left-radius: 8px !important;
-  -moz-border-radius-topleft: 0px !important;
-  -moz-border-radius-topright: 0px !important;
-  -moz-border-radius-bottomright: 8px !important;
-  -moz-border-radius-bottomleft: 8px !important; }
+#topMenu div ul li:first-child a {
+  padding-left: 0; }
 
-#wpadminbar ul {
-  display: inherit; }
+#topMenu div ul#topMenu-id a {
+  color: #fff !important; }
 
-#topMenu {
-  padding: 0; }
-  #topMenu div {
-    padding: 0px 5px 0px 10px; }
-    #topMenu div a {
-      font-size: 1rem;
-      padding: 0.4rem; }
-    #topMenu div ul#topMenu-id a {
-      color: #fff !important; }
-    #topMenu div ul#topMenu-id a:hover,
-    #topMenu div ul#topMenu-id a:active,
-    #topMenu div ul#topMenu-id li.active a {
-      color: #28a745 !important; }
-  #topMenu ul li a {
-    transition: color 300ms 0s ease; }
+#topMenu div ul#topMenu-id a:hover,
+#topMenu div ul#topMenu-id a:active,
+#topMenu div ul#topMenu-id li.active a {
+  color: #28a745 !important; }
 
 #accountLog div.row {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -6055,6 +6110,71 @@ body {
     color: #28a745 !important; }
   #mainMenu li ul.dropdown-menu {
     background-color: #343a40; }
+
+body {
+  background-image: url("../images/bg2K.jpg");
+  background-repeat: no-repeat;
+  background-color: #f3f3f3;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic; }
+
+#mainWraaper .container {
+  position: relative;
+  z-index: 9;
+  background-color: white;
+  overflow: hidden;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  -webkit-border-top-left-radius: 0px !important;
+  -webkit-border-top-right-radius: 0px !important;
+  -webkit-border-bottom-right-radius: 8px !important;
+  -webkit-border-bottom-left-radius: 8px !important;
+  -moz-border-radius-topleft: 0px !important;
+  -moz-border-radius-topright: 0px !important;
+  -moz-border-radius-bottomright: 8px !important;
+  -moz-border-radius-bottomleft: 8px !important; }
+
+@media (min-width: 768px) {
+  #pageRowMain .nf-form-cont {
+    width: 80%; } }
+
+@media (min-width: 992px) {
+  #pageRowMain .nf-form-cont {
+    width: 70%; } }
+
+@media (min-width: 1200px) {
+  #pageRowMain .nf-form-cont {
+    width: 60%; } }
+
+@media (max-width: 991px) {
+  #pageRowSideBar,
+  #shopRowSideBar {
+    margin-left: 15px; } }
+
+#pageRowSideBar .widget h3,
+#shopRowSideBar .widget h3 {
+  font-size: 1.5rem; }
+  #pageRowSideBar .widget h3:hover,
+  #shopRowSideBar .widget h3:hover {
+    color: #bd2130;
+    transition: color 300ms 0s ease-in-out;
+    cursor: pointer; }
+
+#pageRowSideBar .widget ul,
+#shopRowSideBar .widget ul {
+  list-style-type: none; }
+  #pageRowSideBar .widget ul li a,
+  #shopRowSideBar .widget ul li a {
+    text-decoration: none;
+    color: #7b7979;
+    font-size: 1rem; }
+    #pageRowSideBar .widget ul li a:hover,
+    #shopRowSideBar .widget ul li a:hover {
+      color: #23923d;
+      transition: color 300ms 0s ease-in-out;
+      cursor: pointer; }
 
 body.woocommerce-page div.woocommerce #customer_login .col-1,
 body.woocommerce-page div.woocommerce #customer_login .col-2 {

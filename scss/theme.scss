@@ -1,10 +1,18 @@
 // Bootstrap 4
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Varibels
+$sidebar-li-color: #7b7979;
+
+
+
+
 // Theme scss mixin
 @import "mixin";
 // Theme scss styles
-@import "global";
 @import "header";
+@import "global";
+@import "page";
+@import "sidebar";
 @import "woo";
 @import "itemplate";
 @import "footer";

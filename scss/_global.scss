@@ -1,9 +1,10 @@
+
+
 body {
   background-image: url("../images/bg2K.jpg");
   background-repeat: no-repeat;
   background-color: #f3f3f3;
   @include themefont;
-
 
 }
 #mainWraaper .container {
@@ -14,8 +15,8 @@ body {
   @include border-radii(0px, 0px, 8px, 8px);
 }
 
-#wpadminbar {
-  ul {
-    display: inherit;
-  }
-}
+// #wpadminbar {
+//   ul {
+//     display: inherit;
+//   }
+// }
