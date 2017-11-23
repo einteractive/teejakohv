@@ -6175,6 +6175,11 @@ body {
 .woocommerce-page .woocommerce #customer_login .col-2 {
   max-width: 100% !important; }
 
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  width: inherit;
+  margin: inherit; }
+
 #carouselFront .carousel-inner .carousel-item {
   max-height: 429px; }
   #carouselFront .carousel-inner .carousel-item img {

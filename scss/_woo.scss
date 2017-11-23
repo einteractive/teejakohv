@@ -10,9 +10,8 @@
   }
 }
 
-.woocommerce .woocommerce-ordering,
-.woocommerce-page .woocommerce-ordering,
-.woocommerce .woocommerce-result-count,
-.woocommerce-page .woocommerce-result-count {
- //float: inherit;
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  width: inherit;
+  margin: inherit;
 }
