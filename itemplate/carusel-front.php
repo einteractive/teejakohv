@@ -31,7 +31,14 @@
         $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
         $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);
       ?>
-      <a href="<?php the_permalink(); ?>">
+            <?php
+
+if(get_field('slider_link'))
+{
+	echo '<a href="' . get_field('slider_link') . '">';
+}
+
+?>
         <img class="d-block w-100" src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>">
       </a>
 
