@@ -1,30 +1,6 @@
-body.woocommerce {
 
-  #wooWraaper {
-    // ul.products {
-    //   display: inherit;
-    //   @extend .row;
-    //   li {
-    //     @extend .col;
-    //     @extend .col-sm-6;
-    //     @extend .col-lg-4;
-    //   }
-    // }
-
-    #shopRowMain {
-      .woocommerce-breadcrumb {
-        margin: 0 0 0.4rem;
-      }
-
-    }
-    span.onsale {
-
-      }
-    }
-
-}
-body.woocommerce-page {
-  div.woocommerce {
+.woocommerce-page {
+  .woocommerce {
     #customer_login {
       .col-1,
       .col-2 {
@@ -32,4 +8,11 @@ body.woocommerce-page {
       }
     }
   }
+}
+
+.woocommerce .woocommerce-ordering,
+.woocommerce-page .woocommerce-ordering,
+.woocommerce .woocommerce-result-count,
+.woocommerce-page .woocommerce-result-count {
+ //float: inherit;
 }

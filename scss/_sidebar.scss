@@ -1,7 +1,7 @@
 #pageRowSideBar,
 #shopRowSideBar {
   @include media-breakpoint-down(md) {
-    //margin-left: 15px;
+    margin-left: 1rem;
     //@extend .pt-3;
   }
 

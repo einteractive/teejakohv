@@ -6143,6 +6143,11 @@ body {
   #pageRowMain .nf-form-cont {
     width: 60%; } }
 
+@media (max-width: 991px) {
+  #pageRowSideBar,
+  #shopRowSideBar {
+    margin-left: 1rem; } }
+
 #pageRowSideBar .widget h3,
 #shopRowSideBar .widget h3 {
   font-size: 1.5rem; }
@@ -6166,11 +6171,8 @@ body {
       transition: color 300ms 0s ease-in-out;
       cursor: pointer; }
 
-body.woocommerce #wooWraaper #shopRowMain .woocommerce-breadcrumb {
-  margin: 0 0 0.4rem; }
-
-body.woocommerce-page div.woocommerce #customer_login .col-1,
-body.woocommerce-page div.woocommerce #customer_login .col-2 {
+.woocommerce-page .woocommerce #customer_login .col-1,
+.woocommerce-page .woocommerce #customer_login .col-2 {
   max-width: 100% !important; }
 
 #carouselFront .carousel-inner .carousel-item {
