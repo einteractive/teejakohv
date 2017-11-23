@@ -17,7 +17,7 @@
     </div>
     <div class="col-6 col-lg-3">
       <h4>My account</h4>
-      <?php if ( ! dynamic_sidebar( 'menu-footer' ) ): ?> 	<?php endif; ?>
+      <?php if ( ! dynamic_sidebar( 'myaccount-footer' ) ): ?> 	<?php endif; ?>
     </div>
     <div class="col-6 col-lg-3">
       <h4>Follow us</h4>
