@@ -83,8 +83,8 @@
     <a class="" href="<?php echo esc_url( home_url() ); ?>"><img id="site-logo" class="brand img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/teejakohv_logo.png" alt="" /></a>
 
     <!-- Search section -->
-    <div id="searchBar">
-      <div class="ml-auto d-flex">
+    <div id="searchBar" class="" >
+      <div class="ml-auto d-flex justify-content-end">
         <div>
           <?php get_product_search_form() ?>
         </div>

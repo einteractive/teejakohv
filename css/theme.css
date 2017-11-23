@@ -5049,8 +5049,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .p-2, #accountLog div.row {
   padding: 0.5rem !important; }
 
-.pt-2, #pageRowSideBar,
-#shopRowSideBar,
+.pt-2,
 .py-2 {
   padding-top: 0.5rem !important; }
 
@@ -5074,9 +5073,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-top: 1rem !important; }
 
 .pr-3,
-.px-3,
-#pageRowSideBar,
-#shopRowSideBar {
+.px-3 {
   padding-right: 1rem !important; }
 
 .pb-3,
@@ -5084,9 +5081,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-bottom: 1rem !important; }
 
 .pl-3,
-.px-3,
-#pageRowSideBar,
-#shopRowSideBar {
+.px-3 {
   padding-left: 1rem !important; }
 
 .p-4 {
@@ -6148,11 +6143,6 @@ body {
   #pageRowMain .nf-form-cont {
     width: 60%; } }
 
-@media (max-width: 991px) {
-  #pageRowSideBar,
-  #shopRowSideBar {
-    margin-left: 15px; } }
-
 #pageRowSideBar .widget h3,
 #shopRowSideBar .widget h3 {
   font-size: 1.5rem; }
@@ -6175,6 +6165,9 @@ body {
       color: #23923d;
       transition: color 300ms 0s ease-in-out;
       cursor: pointer; }
+
+body.woocommerce #wooWraaper #shopRowMain .woocommerce-breadcrumb {
+  margin: 0 0 0.4rem; }
 
 body.woocommerce-page div.woocommerce #customer_login .col-1,
 body.woocommerce-page div.woocommerce #customer_login .col-2 {

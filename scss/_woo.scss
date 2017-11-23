@@ -12,7 +12,10 @@ body.woocommerce {
     // }
 
     #shopRowMain {
-      
+      .woocommerce-breadcrumb {
+        margin: 0 0 0.4rem;
+      }
+
     }
     span.onsale {
 

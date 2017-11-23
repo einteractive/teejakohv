@@ -33,7 +33,7 @@ get_header( 'shop' ); ?>
 	do_action( 'woocommerce_before_main_content' );
 ?>
 
-	<div class="row row-offcanvas row-offcanvas-left">
+	<div class="row row-offcanvas row-offcanvas-left pt-3">
 		<div id="shopRowSideBar" class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
 
 			<?php
