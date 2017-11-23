@@ -1,0 +1,32 @@
+#pageRowSideBar {
+  @extend .px-3;
+  @extend .pt-2;
+  .widget {
+    h3 {
+      font-size: 1.5rem;
+
+      &:hover {
+        color: darken($red, 15%);
+        transition: color 300ms 0s linear;
+        cursor: pointer;
+      }
+    } // h3 End
+    ul {
+      @extend .list-group;
+      list-style-type: none;
+      li {
+        a {
+          text-decoration: none;
+          color: $sidebar-li-color;
+          font-size: 1rem;
+
+          &:hover {
+            color: darken($green, 15%);
+            transition: color 300ms 0s linear;
+            cursor: pointer;
+          }
+        } // a End
+      } // li End
+    } // ul End
+  } // .widget End
+} // #pageRowSideBar End
