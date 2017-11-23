@@ -386,3 +386,28 @@ function add_loginout_link( $items, $args ) {
    return $items;
 
 }
+
+/**
+ * Woocommerce Breadcrumb.
+ * Author: DJ
+ *
+ *
+ */
+remove_action( 'woocommerce_before_main_content' , 'woocommerce_breadcrumb', 20 );
+add_action('woocommerce_custom_breadcrumb','woocommerce_breadcrumb', 10 );
+/**
+ * Woocommerce woocommerce_result_count.
+ * Author: DJ
+ *
+ *
+ */
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
+add_action('woocommerce_archive_description','woocommerce_result_count', 10 );
+/**
+ * Woocommerce Breadcrumb.
+ * Author: DJ
+ *
+ *
+ */
+remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 30 );
+add_action('woocommerce_archive_description','woocommerce_catalog_ordering', 15 );

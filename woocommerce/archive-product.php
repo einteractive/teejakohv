@@ -47,6 +47,13 @@ get_header( 'shop' ); ?>
 		</div><!-- /#shopRowSideBar  -->
 
 		<div id="shopRowMain" class="col-12 col-lg-9">
+			<?php
+				/**
+				 * @hooked woocommerce_breadcrumb - 20
+				 *
+				 */
+				do_action( 'woocommerce_custom_breadcrumb' );
+			?>
 			<button type="button" class="btn btn-success btn-sm d-lg-none" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
 
     		<header class="woocommerce-products-header">
