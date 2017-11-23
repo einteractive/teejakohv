@@ -33,7 +33,7 @@ get_header( 'shop' ); ?>
 	do_action( 'woocommerce_before_main_content' );
 ?>
 
-	<div class="row row-offcanvas row-offcanvas-left">
+	<div class="row row-offcanvas row-offcanvas-left pt-3">
 		<div id="shopRowSideBar" class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
 
 			<?php
@@ -47,6 +47,13 @@ get_header( 'shop' ); ?>
 		</div><!-- /#shopRowSideBar  -->
 
 		<div id="shopRowMain" class="col-12 col-lg-9">
+			<?php
+				/**
+				 * @hooked woocommerce_breadcrumb - 20
+				 *
+				 */
+				do_action( 'woocommerce_custom_breadcrumb' );
+			?>
 			<button type="button" class="btn btn-success btn-sm d-lg-none" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
 
     		<header class="woocommerce-products-header">
@@ -56,17 +63,19 @@ get_header( 'shop' ); ?>
 						<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
 
 					<?php endif; ?>
-
-					<?php
-						/**
-						 * woocommerce_archive_description hook.
-						 *
-						 * @hooked woocommerce_taxonomy_archive_description - 10
-						 * @hooked woocommerce_product_archive_description - 10
-						 */
-						do_action( 'woocommerce_archive_description' );
-					?>
-
+					<div class="bg-dark d-flex justify-content-between p-1" >
+						<?php
+							/**
+							 * woocommerce_archive_description hook.
+							 *
+							 * @hooked woocommerce_taxonomy_archive_description - 10
+							 * @hooked woocommerce_product_archive_description - 10
+							 * @hooked woocommerce_result_count - 20
+							 * @hooked woocommerce_catalog_ordering - 30
+							 */
+							do_action( 'woocommerce_archive_description' );
+						?>
+					</div>
 			    </header>
 
 					<?php if ( have_posts() ) : ?>
@@ -76,8 +85,6 @@ get_header( 'shop' ); ?>
 							 * woocommerce_before_shop_loop hook.
 							 *
 							 * @hooked wc_print_notices - 10
-							 * @hooked woocommerce_result_count - 20
-							 * @hooked woocommerce_catalog_ordering - 30
 							 */
 							do_action( 'woocommerce_before_shop_loop' );
 						?>

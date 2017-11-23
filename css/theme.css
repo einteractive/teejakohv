@@ -5049,8 +5049,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .p-2, #accountLog div.row {
   padding: 0.5rem !important; }
 
-.pt-2, #pageRowSideBar,
-#shopRowSideBar,
+.pt-2,
 .py-2 {
   padding-top: 0.5rem !important; }
 
@@ -5074,9 +5073,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-top: 1rem !important; }
 
 .pr-3,
-.px-3,
-#pageRowSideBar,
-#shopRowSideBar {
+.px-3 {
   padding-right: 1rem !important; }
 
 .pb-3,
@@ -5084,9 +5081,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-bottom: 1rem !important; }
 
 .pl-3,
-.px-3,
-#pageRowSideBar,
-#shopRowSideBar {
+.px-3 {
   padding-left: 1rem !important; }
 
 .p-4 {
@@ -6151,7 +6146,7 @@ body {
 @media (max-width: 991px) {
   #pageRowSideBar,
   #shopRowSideBar {
-    margin-left: 15px; } }
+    margin-left: 1rem; } }
 
 #pageRowSideBar .widget h3,
 #shopRowSideBar .widget h3 {
@@ -6176,9 +6171,14 @@ body {
       transition: color 300ms 0s ease-in-out;
       cursor: pointer; }
 
-body.woocommerce-page div.woocommerce #customer_login .col-1,
-body.woocommerce-page div.woocommerce #customer_login .col-2 {
+.woocommerce-page .woocommerce #customer_login .col-1,
+.woocommerce-page .woocommerce #customer_login .col-2 {
   max-width: 100% !important; }
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  width: inherit;
+  margin: inherit; }
 
 #carouselFront .carousel-inner .carousel-item {
   max-height: 429px; }

@@ -1,8 +1,5 @@
 <?php get_header(); ?>
-<!-- Front page Slider with Bootstrap Carusel -->
-<?php if ( is_front_page() ) : ?>
-	<?php get_template_part( 'itemplate/carusel', 'front' ); ?>
-<?php endif; ?>
+
 
 
 <!-- Main .container Start-->
@@ -54,7 +51,7 @@
 
       </div>
 
-<h1>Page.php</h1>
+
 
     </div>
 

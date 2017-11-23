@@ -62,7 +62,6 @@ This theme, like WordPress, is licensed under the GPL.
 
   .sidebar-offcanvas {
     position: absolute;
-    top: 1.25rem;
     width: 41.6%; /* 5 columns */
   }
 }

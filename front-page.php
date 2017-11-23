@@ -53,13 +53,7 @@
 
 
       </div>
-
-<h1>Front-page.php</h1>
-
     </div>
-
-
-      </div><!--/row-->
-
-      </div> <!-- /.container -->
+  </div><!--/row-->
+</div> <!-- /.container -->
 <?php get_footer(); ?>

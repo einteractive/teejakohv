@@ -1,23 +1,6 @@
-body.woocommerce {
 
-  #wooWraaper {
-    // ul.products {
-    //   display: inherit;
-    //   @extend .row;
-    //   li {
-    //     @extend .col;
-    //     @extend .col-sm-6;
-    //     @extend .col-lg-4;
-    //   }
-    // }
-    span.onsale {
-
-      }
-    }
-
-}
-body.woocommerce-page {
-  div.woocommerce {
+.woocommerce-page {
+  .woocommerce {
     #customer_login {
       .col-1,
       .col-2 {
@@ -25,4 +8,10 @@ body.woocommerce-page {
       }
     }
   }
+}
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+  width: inherit;
+  margin: inherit;
 }

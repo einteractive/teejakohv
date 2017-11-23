@@ -1,9 +1,12 @@
 #pageRowSideBar,
 #shopRowSideBar {
-  @include media-breakpoint-down(md) { margin-left: 15px; }
+  @include media-breakpoint-down(md) {
+    margin-left: 1rem;
+    //@extend .pt-3;
+  }
 
-  @extend .px-3;
-  @extend .pt-2;
+  //@extend .px-3;
+  //@extend .pt-2;
   .widget {
     h3 {
       font-size: 1.5rem;

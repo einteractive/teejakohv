@@ -83,11 +83,12 @@
     <a class="" href="<?php echo esc_url( home_url() ); ?>"><img id="site-logo" class="brand img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/images/teejakohv_logo.png" alt="" /></a>
 
     <!-- Search section -->
-    <div id="searchBar" class="row">
-      <div class="ml-auto d-flex">
-        <?php get_product_search_form() ?>
-
-        <div id="cart" class="col">
+    <div id="searchBar" class="" >
+      <div class="ml-auto d-flex justify-content-end">
+        <div>
+          <?php get_product_search_form() ?>
+        </div>
+        <div id="cart">
           <div class="dropdown">
             <button class="btn btn-success px-3 btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
              <?php _e('Cart','woocommerce') ?>
