@@ -2992,10 +2992,12 @@ tbody.collapse.show {
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
-  .card > .list-group:first-child .list-group-item:first-child, #pageRowSideBar .widget .card > ul:first-child .list-group-item:first-child {
+  .card > .list-group:first-child .list-group-item:first-child, #pageRowSideBar .widget .card > ul:first-child .list-group-item:first-child,
+  #shopRowSideBar .widget .card > ul:first-child .list-group-item:first-child {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
-  .card > .list-group:last-child .list-group-item:last-child, #pageRowSideBar .widget .card > ul:last-child .list-group-item:last-child {
+  .card > .list-group:last-child .list-group-item:last-child, #pageRowSideBar .widget .card > ul:last-child .list-group-item:last-child,
+  #shopRowSideBar .widget .card > ul:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
 
@@ -3026,7 +3028,8 @@ tbody.collapse.show {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .card-header:first-child {
     border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
-  .card-header + .list-group .list-group-item:first-child, #pageRowSideBar .widget .card-header + ul .list-group-item:first-child {
+  .card-header + .list-group .list-group-item:first-child, #pageRowSideBar .widget .card-header + ul .list-group-item:first-child,
+  #shopRowSideBar .widget .card-header + ul .list-group-item:first-child {
     border-top: 0; }
 
 .card-footer {
@@ -3459,7 +3462,8 @@ tbody.collapse.show {
 .media-body {
   flex: 1; }
 
-.list-group, #pageRowSideBar .widget ul {
+.list-group, #pageRowSideBar .widget ul,
+#shopRowSideBar .widget ul {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -5046,6 +5050,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding: 0.5rem !important; }
 
 .pt-2, #pageRowSideBar,
+#shopRowSideBar,
 .py-2 {
   padding-top: 0.5rem !important; }
 
@@ -5070,7 +5075,8 @@ a.bg-dark:focus, a.bg-dark:hover {
 
 .pr-3,
 .px-3,
-#pageRowSideBar {
+#pageRowSideBar,
+#shopRowSideBar {
   padding-right: 1rem !important; }
 
 .pb-3,
@@ -5079,7 +5085,8 @@ a.bg-dark:focus, a.bg-dark:hover {
 
 .pl-3,
 .px-3,
-#pageRowSideBar {
+#pageRowSideBar,
+#shopRowSideBar {
   padding-left: 1rem !important; }
 
 .p-4 {
@@ -6141,21 +6148,31 @@ body {
   #pageRowMain .nf-form-cont {
     width: 60%; } }
 
-#pageRowSideBar .widget h3 {
+@media (max-width: 991px) {
+  #pageRowSideBar,
+  #shopRowSideBar {
+    margin-left: 15px; } }
+
+#pageRowSideBar .widget h3,
+#shopRowSideBar .widget h3 {
   font-size: 1.5rem; }
-  #pageRowSideBar .widget h3:hover {
-    color: #a71d2a;
+  #pageRowSideBar .widget h3:hover,
+  #shopRowSideBar .widget h3:hover {
+    color: #bd2130;
     transition: color 300ms 0s ease-in-out;
     cursor: pointer; }
 
-#pageRowSideBar .widget ul {
+#pageRowSideBar .widget ul,
+#shopRowSideBar .widget ul {
   list-style-type: none; }
-  #pageRowSideBar .widget ul li a {
+  #pageRowSideBar .widget ul li a,
+  #shopRowSideBar .widget ul li a {
     text-decoration: none;
     color: #7b7979;
     font-size: 1rem; }
-    #pageRowSideBar .widget ul li a:hover {
-      color: #19692c;
+    #pageRowSideBar .widget ul li a:hover,
+    #shopRowSideBar .widget ul li a:hover {
+      color: #23923d;
       transition: color 300ms 0s ease-in-out;
       cursor: pointer; }
 

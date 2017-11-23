@@ -1,4 +1,7 @@
-#pageRowSideBar {
+#pageRowSideBar,
+#shopRowSideBar {
+  @include media-breakpoint-down(md) { margin-left: 15px; }
+
   @extend .px-3;
   @extend .pt-2;
   .widget {
@@ -6,7 +9,7 @@
       font-size: 1.5rem;
 
       &:hover {
-        color: darken($red, 15%);
+        color: darken($red, 10%);
         transition: color 300ms 0s ease-in-out;
         cursor: pointer;
       }
@@ -21,12 +24,19 @@
           font-size: 1rem;
 
           &:hover {
-            color: darken($green, 15%);
+            color: darken($green, 5%);
             transition: color 300ms 0s ease-in-out;
             cursor: pointer;
           }
-        } // a End
-      } // li End
-    } // ul End
-  } // .widget End
-} // #pageRowSideBar End
+        } //a
+      } //li
+    } //ul
+  } //.widget
+} //#pageRowSideBar
+
+#shopRowSideBar {
+   ul.product_list_widget {
+
+   }
+
+} //#shopRowSideBar
