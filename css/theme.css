@@ -5961,8 +5961,9 @@ a.text-dark:focus, a.text-dark:hover {
 #topMenu div ul li a {
   font-size: 1rem;
   padding: 0rem 0.4rem; }
-  #topMenu div ul li a:first-child {
-    padding-left: 0; }
+
+#topMenu div ul li:first-child a {
+  padding-left: 0; }
 
 #topMenu div ul#topMenu-id a {
   color: #fff !important; }

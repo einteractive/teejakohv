@@ -11,10 +11,9 @@
           @extend .nav-link;
           font-size: 1rem;
           padding: 0rem 0.4rem;
-
-          &:first-child { // Align firts elentf #topMenu to left corner #mainWraaper container
-            padding-left: 0;
-          }
+        }
+        &:first-child a { // Align firts elentf #topMenu to left corner #mainWraaper container
+          padding-left: 0;
         }
       }
     }
