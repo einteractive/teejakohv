@@ -7,7 +7,6 @@
   <div class="container">
   <div class="row">
     <div class="col-6 col-lg-3">
-      <h4>Information</h4>
       <ul class="navbar">
         <li>
           <?php if ( ! dynamic_sidebar( 'menu-footer' ) ): ?> 	<?php endif; ?>
@@ -16,11 +15,10 @@
 
     </div>
     <div class="col-6 col-lg-3">
-      <h4>My account</h4>
       <?php if ( ! dynamic_sidebar( 'myaccount-footer' ) ): ?> 	<?php endif; ?>
     </div>
     <div class="col-6 col-lg-3">
-      <h4><?php _e('Follow us','teejakohv') ?></h4>
+      <h3><?php _e('Follow us','teejakohv') ?></h3>
 
       <a href="https://www.facebook.com/TEEjaKOHV/" class="facebook text-light" target="_blank"><span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x text-blue"></i>
@@ -30,7 +28,7 @@
     </div>
 
     <div class="col-6 col-lg-3">
-      <h4>Contact us</h4>
+      <h3>Contact us</h3>
       <address>
         <strong>RC TRADING OÜ</strong><br />
         Redise tn 8-15, <br />

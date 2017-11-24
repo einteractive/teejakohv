@@ -6425,8 +6425,20 @@ footer {
   position: relative;
   padding-top: 6rem;
   padding-bottom: 1rem; }
-  footer h4 {
+  footer h3 {
     color: #28a745; }
+  footer ul.navbar,
+  footer ul.menu {
+    list-style-type: none;
+    padding: 0; }
+    footer ul.navbar li a,
+    footer ul.menu li a {
+      color: #fff;
+      text-decoration: none; }
+      footer ul.navbar li a:hover,
+      footer ul.menu li a:hover {
+        color: #dc3545;
+        transition: color 300ms 0s ease-in-out; }
   footer .facebook span:first-child {
     color: #007bff; }
   footer .twitter span:first-child {
