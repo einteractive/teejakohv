@@ -63,7 +63,7 @@ get_header( 'shop' ); ?>
 						<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
 
 					<?php endif; ?>
-					<div class="bg-light d-flex justify-content-between p-1 shop-header" >
+					<div class="d-flex justify-content-between p-1 shop-header" >
 						<?php
 							/**
 							 * woocommerce_archive_description hook.
