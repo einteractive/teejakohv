@@ -19,6 +19,11 @@ footer,
 #mainMenu {
   background-image: url("../images/texture-bg.gif") !important;
 }
+a {
+  &:hover {
+    transition: color 300ms 0s ease-in-out;
+  }
+}
 
 // #wpadminbar {
 //   ul {

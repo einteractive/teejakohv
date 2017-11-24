@@ -42,7 +42,7 @@
   </div>
   <hr class="border-success">
 
-  <p class="text-success" ><small><?php bloginfo('name'); ?> <?php echo date('Y'); ?> @ <a href="www.iweb.ee" target="_blank">iweb.ee</small></p>
+  <p class="text-success developers-link"><small><?php bloginfo('name'); ?> <?php echo date('Y'); ?> @ <a class="developers-link" href="www.iweb.ee" target="_blank">iweb.ee</small></p>
 </div>
 
 

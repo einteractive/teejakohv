@@ -20,7 +20,7 @@ footer {
         text-decoration: none;
         &:hover {
           color: $red;
-          transition: color 300ms 0s ease-in-out;
+
         }
       }
     } // li end
@@ -45,4 +45,11 @@ footer {
       color: $orange;
     }
   }
+  .developers-link {
+    text-decoration: none;
+    color: $green;
+    &:hover {
+      color: darken($white, 10%);
+    }
+  } //.developers-link
 }

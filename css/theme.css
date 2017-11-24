@@ -6314,6 +6314,9 @@ footer,
 #mainMenu {
   background-image: url("../images/texture-bg.gif") !important; }
 
+a:hover {
+  transition: color 300ms 0s ease-in-out; }
+
 #pageRowMain {
   margin-bottom: 1.5rem; }
   @media (min-width: 768px) {
@@ -6437,13 +6440,17 @@ footer {
       text-decoration: none; }
       footer ul.navbar li a:hover,
       footer ul.menu li a:hover {
-        color: #dc3545;
-        transition: color 300ms 0s ease-in-out; }
+        color: #dc3545; }
   footer .facebook span:first-child {
     color: #007bff; }
   footer .twitter span:first-child {
     color: #17a2b8; }
   footer .rss span:first-child {
     color: #fd7e14; }
+  footer .developers-link {
+    text-decoration: none;
+    color: #28a745; }
+    footer .developers-link:hover {
+      color: #e6e6e6; }
 
 /*# sourceMappingURL=theme.css.map */
