@@ -20,7 +20,7 @@
   <body <?php body_class(); ?>>
 
 
-  <nav id="topMenu" class="navbar navbar-dark bg-dark p-0">
+  <nav id="topMenu" class="navbar navbar-dark bg-dark p-2">
     <div class="container ">
 
         <!-- The WordPress Menu  -->
