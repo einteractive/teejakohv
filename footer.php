@@ -20,44 +20,31 @@
       <?php if ( ! dynamic_sidebar( 'myaccount-footer' ) ): ?> 	<?php endif; ?>
     </div>
     <div class="col-6 col-lg-3">
-      <h4>Follow us</h4>
+      <h4><?php _e('Follow us','teejakohv') ?></h4>
 
-      <a href="#" class="facebook text-light"><span class="fa-stack fa-lg">
+      <a href="https://www.facebook.com/TEEjaKOHV/" class="facebook text-light" target="_blank"><span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x text-blue"></i>
           <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
       </span>Facebook</a><br>
-
-      <a href="#" class="twitter text-light"><span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x text-blue"></i>
-          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-      </span>Twitter</a><br>
-
-      <a href="#" class="rss text-light"><span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x text-blue"></i>
-          <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-      </span>Rss</a>
 
     </div>
 
     <div class="col-6 col-lg-3">
       <h4>Contact us</h4>
       <address>
-        <strong>Twitter, Inc.</strong><br />
-        1355 Market St, Suite 900<br />
-        San Francisco, CA 94103<br />
-        <abbr title="Phone">P:</abbr> (123) 456-7890
-      </address>
+        <strong>RC TRADING OÜ</strong><br />
+        Redise tn 8-15, <br />
+        Harjumaa, Laagri, 76401<br />
+        <abbr title="Phone"><?php _e('Tel','teejakohv') ?>:</abbr> <a href="tel:+37255923710">(372) 5592-3710</a>
+         <a href="mailto:info@teejakohv.ee">info@teejakohv.ee</a>
 
-      <address>
-        <strong>Full Name</strong><br />
-        <a href="mailto:#">first.last@example.com</a>
       </address>
     </div>
 
   </div>
   <hr class="border-success">
 
-  <p class="text-success" ><small>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> by iWeb</small></p>
+  <p class="text-success" ><small><?php bloginfo('name'); ?> <?php echo date('Y'); ?> @ <a href="www.iweb.ee" target="_blank">iweb.ee</small></p>
 </div>
 
 
