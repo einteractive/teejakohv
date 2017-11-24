@@ -1364,12 +1364,18 @@ select.form-control:focus::-ms-value {
   .input-group-sm > input.form-control-plaintext[type="submit"],
   .input-group-sm > .input-group-btn > .form-control-plaintext.btn, #accountLog div.row
   .input-group-sm > .input-group-btn > li.form-control-plaintext, #pageRowMain .nf-form-cont
-  .input-group-sm > .input-group-btn > .form-control-plaintext#nf-field-8, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, #searchBar form .input-group-lg > input.form-control-plaintext.search-field,
+  .input-group-sm > .input-group-btn > .form-control-plaintext#nf-field-8, .woocommerce ul.products li.product
+  .input-group-sm > .input-group-btn > a.form-control-plaintext:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+  .input-group-sm > .input-group-btn > a.form-control-plaintext, .woocommerce ul.products li.product
+  .input-group-sm > .input-group-btn > a.form-control-plaintext.wc-forward, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, #searchBar form .input-group-lg > input.form-control-plaintext.search-field,
   .input-group-lg > .form-control-plaintext.input-group-addon, #searchBar form
   .input-group-lg > input.form-control-plaintext[type="submit"],
   .input-group-lg > .input-group-btn > .form-control-plaintext.btn, #accountLog div.row
   .input-group-lg > .input-group-btn > li.form-control-plaintext, #pageRowMain .nf-form-cont
-  .input-group-lg > .input-group-btn > .form-control-plaintext#nf-field-8 {
+  .input-group-lg > .input-group-btn > .form-control-plaintext#nf-field-8, .woocommerce ul.products li.product
+  .input-group-lg > .input-group-btn > a.form-control-plaintext:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+  .input-group-lg > .input-group-btn > a.form-control-plaintext, .woocommerce ul.products li.product
+  .input-group-lg > .input-group-btn > a.form-control-plaintext.wc-forward {
     padding-right: 0;
     padding-left: 0; }
 
@@ -1378,7 +1384,10 @@ select.form-control:focus::-ms-value {
 .input-group-sm > input[type="submit"],
 .input-group-sm > .input-group-btn > .btn, #accountLog div.row
 .input-group-sm > .input-group-btn > li, #pageRowMain .nf-form-cont
-.input-group-sm > .input-group-btn > #nf-field-8 {
+.input-group-sm > .input-group-btn > #nf-field-8, .woocommerce ul.products li.product
+.input-group-sm > .input-group-btn > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-sm > .input-group-btn > a, .woocommerce ul.products li.product
+.input-group-sm > .input-group-btn > a.wc-forward {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -1395,7 +1404,10 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > input[type="submit"],
 .input-group-lg > .input-group-btn > .btn, #accountLog div.row
 .input-group-lg > .input-group-btn > li, #pageRowMain .nf-form-cont
-.input-group-lg > .input-group-btn > #nf-field-8 {
+.input-group-lg > .input-group-btn > #nf-field-8, .woocommerce ul.products li.product
+.input-group-lg > .input-group-btn > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-lg > .input-group-btn > a, .woocommerce ul.products li.product
+.input-group-lg > .input-group-btn > a.wc-forward {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -1613,7 +1625,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .has-feedback .form-control-feedback {
       top: 0; } }
 
-.btn, #accountLog div.row li, #pageRowMain .nf-form-cont #nf-field-8 {
+.btn, #accountLog div.row li, #pageRowMain .nf-form-cont #nf-field-8, .woocommerce ul.products li.product a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a, .woocommerce ul.products li.product a.wc-forward {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -1626,20 +1638,26 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-  .btn:focus, #accountLog div.row li:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .btn:hover, #accountLog div.row li:hover, #pageRowMain .nf-form-cont #nf-field-8:hover {
+  .btn:focus, #accountLog div.row li:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .woocommerce ul.products li.product a:focus:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a:focus, .woocommerce ul.products li.product a.wc-forward:focus, .btn:hover, #accountLog div.row li:hover, #pageRowMain .nf-form-cont #nf-field-8:hover, .woocommerce ul.products li.product a:hover:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a:hover, .woocommerce ul.products li.product a.wc-forward:hover {
     text-decoration: none; }
-  .btn:focus, #accountLog div.row li:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .btn.focus, #accountLog div.row li.focus, #pageRowMain .nf-form-cont .focus#nf-field-8 {
+  .btn:focus, #accountLog div.row li:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .woocommerce ul.products li.product a:focus:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a:focus, .woocommerce ul.products li.product a.wc-forward:focus, .btn.focus, #accountLog div.row li.focus, #pageRowMain .nf-form-cont .focus#nf-field-8, .woocommerce ul.products li.product a.focus:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a.focus, .woocommerce ul.products li.product a.focus.wc-forward {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .btn.disabled, #accountLog div.row li.disabled, #pageRowMain .nf-form-cont .disabled#nf-field-8, .btn:disabled, #accountLog div.row li:disabled, #pageRowMain .nf-form-cont #nf-field-8:disabled {
+  .btn.disabled, #accountLog div.row li.disabled, #pageRowMain .nf-form-cont .disabled#nf-field-8, .woocommerce ul.products li.product a.disabled:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a.disabled, .woocommerce ul.products li.product a.disabled.wc-forward, .btn:disabled, #accountLog div.row li:disabled, #pageRowMain .nf-form-cont #nf-field-8:disabled, .woocommerce ul.products li.product a:disabled:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a:disabled, .woocommerce ul.products li.product a.wc-forward:disabled {
     opacity: .65; }
-  .btn:not([disabled]):not(.disabled):active, #accountLog div.row li:not([disabled]):not(.disabled):active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active, #accountLog div.row li:not([disabled]):not(.disabled).active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled).active {
+  .btn:not([disabled]):not(.disabled):active, #accountLog div.row li:not([disabled]):not(.disabled):active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled):active, .woocommerce ul.products li.product a:not([disabled]):not(.disabled):active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a:not([disabled]):not(.disabled):active, .woocommerce ul.products li.product a.wc-forward:not([disabled]):not(.disabled):active, .btn:not([disabled]):not(.disabled).active, #accountLog div.row li:not([disabled]):not(.disabled).active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled).active, .woocommerce ul.products li.product a:not([disabled]):not(.disabled).active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a:not([disabled]):not(.disabled).active, .woocommerce ul.products li.product a.wc-forward:not([disabled]):not(.disabled).active {
     background-image: none; }
 
-a.btn.disabled, #pageRowMain .nf-form-cont a.disabled#nf-field-8,
+a.btn.disabled, #pageRowMain .nf-form-cont a.disabled#nf-field-8, .woocommerce ul.products li.product a.disabled:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) a.disabled, .woocommerce ul.products li.product a.disabled.wc-forward,
 fieldset[disabled] a.btn,
 fieldset[disabled] #pageRowMain .nf-form-cont a#nf-field-8, #pageRowMain .nf-form-cont
-fieldset[disabled] a#nf-field-8 {
+fieldset[disabled] a#nf-field-8,
+fieldset[disabled] .woocommerce ul.products li.product a:nth-child(even), .woocommerce ul.products li.product
+fieldset[disabled] a:nth-child(even),
+fieldset[disabled] .woocommerce ul.products li.product a:nth-child(even) a, .woocommerce ul.products li.product a:nth-child(even)
+fieldset[disabled] a,
+fieldset[disabled] .woocommerce ul.products li.product a.wc-forward, .woocommerce ul.products li.product
+fieldset[disabled] a.wc-forward {
   pointer-events: none; }
 
 .btn-primary {
@@ -1682,22 +1700,23 @@ fieldset[disabled] a#nf-field-8 {
     border-color: #666e76;
     box-shadow: 0 0 0 0.2rem rgba(134, 142, 150, 0.5); }
 
-.btn-success, #pageRowMain .nf-form-cont #nf-field-8 {
+.btn-success, #pageRowMain .nf-form-cont #nf-field-8, .woocommerce ul.products li.product a:nth-child(even) {
   color: #fff;
   background-color: #28a745;
   border-color: #28a745; }
-  .btn-success:hover, #pageRowMain .nf-form-cont #nf-field-8:hover {
+  .btn-success:hover, #pageRowMain .nf-form-cont #nf-field-8:hover, .woocommerce ul.products li.product a:hover:nth-child(even) {
     color: #fff;
     background-color: #218838;
     border-color: #1e7e34; }
-  .btn-success:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .btn-success.focus, #pageRowMain .nf-form-cont .focus#nf-field-8 {
+  .btn-success:focus, #pageRowMain .nf-form-cont #nf-field-8:focus, .woocommerce ul.products li.product a:focus:nth-child(even), .btn-success.focus, #pageRowMain .nf-form-cont .focus#nf-field-8, .woocommerce ul.products li.product a.focus:nth-child(even) {
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5); }
-  .btn-success.disabled, #pageRowMain .nf-form-cont .disabled#nf-field-8, .btn-success:disabled, #pageRowMain .nf-form-cont #nf-field-8:disabled {
+  .btn-success.disabled, #pageRowMain .nf-form-cont .disabled#nf-field-8, .woocommerce ul.products li.product a.disabled:nth-child(even), .btn-success:disabled, #pageRowMain .nf-form-cont #nf-field-8:disabled, .woocommerce ul.products li.product a:disabled:nth-child(even) {
     background-color: #28a745;
     border-color: #28a745; }
-  .btn-success:not([disabled]):not(.disabled):active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled):active, .btn-success:not([disabled]):not(.disabled).active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled).active,
+  .btn-success:not([disabled]):not(.disabled):active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled):active, .woocommerce ul.products li.product a:not([disabled]):not(.disabled):active:nth-child(even), .btn-success:not([disabled]):not(.disabled).active, #pageRowMain .nf-form-cont #nf-field-8:not([disabled]):not(.disabled).active, .woocommerce ul.products li.product a:not([disabled]):not(.disabled).active:nth-child(even),
   .show > .btn-success.dropdown-toggle, #pageRowMain .nf-form-cont
-  .show > .dropdown-toggle#nf-field-8 {
+  .show > .dropdown-toggle#nf-field-8, .woocommerce ul.products li.product
+  .show > a.dropdown-toggle:nth-child(even) {
     color: #fff;
     background-color: #1e7e34;
     border-color: #1c7430;
@@ -1743,22 +1762,23 @@ fieldset[disabled] a#nf-field-8 {
     border-color: #c69500;
     box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5); }
 
-.btn-danger, #accountLog div.row li:first-child {
+.btn-danger, #accountLog div.row li:first-child, .woocommerce ul.products li.product a.wc-forward {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545; }
-  .btn-danger:hover, #accountLog div.row li:hover:first-child {
+  .btn-danger:hover, #accountLog div.row li:hover:first-child, .woocommerce ul.products li.product a.wc-forward:hover {
     color: #fff;
     background-color: #c82333;
     border-color: #bd2130; }
-  .btn-danger:focus, #accountLog div.row li:focus:first-child, .btn-danger.focus, #accountLog div.row li.focus:first-child {
+  .btn-danger:focus, #accountLog div.row li:focus:first-child, .woocommerce ul.products li.product a.wc-forward:focus, .btn-danger.focus, #accountLog div.row li.focus:first-child, .woocommerce ul.products li.product a.focus.wc-forward {
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
-  .btn-danger.disabled, #accountLog div.row li.disabled:first-child, .btn-danger:disabled, #accountLog div.row li:disabled:first-child {
+  .btn-danger.disabled, #accountLog div.row li.disabled:first-child, .woocommerce ul.products li.product a.disabled.wc-forward, .btn-danger:disabled, #accountLog div.row li:disabled:first-child, .woocommerce ul.products li.product a.wc-forward:disabled {
     background-color: #dc3545;
     border-color: #dc3545; }
-  .btn-danger:not([disabled]):not(.disabled):active, #accountLog div.row li:not([disabled]):not(.disabled):active:first-child, .btn-danger:not([disabled]):not(.disabled).active, #accountLog div.row li:not([disabled]):not(.disabled).active:first-child,
+  .btn-danger:not([disabled]):not(.disabled):active, #accountLog div.row li:not([disabled]):not(.disabled):active:first-child, .woocommerce ul.products li.product a.wc-forward:not([disabled]):not(.disabled):active, .btn-danger:not([disabled]):not(.disabled).active, #accountLog div.row li:not([disabled]):not(.disabled).active:first-child, .woocommerce ul.products li.product a.wc-forward:not([disabled]):not(.disabled).active,
   .show > .btn-danger.dropdown-toggle, #accountLog div.row
-  .show > li.dropdown-toggle:first-child {
+  .show > li.dropdown-toggle:first-child, .woocommerce ul.products li.product
+  .show > a.dropdown-toggle.wc-forward {
     color: #fff;
     background-color: #bd2130;
     border-color: #b21f2d;
@@ -1987,23 +2007,23 @@ fieldset[disabled] a#nf-field-8 {
   .btn-link:disabled, .btn-link.disabled {
     color: #868e96; }
 
-.btn-lg, .btn-group-lg > .btn, #accountLog div.row .btn-group-lg > li, #pageRowMain .nf-form-cont .btn-group-lg > #nf-field-8 {
+.btn-lg, .btn-group-lg > .btn, #accountLog div.row .btn-group-lg > li, #pageRowMain .nf-form-cont .btn-group-lg > #nf-field-8, .woocommerce ul.products li.product .btn-group-lg > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-lg > a, .woocommerce ul.products li.product .btn-group-lg > a.wc-forward {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, #accountLog div.row .btn-group-sm > li, #pageRowMain .nf-form-cont .btn-group-sm > #nf-field-8 {
+.btn-sm, .btn-group-sm > .btn, #accountLog div.row .btn-group-sm > li, #pageRowMain .nf-form-cont .btn-group-sm > #nf-field-8, .woocommerce ul.products li.product .btn-group-sm > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-sm > a, .woocommerce ul.products li.product .btn-group-sm > a.wc-forward {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem; }
 
-.btn-block {
+.btn-block, .woocommerce ul.products li.product a:nth-child(even) {
   display: block;
   width: 100%; }
 
-.btn-block + .btn-block {
+.btn-block + .btn-block, .woocommerce ul.products li.product a:nth-child(even) + .btn-block, .woocommerce ul.products li.product .btn-block + a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) + a:nth-child(even) {
   margin-top: 0.5rem; }
 
 input[type="submit"].btn-block,
@@ -2136,45 +2156,78 @@ tbody.collapse.show {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, #accountLog div.row .btn-group > li, #pageRowMain .nf-form-cont .btn-group > #nf-field-8,
+  .btn-group > .btn, #accountLog div.row .btn-group > li, #pageRowMain .nf-form-cont .btn-group > #nf-field-8, .woocommerce ul.products li.product .btn-group > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a, .woocommerce ul.products li.product .btn-group > a.wc-forward,
   .btn-group-vertical > .btn, #accountLog div.row
   .btn-group-vertical > li, #pageRowMain .nf-form-cont
-  .btn-group-vertical > #nf-field-8 {
+  .btn-group-vertical > #nf-field-8, .woocommerce ul.products li.product
+  .btn-group-vertical > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical > a, .woocommerce ul.products li.product
+  .btn-group-vertical > a.wc-forward {
     position: relative;
     flex: 0 1 auto; }
-    .btn-group > .btn:hover, #accountLog div.row .btn-group > li:hover, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:hover,
+    .btn-group > .btn:hover, #accountLog div.row .btn-group > li:hover, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:hover, .woocommerce ul.products li.product .btn-group > a:hover:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a:hover, .woocommerce ul.products li.product .btn-group > a.wc-forward:hover,
     .btn-group-vertical > .btn:hover, #accountLog div.row
     .btn-group-vertical > li:hover, #pageRowMain .nf-form-cont
-    .btn-group-vertical > #nf-field-8:hover {
+    .btn-group-vertical > #nf-field-8:hover, .woocommerce ul.products li.product
+    .btn-group-vertical > a:hover:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+    .btn-group-vertical > a:hover, .woocommerce ul.products li.product
+    .btn-group-vertical > a.wc-forward:hover {
       z-index: 2; }
-    .btn-group > .btn:focus, #accountLog div.row .btn-group > li:focus, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:focus, .btn-group > .btn:active, #accountLog div.row .btn-group > li:active, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:active, .btn-group > .btn.active, #accountLog div.row .btn-group > li.active, #pageRowMain .nf-form-cont .btn-group > .active#nf-field-8,
+    .btn-group > .btn:focus, #accountLog div.row .btn-group > li:focus, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:focus, .woocommerce ul.products li.product .btn-group > a:focus:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a:focus, .woocommerce ul.products li.product .btn-group > a.wc-forward:focus, .btn-group > .btn:active, #accountLog div.row .btn-group > li:active, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:active, .woocommerce ul.products li.product .btn-group > a:active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a:active, .woocommerce ul.products li.product .btn-group > a.wc-forward:active, .btn-group > .btn.active, #accountLog div.row .btn-group > li.active, #pageRowMain .nf-form-cont .btn-group > .active#nf-field-8, .woocommerce ul.products li.product .btn-group > a.active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a.active, .woocommerce ul.products li.product .btn-group > a.active.wc-forward,
     .btn-group-vertical > .btn:focus, #accountLog div.row
     .btn-group-vertical > li:focus, #pageRowMain .nf-form-cont
-    .btn-group-vertical > #nf-field-8:focus,
+    .btn-group-vertical > #nf-field-8:focus, .woocommerce ul.products li.product
+    .btn-group-vertical > a:focus:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+    .btn-group-vertical > a:focus, .woocommerce ul.products li.product
+    .btn-group-vertical > a.wc-forward:focus,
     .btn-group-vertical > .btn:active, #accountLog div.row
     .btn-group-vertical > li:active, #pageRowMain .nf-form-cont
-    .btn-group-vertical > #nf-field-8:active,
+    .btn-group-vertical > #nf-field-8:active, .woocommerce ul.products li.product
+    .btn-group-vertical > a:active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+    .btn-group-vertical > a:active, .woocommerce ul.products li.product
+    .btn-group-vertical > a.wc-forward:active,
     .btn-group-vertical > .btn.active, #accountLog div.row
     .btn-group-vertical > li.active, #pageRowMain .nf-form-cont
-    .btn-group-vertical > .active#nf-field-8 {
+    .btn-group-vertical > .active#nf-field-8, .woocommerce ul.products li.product
+    .btn-group-vertical > a.active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+    .btn-group-vertical > a.active, .woocommerce ul.products li.product
+    .btn-group-vertical > a.active.wc-forward {
       z-index: 2; }
-  .btn-group .btn + .btn, .btn-group #accountLog div.row li + .btn, #accountLog div.row .btn-group li + .btn, .btn-group #pageRowMain .nf-form-cont #nf-field-8 + .btn, #pageRowMain .nf-form-cont .btn-group #nf-field-8 + .btn, .btn-group #accountLog div.row .btn + li, #accountLog div.row .btn-group .btn + li, .btn-group #accountLog div.row li + li, #accountLog div.row .btn-group li + li, .btn-group #pageRowMain .nf-form-cont #accountLog div.row #nf-field-8 + li, #accountLog div.row .btn-group #pageRowMain .nf-form-cont #nf-field-8 + li, #pageRowMain .nf-form-cont .btn-group #accountLog div.row #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .btn-group #nf-field-8 + li, .btn-group #pageRowMain .nf-form-cont .btn + #nf-field-8, #pageRowMain .nf-form-cont .btn-group .btn + #nf-field-8, .btn-group #accountLog div.row #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont .btn-group #accountLog div.row li + #nf-field-8, #accountLog div.row .btn-group #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .btn-group li + #nf-field-8, .btn-group #pageRowMain .nf-form-cont #nf-field-8 + #nf-field-8, #pageRowMain .nf-form-cont .btn-group #nf-field-8 + #nf-field-8,
+  .btn-group .btn + .btn, .btn-group #accountLog div.row li + .btn, #accountLog div.row .btn-group li + .btn, .btn-group #pageRowMain .nf-form-cont #nf-field-8 + .btn, #pageRowMain .nf-form-cont .btn-group #nf-field-8 + .btn, .btn-group .woocommerce ul.products li.product a:nth-child(even) + .btn, .woocommerce ul.products li.product .btn-group a:nth-child(even) + .btn, .btn-group .woocommerce ul.products li.product a:nth-child(even) a + .btn, .woocommerce ul.products li.product a:nth-child(even) .btn-group a + .btn, .btn-group .woocommerce ul.products li.product a.wc-forward + .btn, .woocommerce ul.products li.product .btn-group a.wc-forward + .btn, .btn-group #accountLog div.row .btn + li, #accountLog div.row .btn-group .btn + li, .btn-group #accountLog div.row li + li, #accountLog div.row .btn-group li + li, .btn-group #pageRowMain .nf-form-cont #accountLog div.row #nf-field-8 + li, #accountLog div.row .btn-group #pageRowMain .nf-form-cont #nf-field-8 + li, #pageRowMain .nf-form-cont .btn-group #accountLog div.row #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .btn-group #nf-field-8 + li, .btn-group .woocommerce ul.products li.product #accountLog div.row a:nth-child(even) + li, #accountLog div.row .btn-group .woocommerce ul.products li.product a:nth-child(even) + li, .woocommerce ul.products li.product .btn-group #accountLog div.row a:nth-child(even) + li, #accountLog div.row .woocommerce ul.products li.product .btn-group a:nth-child(even) + li, .btn-group .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row a + li, #accountLog div.row .btn-group .woocommerce ul.products li.product a:nth-child(even) a + li, .woocommerce ul.products li.product a:nth-child(even) .btn-group #accountLog div.row a + li, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) .btn-group a + li, .btn-group .woocommerce ul.products li.product #accountLog div.row a.wc-forward + li, #accountLog div.row .btn-group .woocommerce ul.products li.product a.wc-forward + li, .woocommerce ul.products li.product .btn-group #accountLog div.row a.wc-forward + li, #accountLog div.row .woocommerce ul.products li.product .btn-group a.wc-forward + li, .btn-group #pageRowMain .nf-form-cont .btn + #nf-field-8, #pageRowMain .nf-form-cont .btn-group .btn + #nf-field-8, .btn-group #accountLog div.row #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont .btn-group #accountLog div.row li + #nf-field-8, #accountLog div.row .btn-group #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .btn-group li + #nf-field-8, .btn-group #pageRowMain .nf-form-cont #nf-field-8 + #nf-field-8, #pageRowMain .nf-form-cont .btn-group #nf-field-8 + #nf-field-8, .btn-group .woocommerce ul.products li.product #pageRowMain .nf-form-cont a:nth-child(even) + #nf-field-8, #pageRowMain .nf-form-cont .btn-group .woocommerce ul.products li.product a:nth-child(even) + #nf-field-8, .woocommerce ul.products li.product .btn-group #pageRowMain .nf-form-cont a:nth-child(even) + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .btn-group a:nth-child(even) + #nf-field-8, .btn-group .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont a + #nf-field-8, #pageRowMain .nf-form-cont .btn-group .woocommerce ul.products li.product a:nth-child(even) a + #nf-field-8, .woocommerce ul.products li.product a:nth-child(even) .btn-group #pageRowMain .nf-form-cont a + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) .btn-group a + #nf-field-8, .btn-group .woocommerce ul.products li.product #pageRowMain .nf-form-cont a.wc-forward + #nf-field-8, #pageRowMain .nf-form-cont .btn-group .woocommerce ul.products li.product a.wc-forward + #nf-field-8, .woocommerce ul.products li.product .btn-group #pageRowMain .nf-form-cont a.wc-forward + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .btn-group a.wc-forward + #nf-field-8, .btn-group .woocommerce ul.products li.product .btn + a:nth-child(even), .woocommerce ul.products li.product .btn-group .btn + a:nth-child(even), .btn-group #accountLog div.row .woocommerce ul.products li.product li + a:nth-child(even), .woocommerce ul.products li.product .btn-group #accountLog div.row li + a:nth-child(even), #accountLog div.row .btn-group .woocommerce ul.products li.product li + a:nth-child(even), .woocommerce ul.products li.product #accountLog div.row .btn-group li + a:nth-child(even), .btn-group #pageRowMain .nf-form-cont .woocommerce ul.products li.product #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product .btn-group #pageRowMain .nf-form-cont #nf-field-8 + a:nth-child(even), #pageRowMain .nf-form-cont .btn-group .woocommerce ul.products li.product #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product #pageRowMain .nf-form-cont .btn-group #nf-field-8 + a:nth-child(even), .btn-group .woocommerce ul.products li.product a:nth-child(even) + a:nth-child(even), .woocommerce ul.products li.product .btn-group a:nth-child(even) + a:nth-child(even), .btn-group .woocommerce ul.products li.product a.wc-forward + a:nth-child(even), .woocommerce ul.products li.product .btn-group a.wc-forward + a:nth-child(even), .btn-group .woocommerce ul.products li.product a:nth-child(even) .btn + a, .woocommerce ul.products li.product a:nth-child(even) .btn-group .btn + a, .btn-group #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) li + a, .woocommerce ul.products li.product a:nth-child(even) .btn-group #accountLog div.row li + a, #accountLog div.row .btn-group .woocommerce ul.products li.product a:nth-child(even) li + a, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row .btn-group li + a, .btn-group #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) .btn-group #pageRowMain .nf-form-cont #nf-field-8 + a, #pageRowMain .nf-form-cont .btn-group .woocommerce ul.products li.product a:nth-child(even) #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont .btn-group #nf-field-8 + a, .woocommerce ul.products li.product .btn-group a:nth-child(even) a:nth-child(even) + a, .btn-group .woocommerce ul.products li.product a:nth-child(even) a + a, .woocommerce ul.products li.product a:nth-child(even) .btn-group a + a, .woocommerce ul.products li.product .btn-group a:nth-child(even) a.wc-forward + a, .btn-group .woocommerce ul.products li.product .btn + a.wc-forward, .woocommerce ul.products li.product .btn-group .btn + a.wc-forward, .btn-group #accountLog div.row .woocommerce ul.products li.product li + a.wc-forward, .woocommerce ul.products li.product .btn-group #accountLog div.row li + a.wc-forward, #accountLog div.row .btn-group .woocommerce ul.products li.product li + a.wc-forward, .woocommerce ul.products li.product #accountLog div.row .btn-group li + a.wc-forward, .btn-group #pageRowMain .nf-form-cont .woocommerce ul.products li.product #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product .btn-group #pageRowMain .nf-form-cont #nf-field-8 + a.wc-forward, #pageRowMain .nf-form-cont .btn-group .woocommerce ul.products li.product #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .btn-group #nf-field-8 + a.wc-forward, .btn-group .woocommerce ul.products li.product a:nth-child(even) + a.wc-forward, .woocommerce ul.products li.product .btn-group a:nth-child(even) + a.wc-forward, .btn-group .woocommerce ul.products li.product a.wc-forward + a.wc-forward, .woocommerce ul.products li.product .btn-group a.wc-forward + a.wc-forward,
   .btn-group .btn + .btn-group,
   .btn-group #accountLog div.row li + .btn-group, #accountLog div.row
   .btn-group li + .btn-group,
   .btn-group #pageRowMain .nf-form-cont #nf-field-8 + .btn-group, #pageRowMain .nf-form-cont
   .btn-group #nf-field-8 + .btn-group,
+  .btn-group .woocommerce ul.products li.product a:nth-child(even) + .btn-group, .woocommerce ul.products li.product
+  .btn-group a:nth-child(even) + .btn-group,
+  .btn-group .woocommerce ul.products li.product a:nth-child(even) a + .btn-group, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group a + .btn-group,
+  .btn-group .woocommerce ul.products li.product a.wc-forward + .btn-group, .woocommerce ul.products li.product
+  .btn-group a.wc-forward + .btn-group,
   .btn-group .btn-group + .btn,
   .btn-group #accountLog div.row .btn-group + li, #accountLog div.row
   .btn-group .btn-group + li,
   .btn-group #pageRowMain .nf-form-cont .btn-group + #nf-field-8, #pageRowMain .nf-form-cont
   .btn-group .btn-group + #nf-field-8,
+  .btn-group .woocommerce ul.products li.product .btn-group + a:nth-child(even), .woocommerce ul.products li.product
+  .btn-group .btn-group + a:nth-child(even),
+  .btn-group .woocommerce ul.products li.product a:nth-child(even) .btn-group + a, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group .btn-group + a,
+  .btn-group .woocommerce ul.products li.product .btn-group + a.wc-forward, .woocommerce ul.products li.product
+  .btn-group .btn-group + a.wc-forward,
   .btn-group .btn-group + .btn-group,
   .btn-group-vertical .btn + .btn,
   .btn-group-vertical #accountLog div.row li + .btn, #accountLog div.row
   .btn-group-vertical li + .btn,
   .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + .btn, #pageRowMain .nf-form-cont
   .btn-group-vertical #nf-field-8 + .btn,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) + .btn, .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) + .btn,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) a + .btn, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical a + .btn,
+  .btn-group-vertical .woocommerce ul.products li.product a.wc-forward + .btn, .woocommerce ul.products li.product
+  .btn-group-vertical a.wc-forward + .btn,
   .btn-group-vertical #accountLog div.row .btn + li, #accountLog div.row
   .btn-group-vertical .btn + li,
   .btn-group-vertical #accountLog div.row li + li, #accountLog div.row
@@ -2183,6 +2236,18 @@ tbody.collapse.show {
   .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + li, #pageRowMain .nf-form-cont
   .btn-group-vertical #accountLog div.row #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont
   .btn-group-vertical #nf-field-8 + li,
+  .btn-group-vertical .woocommerce ul.products li.product #accountLog div.row a:nth-child(even) + li, #accountLog div.row
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) + li, .woocommerce ul.products li.product
+  .btn-group-vertical #accountLog div.row a:nth-child(even) + li, #accountLog div.row .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) + li,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row a + li, #accountLog div.row
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) a + li, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical #accountLog div.row a + li, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical a + li,
+  .btn-group-vertical .woocommerce ul.products li.product #accountLog div.row a.wc-forward + li, #accountLog div.row
+  .btn-group-vertical .woocommerce ul.products li.product a.wc-forward + li, .woocommerce ul.products li.product
+  .btn-group-vertical #accountLog div.row a.wc-forward + li, #accountLog div.row .woocommerce ul.products li.product
+  .btn-group-vertical a.wc-forward + li,
   .btn-group-vertical #pageRowMain .nf-form-cont .btn + #nf-field-8, #pageRowMain .nf-form-cont
   .btn-group-vertical .btn + #nf-field-8,
   .btn-group-vertical #accountLog div.row #pageRowMain .nf-form-cont li + #nf-field-8, #pageRowMain .nf-form-cont
@@ -2191,16 +2256,82 @@ tbody.collapse.show {
   .btn-group-vertical li + #nf-field-8,
   .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + #nf-field-8, #pageRowMain .nf-form-cont
   .btn-group-vertical #nf-field-8 + #nf-field-8,
+  .btn-group-vertical .woocommerce ul.products li.product #pageRowMain .nf-form-cont a:nth-child(even) + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) + #nf-field-8, .woocommerce ul.products li.product
+  .btn-group-vertical #pageRowMain .nf-form-cont a:nth-child(even) + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) + #nf-field-8,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont a + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) a + #nf-field-8, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical #pageRowMain .nf-form-cont a + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical a + #nf-field-8,
+  .btn-group-vertical .woocommerce ul.products li.product #pageRowMain .nf-form-cont a.wc-forward + #nf-field-8, #pageRowMain .nf-form-cont
+  .btn-group-vertical .woocommerce ul.products li.product a.wc-forward + #nf-field-8, .woocommerce ul.products li.product
+  .btn-group-vertical #pageRowMain .nf-form-cont a.wc-forward + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product
+  .btn-group-vertical a.wc-forward + #nf-field-8,
+  .btn-group-vertical .woocommerce ul.products li.product .btn + a:nth-child(even), .woocommerce ul.products li.product
+  .btn-group-vertical .btn + a:nth-child(even),
+  .btn-group-vertical #accountLog div.row .woocommerce ul.products li.product li + a:nth-child(even), .woocommerce ul.products li.product
+  .btn-group-vertical #accountLog div.row li + a:nth-child(even), #accountLog div.row
+  .btn-group-vertical .woocommerce ul.products li.product li + a:nth-child(even), .woocommerce ul.products li.product #accountLog div.row
+  .btn-group-vertical li + a:nth-child(even),
+  .btn-group-vertical #pageRowMain .nf-form-cont .woocommerce ul.products li.product #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product
+  .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + a:nth-child(even), #pageRowMain .nf-form-cont
+  .btn-group-vertical .woocommerce ul.products li.product #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product #pageRowMain .nf-form-cont
+  .btn-group-vertical #nf-field-8 + a:nth-child(even),
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) + a:nth-child(even), .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) + a:nth-child(even),
+  .btn-group-vertical .woocommerce ul.products li.product a.wc-forward + a:nth-child(even), .woocommerce ul.products li.product
+  .btn-group-vertical a.wc-forward + a:nth-child(even),
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) .btn + a, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical .btn + a,
+  .btn-group-vertical #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) li + a, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical #accountLog div.row li + a, #accountLog div.row
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) li + a, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row
+  .btn-group-vertical li + a,
+  .btn-group-vertical #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + a, #pageRowMain .nf-form-cont
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont
+  .btn-group-vertical #nf-field-8 + a, .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) a:nth-child(even) + a,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) a + a, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical a + a, .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) a.wc-forward + a,
+  .btn-group-vertical .woocommerce ul.products li.product .btn + a.wc-forward, .woocommerce ul.products li.product
+  .btn-group-vertical .btn + a.wc-forward,
+  .btn-group-vertical #accountLog div.row .woocommerce ul.products li.product li + a.wc-forward, .woocommerce ul.products li.product
+  .btn-group-vertical #accountLog div.row li + a.wc-forward, #accountLog div.row
+  .btn-group-vertical .woocommerce ul.products li.product li + a.wc-forward, .woocommerce ul.products li.product #accountLog div.row
+  .btn-group-vertical li + a.wc-forward,
+  .btn-group-vertical #pageRowMain .nf-form-cont .woocommerce ul.products li.product #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product
+  .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + a.wc-forward, #pageRowMain .nf-form-cont
+  .btn-group-vertical .woocommerce ul.products li.product #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product #pageRowMain .nf-form-cont
+  .btn-group-vertical #nf-field-8 + a.wc-forward,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) + a.wc-forward, .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) + a.wc-forward,
+  .btn-group-vertical .woocommerce ul.products li.product a.wc-forward + a.wc-forward, .woocommerce ul.products li.product
+  .btn-group-vertical a.wc-forward + a.wc-forward,
   .btn-group-vertical .btn + .btn-group,
   .btn-group-vertical #accountLog div.row li + .btn-group, #accountLog div.row
   .btn-group-vertical li + .btn-group,
   .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8 + .btn-group, #pageRowMain .nf-form-cont
   .btn-group-vertical #nf-field-8 + .btn-group,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) + .btn-group, .woocommerce ul.products li.product
+  .btn-group-vertical a:nth-child(even) + .btn-group,
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) a + .btn-group, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical a + .btn-group,
+  .btn-group-vertical .woocommerce ul.products li.product a.wc-forward + .btn-group, .woocommerce ul.products li.product
+  .btn-group-vertical a.wc-forward + .btn-group,
   .btn-group-vertical .btn-group + .btn,
   .btn-group-vertical #accountLog div.row .btn-group + li, #accountLog div.row
   .btn-group-vertical .btn-group + li,
   .btn-group-vertical #pageRowMain .nf-form-cont .btn-group + #nf-field-8, #pageRowMain .nf-form-cont
   .btn-group-vertical .btn-group + #nf-field-8,
+  .btn-group-vertical .woocommerce ul.products li.product .btn-group + a:nth-child(even), .woocommerce ul.products li.product
+  .btn-group-vertical .btn-group + a:nth-child(even),
+  .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) .btn-group + a, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical .btn-group + a,
+  .btn-group-vertical .woocommerce ul.products li.product .btn-group + a.wc-forward, .woocommerce ul.products li.product
+  .btn-group-vertical .btn-group + a.wc-forward,
   .btn-group-vertical .btn-group + .btn-group {
     margin-left: -1px; }
 
@@ -2211,16 +2342,16 @@ tbody.collapse.show {
   .btn-toolbar .input-group, .btn-toolbar #searchBar form, #searchBar .btn-toolbar form {
     width: auto; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:not(:first-child):not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:not(:first-child):not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:not(:first-child):not(:last-child):not(.dropdown-toggle), .woocommerce ul.products li.product .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle):nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a:not(:first-child):not(:last-child):not(.dropdown-toggle), .woocommerce ul.products li.product .btn-group > a.wc-forward:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, #accountLog div.row .btn-group > li:first-child, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:first-child {
+.btn-group > .btn:first-child, #accountLog div.row .btn-group > li:first-child, #pageRowMain .nf-form-cont .btn-group > #nf-field-8:first-child, .woocommerce ul.products li.product .btn-group > a:first-child:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a:first-child, .woocommerce ul.products li.product .btn-group > a.wc-forward:first-child {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:first-child:not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:first-child:not(:last-child):not(.dropdown-toggle) {
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), #accountLog div.row .btn-group > li:first-child:not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:first-child:not(:last-child):not(.dropdown-toggle), .woocommerce ul.products li.product .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle):nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a:first-child:not(:last-child):not(.dropdown-toggle), .woocommerce ul.products li.product .btn-group > a.wc-forward:first-child:not(:last-child):not(.dropdown-toggle) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), #accountLog div.row .btn-group > li:last-child:not(:first-child), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), #accountLog div.row .btn-group > li:last-child:not(:first-child), #pageRowMain .nf-form-cont .btn-group > #nf-field-8:last-child:not(:first-child), .woocommerce ul.products li.product .btn-group > a:last-child:not(:first-child):nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > a:last-child:not(:first-child), .woocommerce ul.products li.product .btn-group > a.wc-forward:last-child:not(:first-child),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
@@ -2228,29 +2359,29 @@ tbody.collapse.show {
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group > .btn-group:not(:first-child):not(:last-child) > li, #pageRowMain .nf-form-cont .btn-group > .btn-group:not(:first-child):not(:last-child) > #nf-field-8 {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group > .btn-group:not(:first-child):not(:last-child) > li, #pageRowMain .nf-form-cont .btn-group > .btn-group:not(:first-child):not(:last-child) > #nf-field-8, .woocommerce ul.products li.product .btn-group > .btn-group:not(:first-child):not(:last-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > .btn-group:not(:first-child):not(:last-child) > a, .woocommerce ul.products li.product .btn-group > .btn-group:not(:first-child):not(:last-child) > a.wc-forward {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group > .btn-group:first-child:not(:last-child) > li:last-child, #pageRowMain .nf-form-cont .btn-group > .btn-group:first-child:not(:last-child) > #nf-field-8:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group > .btn-group:first-child:not(:last-child) > li:last-child, #pageRowMain .nf-form-cont .btn-group > .btn-group:first-child:not(:last-child) > #nf-field-8:last-child, .woocommerce ul.products li.product .btn-group > .btn-group:first-child:not(:last-child) > a:last-child:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > .btn-group:first-child:not(:last-child) > a:last-child, .woocommerce ul.products li.product .btn-group > .btn-group:first-child:not(:last-child) > a.wc-forward:last-child,
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group > .btn-group:last-child:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .btn-group > .btn-group:last-child:not(:first-child) > #nf-field-8:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group > .btn-group:last-child:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .btn-group > .btn-group:last-child:not(:first-child) > #nf-field-8:first-child, .woocommerce ul.products li.product .btn-group > .btn-group:last-child:not(:first-child) > a:first-child:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group > .btn-group:last-child:not(:first-child) > a:first-child, .woocommerce ul.products li.product .btn-group > .btn-group:last-child:not(:first-child) > a.wc-forward:first-child {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn + .dropdown-toggle-split, #accountLog div.row li + .dropdown-toggle-split, #pageRowMain .nf-form-cont #nf-field-8 + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, #accountLog div.row li + .dropdown-toggle-split, #pageRowMain .nf-form-cont #nf-field-8 + .dropdown-toggle-split, .woocommerce ul.products li.product a:nth-child(even) + .dropdown-toggle-split, .woocommerce ul.products li.product a:nth-child(even) a + .dropdown-toggle-split, .woocommerce ul.products li.product a.wc-forward + .dropdown-toggle-split {
   padding-right: 0.5625rem;
   padding-left: 0.5625rem; }
-  .btn + .dropdown-toggle-split::after, #accountLog div.row li + .dropdown-toggle-split::after, #pageRowMain .nf-form-cont #nf-field-8 + .dropdown-toggle-split::after {
+  .btn + .dropdown-toggle-split::after, #accountLog div.row li + .dropdown-toggle-split::after, #pageRowMain .nf-form-cont #nf-field-8 + .dropdown-toggle-split::after, .woocommerce ul.products li.product a:nth-child(even) + .dropdown-toggle-split::after, .woocommerce ul.products li.product a:nth-child(even) a + .dropdown-toggle-split::after, .woocommerce ul.products li.product a.wc-forward + .dropdown-toggle-split::after {
     margin-left: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-sm > li + .dropdown-toggle-split, #pageRowMain .nf-form-cont .btn-group-sm > #nf-field-8 + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-sm > li + .dropdown-toggle-split, #pageRowMain .nf-form-cont .btn-group-sm > #nf-field-8 + .dropdown-toggle-split, .woocommerce ul.products li.product .btn-group-sm > a:nth-child(even) + .dropdown-toggle-split, .woocommerce ul.products li.product a:nth-child(even) .btn-group-sm > a + .dropdown-toggle-split, .woocommerce ul.products li.product .btn-group-sm > a.wc-forward + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-lg > li + .dropdown-toggle-split, #pageRowMain .nf-form-cont .btn-group-lg > #nf-field-8 + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, #accountLog div.row .btn-group-lg > li + .dropdown-toggle-split, #pageRowMain .nf-form-cont .btn-group-lg > #nf-field-8 + .dropdown-toggle-split, .woocommerce ul.products li.product .btn-group-lg > a:nth-child(even) + .dropdown-toggle-split, .woocommerce ul.products li.product a:nth-child(even) .btn-group-lg > a + .dropdown-toggle-split, .woocommerce ul.products li.product .btn-group-lg > a.wc-forward + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem; }
 
@@ -2258,47 +2389,62 @@ tbody.collapse.show {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center; }
-  .btn-group-vertical .btn, .btn-group-vertical #accountLog div.row li, #accountLog div.row .btn-group-vertical li, .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8, #pageRowMain .nf-form-cont .btn-group-vertical #nf-field-8,
+  .btn-group-vertical .btn, .btn-group-vertical #accountLog div.row li, #accountLog div.row .btn-group-vertical li, .btn-group-vertical #pageRowMain .nf-form-cont #nf-field-8, #pageRowMain .nf-form-cont .btn-group-vertical #nf-field-8, .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even), .woocommerce ul.products li.product .btn-group-vertical a:nth-child(even), .btn-group-vertical .woocommerce ul.products li.product a:nth-child(even) a, .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical a, .btn-group-vertical .woocommerce ul.products li.product a.wc-forward, .woocommerce ul.products li.product .btn-group-vertical a.wc-forward,
   .btn-group-vertical .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn + .btn, #accountLog div.row .btn-group-vertical > li + .btn, #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + .btn, #accountLog div.row .btn-group-vertical > .btn + li, #accountLog div.row .btn-group-vertical > li + li, #pageRowMain .nf-form-cont #accountLog div.row .btn-group-vertical > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + li, #pageRowMain .nf-form-cont .btn-group-vertical > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .btn-group-vertical > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .btn-group-vertical > li + #nf-field-8, #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + #nf-field-8,
+  .btn-group-vertical > .btn + .btn, #accountLog div.row .btn-group-vertical > li + .btn, #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + .btn, .woocommerce ul.products li.product .btn-group-vertical > a:nth-child(even) + .btn, .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > a + .btn, .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward + .btn, #accountLog div.row .btn-group-vertical > .btn + li, #accountLog div.row .btn-group-vertical > li + li, #pageRowMain .nf-form-cont #accountLog div.row .btn-group-vertical > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + li, .woocommerce ul.products li.product #accountLog div.row .btn-group-vertical > a:nth-child(even) + li, #accountLog div.row .woocommerce ul.products li.product .btn-group-vertical > a:nth-child(even) + li, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row .btn-group-vertical > a + li, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > a + li, .woocommerce ul.products li.product #accountLog div.row .btn-group-vertical > a.wc-forward + li, #accountLog div.row .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward + li, #pageRowMain .nf-form-cont .btn-group-vertical > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .btn-group-vertical > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .btn-group-vertical > li + #nf-field-8, #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + #nf-field-8, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .btn-group-vertical > a:nth-child(even) + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .btn-group-vertical > a:nth-child(even) + #nf-field-8, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont .btn-group-vertical > a + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > a + #nf-field-8, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .btn-group-vertical > a.wc-forward + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward + #nf-field-8, .woocommerce ul.products li.product .btn-group-vertical > .btn + a:nth-child(even), #accountLog div.row .woocommerce ul.products li.product .btn-group-vertical > li + a:nth-child(even), .woocommerce ul.products li.product #accountLog div.row .btn-group-vertical > li + a:nth-child(even), #pageRowMain .nf-form-cont .woocommerce ul.products li.product .btn-group-vertical > #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product .btn-group-vertical > a:nth-child(even) + a:nth-child(even), .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward + a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > .btn + a, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > li + a, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row .btn-group-vertical > li + a, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > a + a, .woocommerce ul.products li.product .btn-group-vertical > .btn + a.wc-forward, #accountLog div.row .woocommerce ul.products li.product .btn-group-vertical > li + a.wc-forward, .woocommerce ul.products li.product #accountLog div.row .btn-group-vertical > li + a.wc-forward, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .btn-group-vertical > #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product .btn-group-vertical > a:nth-child(even) + a.wc-forward, .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward + a.wc-forward,
   .btn-group-vertical > .btn + .btn-group, #accountLog div.row
   .btn-group-vertical > li + .btn-group, #pageRowMain .nf-form-cont
-  .btn-group-vertical > #nf-field-8 + .btn-group,
+  .btn-group-vertical > #nf-field-8 + .btn-group, .woocommerce ul.products li.product
+  .btn-group-vertical > a:nth-child(even) + .btn-group, .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical > a + .btn-group, .woocommerce ul.products li.product
+  .btn-group-vertical > a.wc-forward + .btn-group,
   .btn-group-vertical > .btn-group + .btn, #accountLog div.row
   .btn-group-vertical > .btn-group + li, #pageRowMain .nf-form-cont
-  .btn-group-vertical > .btn-group + #nf-field-8,
+  .btn-group-vertical > .btn-group + #nf-field-8, .woocommerce ul.products li.product
+  .btn-group-vertical > .btn-group + a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+  .btn-group-vertical > .btn-group + a, .woocommerce ul.products li.product
+  .btn-group-vertical > .btn-group + a.wc-forward,
   .btn-group-vertical > .btn-group + .btn-group {
     margin-top: -1px;
     margin-left: 0; }
-  .btn-group-vertical > .btn:not(:first-child):not(:last-child), #accountLog div.row .btn-group-vertical > li:not(:first-child):not(:last-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:not(:first-child):not(:last-child) {
+  .btn-group-vertical > .btn:not(:first-child):not(:last-child), #accountLog div.row .btn-group-vertical > li:not(:first-child):not(:last-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:not(:first-child):not(:last-child), .woocommerce ul.products li.product .btn-group-vertical > a:not(:first-child):not(:last-child):nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > a:not(:first-child):not(:last-child), .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward:not(:first-child):not(:last-child) {
     border-radius: 0; }
-  .btn-group-vertical > .btn:first-child:not(:last-child), #accountLog div.row .btn-group-vertical > li:first-child:not(:last-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:first-child:not(:last-child) {
+  .btn-group-vertical > .btn:first-child:not(:last-child), #accountLog div.row .btn-group-vertical > li:first-child:not(:last-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:first-child:not(:last-child), .woocommerce ul.products li.product .btn-group-vertical > a:first-child:not(:last-child):nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > a:first-child:not(:last-child), .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward:first-child:not(:last-child) {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn:last-child:not(:first-child), #accountLog div.row .btn-group-vertical > li:last-child:not(:first-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:last-child:not(:first-child) {
+  .btn-group-vertical > .btn:last-child:not(:first-child), #accountLog div.row .btn-group-vertical > li:last-child:not(:first-child), #pageRowMain .nf-form-cont .btn-group-vertical > #nf-field-8:last-child:not(:first-child), .woocommerce ul.products li.product .btn-group-vertical > a:last-child:not(:first-child):nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > a:last-child:not(:first-child), .woocommerce ul.products li.product .btn-group-vertical > a.wc-forward:last-child:not(:first-child) {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > li, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > #nf-field-8 {
+  .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, #accountLog div.row .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > li, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > #nf-field-8, .woocommerce ul.products li.product .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a, .woocommerce ul.products li.product .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > a.wc-forward {
     border-radius: 0; }
-  .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group-vertical > .btn-group:first-child:not(:last-child) > li:last-child, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:first-child:not(:last-child) > #nf-field-8:last-child,
+  .btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, #accountLog div.row .btn-group-vertical > .btn-group:first-child:not(:last-child) > li:last-child, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:first-child:not(:last-child) > #nf-field-8:last-child, .woocommerce ul.products li.product .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > .btn-group:first-child:not(:last-child) > a:last-child, .woocommerce ul.products li.product .btn-group-vertical > .btn-group:first-child:not(:last-child) > a.wc-forward:last-child,
   .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
-  .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group-vertical > .btn-group:last-child:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:last-child:not(:first-child) > #nf-field-8:first-child {
+  .btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, #accountLog div.row .btn-group-vertical > .btn-group:last-child:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .btn-group-vertical > .btn-group:last-child:not(:first-child) > #nf-field-8:first-child, .woocommerce ul.products li.product .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .btn-group-vertical > .btn-group:last-child:not(:first-child) > a:first-child, .woocommerce ul.products li.product .btn-group-vertical > .btn-group:last-child:not(:first-child) > a.wc-forward:first-child {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], #accountLog div.row [data-toggle="buttons"] > li input[type="radio"], #pageRowMain .nf-form-cont [data-toggle="buttons"] > #nf-field-8 input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], #accountLog div.row [data-toggle="buttons"] > li input[type="radio"], #pageRowMain .nf-form-cont [data-toggle="buttons"] > #nf-field-8 input[type="radio"], .woocommerce ul.products li.product [data-toggle="buttons"] > a:nth-child(even) input[type="radio"], .woocommerce ul.products li.product a:nth-child(even) [data-toggle="buttons"] > a input[type="radio"], .woocommerce ul.products li.product [data-toggle="buttons"] > a.wc-forward input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"], #accountLog div.row
 [data-toggle="buttons"] > li input[type="checkbox"], #pageRowMain .nf-form-cont
-[data-toggle="buttons"] > #nf-field-8 input[type="checkbox"],
+[data-toggle="buttons"] > #nf-field-8 input[type="checkbox"], .woocommerce ul.products li.product
+[data-toggle="buttons"] > a:nth-child(even) input[type="checkbox"], .woocommerce ul.products li.product a:nth-child(even)
+[data-toggle="buttons"] > a input[type="checkbox"], .woocommerce ul.products li.product
+[data-toggle="buttons"] > a.wc-forward input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"], #accountLog div.row
 [data-toggle="buttons"] > .btn-group > li input[type="radio"], #pageRowMain .nf-form-cont
-[data-toggle="buttons"] > .btn-group > #nf-field-8 input[type="radio"],
+[data-toggle="buttons"] > .btn-group > #nf-field-8 input[type="radio"], .woocommerce ul.products li.product
+[data-toggle="buttons"] > .btn-group > a:nth-child(even) input[type="radio"], .woocommerce ul.products li.product a:nth-child(even)
+[data-toggle="buttons"] > .btn-group > a input[type="radio"], .woocommerce ul.products li.product
+[data-toggle="buttons"] > .btn-group > a.wc-forward input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], #accountLog div.row
 [data-toggle="buttons"] > .btn-group > li input[type="checkbox"], #pageRowMain .nf-form-cont
-[data-toggle="buttons"] > .btn-group > #nf-field-8 input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > #nf-field-8 input[type="checkbox"], .woocommerce ul.products li.product
+[data-toggle="buttons"] > .btn-group > a:nth-child(even) input[type="checkbox"], .woocommerce ul.products li.product a:nth-child(even)
+[data-toggle="buttons"] > .btn-group > a input[type="checkbox"], .woocommerce ul.products li.product
+[data-toggle="buttons"] > .btn-group > a.wc-forward input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -2350,7 +2496,10 @@ tbody.collapse.show {
   .input-group-sm > .input-group-btn > input.btn[type="submit"], #searchBar form #pageRowMain .nf-form-cont
   .input-group-sm > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont #searchBar form
   .input-group-sm > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont
-  .input-group-sm > .input-group-btn > .input-group-addon#nf-field-8, #searchBar form input.form-control-sm[type="submit"] {
+  .input-group-sm > .input-group-btn > .input-group-addon#nf-field-8, .woocommerce ul.products li.product
+  .input-group-sm > .input-group-btn > a.input-group-addon:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+  .input-group-sm > .input-group-btn > a.input-group-addon, .woocommerce ul.products li.product
+  .input-group-sm > .input-group-btn > a.input-group-addon.wc-forward, #searchBar form input.form-control-sm[type="submit"] {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
@@ -2362,7 +2511,10 @@ tbody.collapse.show {
   .input-group-lg > .input-group-btn > input.btn[type="submit"], #searchBar form #pageRowMain .nf-form-cont
   .input-group-lg > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont #searchBar form
   .input-group-lg > .input-group-btn > input[type="submit"]#nf-field-8, #pageRowMain .nf-form-cont
-  .input-group-lg > .input-group-btn > .input-group-addon#nf-field-8, #searchBar form input.form-control-lg[type="submit"] {
+  .input-group-lg > .input-group-btn > .input-group-addon#nf-field-8, .woocommerce ul.products li.product
+  .input-group-lg > .input-group-btn > a.input-group-addon:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+  .input-group-lg > .input-group-btn > a.input-group-addon, .woocommerce ul.products li.product
+  .input-group-lg > .input-group-btn > a.input-group-addon.wc-forward, #searchBar form input.form-control-lg[type="submit"] {
     padding: 0.5rem 1rem;
     font-size: 1.25rem;
     border-radius: 0.3rem; }
@@ -2375,17 +2527,29 @@ tbody.collapse.show {
 #searchBar form input[type="submit"]:not(:last-child),
 .input-group-btn:not(:last-child) > .btn, #accountLog div.row
 .input-group-btn:not(:last-child) > li, #pageRowMain .nf-form-cont
-.input-group-btn:not(:last-child) > #nf-field-8,
+.input-group-btn:not(:last-child) > #nf-field-8, .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:last-child) > a, .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > a.wc-forward,
 .input-group-btn:not(:last-child) > .btn-group > .btn, #accountLog div.row
 .input-group-btn:not(:last-child) > .btn-group > li, #pageRowMain .nf-form-cont
-.input-group-btn:not(:last-child) > .btn-group > #nf-field-8,
+.input-group-btn:not(:last-child) > .btn-group > #nf-field-8, .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > .btn-group > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:last-child) > .btn-group > a, .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > .btn-group > a.wc-forward,
 .input-group-btn:not(:last-child) > .dropdown-toggle,
 .input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle), #accountLog div.row
 .input-group-btn:not(:first-child) > li:not(:last-child):not(.dropdown-toggle), #pageRowMain .nf-form-cont
-.input-group-btn:not(:first-child) > #nf-field-8:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > #nf-field-8:not(:last-child):not(.dropdown-toggle), .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > a:not(:last-child):not(.dropdown-toggle):nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:first-child) > a:not(:last-child):not(.dropdown-toggle), .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > a.wc-forward:not(:last-child):not(.dropdown-toggle),
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn, #accountLog div.row
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > li, #pageRowMain .nf-form-cont
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > #nf-field-8 {
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > #nf-field-8, .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > a, .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > a.wc-forward {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
@@ -2397,17 +2561,29 @@ tbody.collapse.show {
 #searchBar form input[type="submit"]:not(:first-child),
 .input-group-btn:not(:first-child) > .btn, #accountLog div.row
 .input-group-btn:not(:first-child) > li, #pageRowMain .nf-form-cont
-.input-group-btn:not(:first-child) > #nf-field-8,
+.input-group-btn:not(:first-child) > #nf-field-8, .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:first-child) > a, .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > a.wc-forward,
 .input-group-btn:not(:first-child) > .btn-group > .btn, #accountLog div.row
 .input-group-btn:not(:first-child) > .btn-group > li, #pageRowMain .nf-form-cont
-.input-group-btn:not(:first-child) > .btn-group > #nf-field-8,
+.input-group-btn:not(:first-child) > .btn-group > #nf-field-8, .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > .btn-group > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:first-child) > .btn-group > a, .woocommerce ul.products li.product
+.input-group-btn:not(:first-child) > .btn-group > a.wc-forward,
 .input-group-btn:not(:first-child) > .dropdown-toggle,
 .input-group-btn:not(:last-child) > .btn:not(:first-child), #accountLog div.row
 .input-group-btn:not(:last-child) > li:not(:first-child), #pageRowMain .nf-form-cont
-.input-group-btn:not(:last-child) > #nf-field-8:not(:first-child),
+.input-group-btn:not(:last-child) > #nf-field-8:not(:first-child), .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > a:not(:first-child):nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:last-child) > a:not(:first-child), .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > a.wc-forward:not(:first-child),
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn, #accountLog div.row
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > li, #pageRowMain .nf-form-cont
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > #nf-field-8 {
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > #nf-field-8, .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even)
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > a, .woocommerce ul.products li.product
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > a.wc-forward {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -2419,25 +2595,25 @@ tbody.collapse.show {
   align-items: stretch;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, #accountLog div.row .input-group-btn > li, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 {
+  .input-group-btn > .btn, #accountLog div.row .input-group-btn > li, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8, .woocommerce ul.products li.product .input-group-btn > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a, .woocommerce ul.products li.product .input-group-btn > a.wc-forward {
     position: relative; }
-    .input-group-btn > .btn + .btn, #accountLog div.row .input-group-btn > li + .btn, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + .btn, #accountLog div.row .input-group-btn > .btn + li, #accountLog div.row .input-group-btn > li + li, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + li, #pageRowMain .nf-form-cont .input-group-btn > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn > li + #nf-field-8, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + #nf-field-8 {
+    .input-group-btn > .btn + .btn, #accountLog div.row .input-group-btn > li + .btn, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + .btn, .woocommerce ul.products li.product .input-group-btn > a:nth-child(even) + .btn, .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a + .btn, .woocommerce ul.products li.product .input-group-btn > a.wc-forward + .btn, #accountLog div.row .input-group-btn > .btn + li, #accountLog div.row .input-group-btn > li + li, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + li, .woocommerce ul.products li.product #accountLog div.row .input-group-btn > a:nth-child(even) + li, #accountLog div.row .woocommerce ul.products li.product .input-group-btn > a:nth-child(even) + li, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row .input-group-btn > a + li, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a + li, .woocommerce ul.products li.product #accountLog div.row .input-group-btn > a.wc-forward + li, #accountLog div.row .woocommerce ul.products li.product .input-group-btn > a.wc-forward + li, #pageRowMain .nf-form-cont .input-group-btn > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn > li + #nf-field-8, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + #nf-field-8, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn > a:nth-child(even) + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn > a:nth-child(even) + #nf-field-8, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont .input-group-btn > a + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a + #nf-field-8, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn > a.wc-forward + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn > a.wc-forward + #nf-field-8, .woocommerce ul.products li.product .input-group-btn > .btn + a:nth-child(even), #accountLog div.row .woocommerce ul.products li.product .input-group-btn > li + a:nth-child(even), .woocommerce ul.products li.product #accountLog div.row .input-group-btn > li + a:nth-child(even), #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn > #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product .input-group-btn > a:nth-child(even) + a:nth-child(even), .woocommerce ul.products li.product .input-group-btn > a.wc-forward + a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > .btn + a, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > li + a, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row .input-group-btn > li + a, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a + a, .woocommerce ul.products li.product .input-group-btn > .btn + a.wc-forward, #accountLog div.row .woocommerce ul.products li.product .input-group-btn > li + a.wc-forward, .woocommerce ul.products li.product #accountLog div.row .input-group-btn > li + a.wc-forward, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn > #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product .input-group-btn > a:nth-child(even) + a.wc-forward, .woocommerce ul.products li.product .input-group-btn > a.wc-forward + a.wc-forward {
       margin-left: -1px; }
-    .input-group-btn > .btn:focus, #accountLog div.row .input-group-btn > li:focus, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:focus, .input-group-btn > .btn:active, #accountLog div.row .input-group-btn > li:active, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:active, .input-group-btn > .btn:hover, #accountLog div.row .input-group-btn > li:hover, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:hover {
+    .input-group-btn > .btn:focus, #accountLog div.row .input-group-btn > li:focus, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:focus, .woocommerce ul.products li.product .input-group-btn > a:focus:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a:focus, .woocommerce ul.products li.product .input-group-btn > a.wc-forward:focus, .input-group-btn > .btn:active, #accountLog div.row .input-group-btn > li:active, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:active, .woocommerce ul.products li.product .input-group-btn > a:active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a:active, .woocommerce ul.products li.product .input-group-btn > a.wc-forward:active, .input-group-btn > .btn:hover, #accountLog div.row .input-group-btn > li:hover, #pageRowMain .nf-form-cont .input-group-btn > #nf-field-8:hover, .woocommerce ul.products li.product .input-group-btn > a:hover:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn > a:hover, .woocommerce ul.products li.product .input-group-btn > a.wc-forward:hover {
       z-index: 3; }
-  .input-group-btn:first-child > .btn + .btn, #accountLog div.row .input-group-btn:first-child > li + .btn, #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + .btn, #accountLog div.row .input-group-btn:first-child > .btn + li, #accountLog div.row .input-group-btn:first-child > li + li, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn:first-child > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + li, #pageRowMain .nf-form-cont .input-group-btn:first-child > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn:first-child > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn:first-child > li + #nf-field-8, #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + #nf-field-8 {
+  .input-group-btn:first-child > .btn + .btn, #accountLog div.row .input-group-btn:first-child > li + .btn, #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + .btn, .woocommerce ul.products li.product .input-group-btn:first-child > a:nth-child(even) + .btn, .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:first-child > a + .btn, .woocommerce ul.products li.product .input-group-btn:first-child > a.wc-forward + .btn, #accountLog div.row .input-group-btn:first-child > .btn + li, #accountLog div.row .input-group-btn:first-child > li + li, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn:first-child > #nf-field-8 + li, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + li, .woocommerce ul.products li.product #accountLog div.row .input-group-btn:first-child > a:nth-child(even) + li, #accountLog div.row .woocommerce ul.products li.product .input-group-btn:first-child > a:nth-child(even) + li, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row .input-group-btn:first-child > a + li, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:first-child > a + li, .woocommerce ul.products li.product #accountLog div.row .input-group-btn:first-child > a.wc-forward + li, #accountLog div.row .woocommerce ul.products li.product .input-group-btn:first-child > a.wc-forward + li, #pageRowMain .nf-form-cont .input-group-btn:first-child > .btn + #nf-field-8, #accountLog div.row #pageRowMain .nf-form-cont .input-group-btn:first-child > li + #nf-field-8, #pageRowMain .nf-form-cont #accountLog div.row .input-group-btn:first-child > li + #nf-field-8, #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + #nf-field-8, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn:first-child > a:nth-child(even) + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn:first-child > a:nth-child(even) + #nf-field-8, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont .input-group-btn:first-child > a + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:first-child > a + #nf-field-8, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn:first-child > a.wc-forward + #nf-field-8, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn:first-child > a.wc-forward + #nf-field-8, .woocommerce ul.products li.product .input-group-btn:first-child > .btn + a:nth-child(even), #accountLog div.row .woocommerce ul.products li.product .input-group-btn:first-child > li + a:nth-child(even), .woocommerce ul.products li.product #accountLog div.row .input-group-btn:first-child > li + a:nth-child(even), #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn:first-child > #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + a:nth-child(even), .woocommerce ul.products li.product .input-group-btn:first-child > a:nth-child(even) + a:nth-child(even), .woocommerce ul.products li.product .input-group-btn:first-child > a.wc-forward + a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:first-child > .btn + a, #accountLog div.row .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:first-child > li + a, .woocommerce ul.products li.product a:nth-child(even) #accountLog div.row .input-group-btn:first-child > li + a, #pageRowMain .nf-form-cont .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:first-child > #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + a, .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:first-child > a + a, .woocommerce ul.products li.product .input-group-btn:first-child > .btn + a.wc-forward, #accountLog div.row .woocommerce ul.products li.product .input-group-btn:first-child > li + a.wc-forward, .woocommerce ul.products li.product #accountLog div.row .input-group-btn:first-child > li + a.wc-forward, #pageRowMain .nf-form-cont .woocommerce ul.products li.product .input-group-btn:first-child > #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product #pageRowMain .nf-form-cont .input-group-btn:first-child > #nf-field-8 + a.wc-forward, .woocommerce ul.products li.product .input-group-btn:first-child > a:nth-child(even) + a.wc-forward, .woocommerce ul.products li.product .input-group-btn:first-child > a.wc-forward + a.wc-forward {
     margin-left: 0; }
-  .input-group-btn:not(:last-child) > .btn, #accountLog div.row .input-group-btn:not(:last-child) > li, #pageRowMain .nf-form-cont .input-group-btn:not(:last-child) > #nf-field-8,
+  .input-group-btn:not(:last-child) > .btn, #accountLog div.row .input-group-btn:not(:last-child) > li, #pageRowMain .nf-form-cont .input-group-btn:not(:last-child) > #nf-field-8, .woocommerce ul.products li.product .input-group-btn:not(:last-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:not(:last-child) > a, .woocommerce ul.products li.product .input-group-btn:not(:last-child) > a.wc-forward,
   .input-group-btn:not(:last-child) > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn, #accountLog div.row .input-group-btn:not(:first-child) > li, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8,
+  .input-group-btn:not(:first-child) > .btn, #accountLog div.row .input-group-btn:not(:first-child) > li, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:not(:first-child) > a, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a.wc-forward,
   .input-group-btn:not(:first-child) > .btn-group {
     z-index: 2;
     margin-left: 0; }
-    .input-group-btn:not(:first-child) > .btn:first-child, #accountLog div.row .input-group-btn:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:first-child,
+    .input-group-btn:not(:first-child) > .btn:first-child, #accountLog div.row .input-group-btn:not(:first-child) > li:first-child, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:first-child, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a:first-child:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:not(:first-child) > a:first-child, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a.wc-forward:first-child,
     .input-group-btn:not(:first-child) > .btn-group:first-child {
       margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, #accountLog div.row .input-group-btn:not(:first-child) > li:focus, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:focus, .input-group-btn:not(:first-child) > .btn:active, #accountLog div.row .input-group-btn:not(:first-child) > li:active, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:active, .input-group-btn:not(:first-child) > .btn:hover, #accountLog div.row .input-group-btn:not(:first-child) > li:hover, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:hover,
+    .input-group-btn:not(:first-child) > .btn:focus, #accountLog div.row .input-group-btn:not(:first-child) > li:focus, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:focus, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a:focus:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:not(:first-child) > a:focus, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a.wc-forward:focus, .input-group-btn:not(:first-child) > .btn:active, #accountLog div.row .input-group-btn:not(:first-child) > li:active, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:active, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a:active:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:not(:first-child) > a:active, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a.wc-forward:active, .input-group-btn:not(:first-child) > .btn:hover, #accountLog div.row .input-group-btn:not(:first-child) > li:hover, #pageRowMain .nf-form-cont .input-group-btn:not(:first-child) > #nf-field-8:hover, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a:hover:nth-child(even), .woocommerce ul.products li.product a:nth-child(even) .input-group-btn:not(:first-child) > a:hover, .woocommerce ul.products li.product .input-group-btn:not(:first-child) > a.wc-forward:hover,
     .input-group-btn:not(:first-child) > .btn-group:focus,
     .input-group-btn:not(:first-child) > .btn-group:active,
     .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -3248,7 +3424,7 @@ tbody.collapse.show {
   .badge:empty {
     display: none; }
 
-.btn .badge, #accountLog div.row li .badge, #pageRowMain .nf-form-cont #nf-field-8 .badge {
+.btn .badge, #accountLog div.row li .badge, #pageRowMain .nf-form-cont #nf-field-8 .badge, .woocommerce ul.products li.product a:nth-child(even) .badge, .woocommerce ul.products li.product a.wc-forward .badge {
   position: relative;
   top: -1px; }
 
@@ -4179,10 +4355,10 @@ a.bg-info:focus, a.bg-info:hover {
 a.bg-warning:focus, a.bg-warning:hover {
   background-color: #d39e00 !important; }
 
-.bg-danger {
+.bg-danger, .woocommerce ul.products li.product a:nth-child(even) a {
   background-color: #dc3545 !important; }
 
-a.bg-danger:focus, a.bg-danger:hover {
+a.bg-danger:focus, .woocommerce ul.products li.product a:nth-child(even) a:focus, a.bg-danger:hover, .woocommerce ul.products li.product a:nth-child(even) a:hover {
   background-color: #bd2130 !important; }
 
 .bg-light {
@@ -5054,7 +5230,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-top: 0.5rem !important; }
 
 .pr-2,
-.px-2 {
+.px-2,
+.woocommerce ul.products li.product {
   padding-right: 0.5rem !important; }
 
 .pb-2,
@@ -5062,7 +5239,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-bottom: 0.5rem !important; }
 
 .pl-2,
-.px-2 {
+.px-2,
+.woocommerce ul.products li.product {
   padding-left: 0.5rem !important; }
 
 .p-3 {
@@ -6180,9 +6358,13 @@ body {
   width: inherit;
   margin: inherit; }
 
+.shop-header {
+  background-color: #343a40; }
+
 .woocommerce ul.products li.product a {
-  color: #28a745; }
+  transition: color 300ms 0s ease-in-out; }
   .woocommerce ul.products li.product a h2 {
+    color: #28a745;
     width: 97%;
     white-space: nowrap;
     overflow: hidden;
@@ -6192,6 +6374,13 @@ body {
     color: #343a40;
     font-weight: normal;
     line-height: normal; }
+  .woocommerce ul.products li.product a:nth-child(even) {
+    position: relative; }
+  .woocommerce ul.products li.product a.wc-forward {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 0; }
   .woocommerce ul.products li.product a:hover h2 {
     color: #bd2130;
     transition: color 300ms 0s ease-in-out; }
