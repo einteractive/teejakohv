@@ -6309,6 +6309,11 @@ body {
   -moz-border-radius-bottomright: 8px !important;
   -moz-border-radius-bottomleft: 8px !important; }
 
+.bg-dark,
+footer,
+#mainMenu {
+  background-image: url("../images/texture-bg.gif") !important; }
+
 @media (min-width: 768px) {
   #pageRowMain .nf-form-cont {
     width: 80%; } }
@@ -6411,7 +6416,6 @@ body {
     max-height: 429px; }
 
 footer {
-  background-image: url("../images/texture-bg.gif");
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   margin-top: -4rem;
