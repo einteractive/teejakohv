@@ -3,6 +3,7 @@
 }
 
 #pageRowMain {
+  margin-bottom: 1.5rem;
   .nf-form-cont {
     @include media-breakpoint-up(md) {
       width: 80%;

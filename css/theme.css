@@ -6314,17 +6314,17 @@ footer,
 #mainMenu {
   background-image: url("../images/texture-bg.gif") !important; }
 
-@media (min-width: 768px) {
-  #pageRowMain .nf-form-cont {
-    width: 80%; } }
-
-@media (min-width: 992px) {
-  #pageRowMain .nf-form-cont {
-    width: 70%; } }
-
-@media (min-width: 1200px) {
-  #pageRowMain .nf-form-cont {
-    width: 60%; } }
+#pageRowMain {
+  margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    #pageRowMain .nf-form-cont {
+      width: 80%; } }
+  @media (min-width: 992px) {
+    #pageRowMain .nf-form-cont {
+      width: 70%; } }
+  @media (min-width: 1200px) {
+    #pageRowMain .nf-form-cont {
+      width: 60%; } }
 
 @media (max-width: 991px) {
   #pageRowSideBar,
