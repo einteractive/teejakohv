@@ -10,7 +10,7 @@
     <div class="row row-offcanvas row-offcanvas-left pt-3">
 
 
-        <div class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
+        <div id="pageRowSideBar" class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
 					<?php get_sidebar(); ?>
         </div><!--/.sidebar-offcanvas -->
 
