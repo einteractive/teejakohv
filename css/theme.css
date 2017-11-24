@@ -6314,17 +6314,20 @@ footer,
 #mainMenu {
   background-image: url("../images/texture-bg.gif") !important; }
 
-@media (min-width: 768px) {
-  #pageRowMain .nf-form-cont {
-    width: 80%; } }
+a:hover {
+  transition: color 300ms 0s ease-in-out; }
 
-@media (min-width: 992px) {
-  #pageRowMain .nf-form-cont {
-    width: 70%; } }
-
-@media (min-width: 1200px) {
-  #pageRowMain .nf-form-cont {
-    width: 60%; } }
+#pageRowMain {
+  margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    #pageRowMain .nf-form-cont {
+      width: 80%; } }
+  @media (min-width: 992px) {
+    #pageRowMain .nf-form-cont {
+      width: 70%; } }
+  @media (min-width: 1200px) {
+    #pageRowMain .nf-form-cont {
+      width: 60%; } }
 
 @media (max-width: 991px) {
   #pageRowSideBar,
@@ -6425,13 +6428,29 @@ footer {
   position: relative;
   padding-top: 6rem;
   padding-bottom: 1rem; }
-  footer h4 {
+  footer h3 {
     color: #28a745; }
+  footer ul.navbar,
+  footer ul.menu {
+    list-style-type: none;
+    padding: 0; }
+    footer ul.navbar li a,
+    footer ul.menu li a {
+      color: #fff;
+      text-decoration: none; }
+      footer ul.navbar li a:hover,
+      footer ul.menu li a:hover {
+        color: #dc3545; }
   footer .facebook span:first-child {
     color: #007bff; }
   footer .twitter span:first-child {
     color: #17a2b8; }
   footer .rss span:first-child {
     color: #fd7e14; }
+  footer .developers-link {
+    text-decoration: none;
+    color: #28a745; }
+    footer .developers-link:hover {
+      color: #e6e6e6; }
 
 /*# sourceMappingURL=theme.css.map */

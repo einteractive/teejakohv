@@ -6,9 +6,30 @@ footer {
   padding-top: 6rem;
   padding-bottom: 1rem;
 
-  h4 {
+  h3 {
     color: $green;
   }
+  ul.navbar,
+  ul.menu {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      a {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          color: $red;
+
+        }
+      }
+    } // li end
+
+  } // ul.navbar end
+
+
+
+
   .facebook {
     span:first-child {
       color: $primary;
@@ -24,4 +45,11 @@ footer {
       color: $orange;
     }
   }
+  .developers-link {
+    text-decoration: none;
+    color: $green;
+    &:hover {
+      color: darken($white, 10%);
+    }
+  } //.developers-link
 }
