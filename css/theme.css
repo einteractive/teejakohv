@@ -6355,7 +6355,9 @@ footer,
       cursor: pointer; }
 
 .woocommerce-page .woocommerce #customer_login .col-1,
-.woocommerce-page .woocommerce #customer_login .col-2 {
+.woocommerce-page .woocommerce #customer_login .col-2,
+.woocommerce-page .woocommerce #customer_details .col-1,
+.woocommerce-page .woocommerce #customer_details .col-2 {
   max-width: 100% !important; }
 
 .woocommerce ul.products li.product,
