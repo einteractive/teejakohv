@@ -124,29 +124,39 @@
 
    // Single page
    // This lines of code describe single page styles
-   // div.product .woocommerce-tabs {
-   //   ul.tabs {
-   //     margin-bottom: 0;
-   //     li {
-   //       background-color: $theme-bg-color;
-   //       &.active {
-   //         background-color: $theme-bg-color;
-   //       }
-   //       &:not(.active) {
-   //         background-color: white;
-   //       }
-   //     }
-   //   }
-   //   .panel {
-   //     background-color: $theme-bg-color;
-   //     border: 1px solid $theme-border;
-   //     border-top: none;
-   //     @extend .px-3;
-   //     @extend .py-5;
-   //     @extend .border-top-0;
-   //
-   //   }
-   // }
+   div.product .woocommerce-tabs {
+     ul {
+       margin-bottom: 0;
+       li {
+
+
+         a {
+           color: $dark;
+           border-color: $theme-border;
+           &.active {
+             background-color: $theme-bg-color;
+             border-bottom-color: $theme-bg-color;
+           }
+         }
+         // background-color: $theme-bg-color;
+         // &.active {
+         //   background-color: $theme-bg-color;
+         // }
+         // &:not(.active) {
+         //   background-color: white;
+         // }
+       }
+     }
+     .panel {
+       background-color: $theme-bg-color;
+       border: 1px solid $theme-border;
+       border-top: none;
+       @extend .px-3;
+       @extend .py-5;
+       @extend .border-top-0;
+
+     }
+   }
 
    // End single
 
