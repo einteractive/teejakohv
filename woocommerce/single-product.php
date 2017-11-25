@@ -31,12 +31,37 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_before_main_content' );
 	?>
+	<div class="row row-offcanvas row-offcanvas-left pt-3">
+		<div id="shopRowSideBar" class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
+
+			<?php
+				/**
+				 * woocommerce_sidebar hook.
+				 *
+				 * @hooked woocommerce_get_sidebar - 10
+				 */
+				do_action( 'woocommerce_sidebar' );
+			?>
+		</div><!-- /#shopRowSideBar  -->
+
+		<div id="shopRowMain" class="col-12 col-lg-9">
+			<?php
+				/**
+				 * @hooked woocommerce_breadcrumb - 20
+				 *
+				 */
+				do_action( 'woocommerce_custom_breadcrumb' );
+			?>
+			<button type="button" class="btn btn-success btn-sm d-lg-none" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
+
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
+	</div> <!-- /#shopRowMain  -->
+</div> <!-- /.row-offcanvas  -->
 
 	<?php
 		/**
