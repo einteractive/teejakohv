@@ -112,7 +112,7 @@
            font-weight: initial;
          }
        }
-       
+
        &:hover,
        &:focus {
          a span {
@@ -158,9 +158,16 @@
     } // ul end
   } //.woocommerce-pagination
 
-
-
-
+// Styling Woo button classes
+#respond input#submit.alt,
+a.button.alt,
+button.button.alt,
+input.button.alt {
+  @extend .btn;
+  @extend .btn-success;
+  @extend .btn-block;
+  @extend .py-3;
+}
 
 
 
