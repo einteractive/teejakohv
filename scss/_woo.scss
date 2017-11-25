@@ -124,15 +124,30 @@
 
    // Single page
    // This lines of code describe single page styles
-   div.product .woocommerce-tabs .panel {
-     background-color: $theme-bg-color;
-     border: 1px solid $theme-border;
-     border-top: none;
-     @extend .px-3;
-     @extend .py-5;
-     @extend .border-top-0;
+   // div.product .woocommerce-tabs {
+   //   ul.tabs {
+   //     margin-bottom: 0;
+   //     li {
+   //       background-color: $theme-bg-color;
+   //       &.active {
+   //         background-color: $theme-bg-color;
+   //       }
+   //       &:not(.active) {
+   //         background-color: white;
+   //       }
+   //     }
+   //   }
+   //   .panel {
+   //     background-color: $theme-bg-color;
+   //     border: 1px solid $theme-border;
+   //     border-top: none;
+   //     @extend .px-3;
+   //     @extend .py-5;
+   //     @extend .border-top-0;
+   //
+   //   }
+   // }
 
-   }
    // End single
 
 

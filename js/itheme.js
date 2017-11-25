@@ -3853,6 +3853,7 @@ return exports;
 //# sourceMappingURL=bootstrap.js.map
 
 
+$( "li.nav-item.active a" ).addClass( "active" );
     // Off-Canvas Menu in #mainWraaper
   $(function () {
     'use strict'
