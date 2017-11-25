@@ -1,6 +1,7 @@
 #wooWraaper {
 
 }
+// Woo Bug with Bootstrap4
 .woocommerce-page {
   .woocommerce {
     #customer_login,
@@ -12,14 +13,6 @@
     }
   }
 }
-
-
-//
-// .woocommerce ul.products li.product,
-// .woocommerce-page ul.products li.product {
-//   width: inherit;
-//   margin: inherit;
-// }
 
 
 // Shop header display results and ordering in shop page
@@ -36,20 +29,13 @@
 
 } // End
 
-// Checkout Page
-.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
-.checkout-button {
-  @extend .btn;
-  @extend .btn-block;
-  @extend .btn-success;
-  @extend .py-3;
-  font-size: 1.3rem;
-} // End
+
 
 
 .woocommerce {
 
-  // Shop Page
+
+  // Main Shop Page
   ul.products li.product {
     width: inherit;
     margin: inherit;
@@ -158,16 +144,20 @@
     } // ul end
   } //.woocommerce-pagination
 
-// Styling Woo button classes
-#respond input#submit.alt,
-a.button.alt,
-button.button.alt,
-input.button.alt {
-  @extend .btn;
-  @extend .btn-success;
-  @extend .btn-block;
-  @extend .py-3;
-}
+  // Styling Woo button classes
+  #respond input#submit.alt,
+  a.button.alt,
+  button.button.alt,
+  input.button.alt {
+    @include themefont;
+    @extend .btn;
+    @extend .btn-success;
+    @extend .btn-block;
+    @extend .py-3;
+    @extend .my-2;
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
 
 
 
