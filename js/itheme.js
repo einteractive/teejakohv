@@ -3852,9 +3852,10 @@ return exports;
 }({},$,Popper));
 //# sourceMappingURL=bootstrap.js.map
 
+  // This code add to woo tabs bootstrap4 active class to anchor element
+  $( "li.nav-item.active a" ).addClass( "active" );
 
-$( "li.nav-item.active a" ).addClass( "active" );
-    // Off-Canvas Menu in #mainWraaper
+  // Off-Canvas Menu in #mainWraaper
   $(function () {
     'use strict'
 
