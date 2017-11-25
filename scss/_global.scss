@@ -5,6 +5,7 @@ body {
   background-repeat: no-repeat;
   background-color: #f3f3f3;
   @include themefont;
+  font-size: 17px;
 
 }
 #mainWraaper .container {
@@ -17,7 +18,7 @@ body {
 .bg-dark,
 footer,
 #mainMenu {
-  background-image: url("../images/texture-bg.gif") !important;
+  background-image: url("../images/debut_dark.png") !important;
 }
 a {
   &:hover {

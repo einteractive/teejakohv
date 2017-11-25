@@ -12,19 +12,8 @@
 
         <div class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
 					<?php get_sidebar(); ?>
-          <div class="list-group " role="tablist">
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link to link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Index</a>
-          </div>
-        </div><!--/span-->
+
+        </div><!--/.sidebar-offcanvas -->
 
         <div class="col-12 col-lg-9">
 

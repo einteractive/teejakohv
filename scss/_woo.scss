@@ -1,6 +1,7 @@
 #wooWraaper {
 
 }
+// Woo Bug with Bootstrap4
 .woocommerce-page {
   .woocommerce {
     #customer_login,
@@ -13,16 +14,12 @@
   }
 }
 
-.woocommerce ul.products li.product,
-.woocommerce-page ul.products li.product {
-  width: inherit;
-  margin: inherit;
-}
 
+// Shop header display results and ordering in shop page
 .shop-header {
-  background-color: #f5f5f5;
-  border-top: 1px solid #d7d7d7;
-  border-bottom: 1px solid #d7d7d7;
+  background-color: $theme-bg-color;
+  border-top: 1px solid $theme-border;
+  border-bottom: 1px solid $theme-border;
   margin-bottom: 1rem;
 
   p,
@@ -30,68 +27,165 @@
     margin: 1rem 0 !important;
   }
 
-}
+} // End
+
 
 
 .woocommerce {
+
+
+  // Main Shop Page
   ul.products li.product {
+    @extend .col-6;
+    @extend .col-md-4;
+
+
+
+    width: inherit !important;
+    margin: inherit !important;
     @extend .px-2;
 
       a {
       transition: color 300ms 0s ease-in-out;
+        img {
+          border: 1px solid $theme-border;
+        }
 
-      h2 {
-        color: $green;
-        width: 97%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis
-      }
-
-      span {
-        font-size: 1.3rem;
-        color: $dark;
-        font-weight: normal;
-        line-height: normal;
-      }
-
-      &:nth-child(even) {
-        @extend .btn;
-        @extend .btn-block;
-        @extend .btn-success;
-        position: relative;
-        //color: $red;
-          & a {
-            @extend .btn;
-            @extend .bg-danger;
+        h2 {
+          color: $green;
+          width: 97%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis
           }
-        }
-        &.wc-forward {
+
+        span {
+          font-size: 1.3rem;
+          color: $dark;
+          font-weight: normal;
+          line-height: normal;
+
+          del span {
+            float: right;
+            @extend del;
+          }
+          &.onsale {
+            background-color: #28a745 !important;
+            border-radius: 0rem 0rem 0rem 0rem;
+            color: white;
+            font-size: 0.9rem;
+            left: 0.5rem;
+            right: auto;
+            padding: 0.4rem;
+            min-height: inherit;
+            top: 2rem;
+            margin: 0;
+            }
+          } // span end
+
+        &:nth-child(even) {
           @extend .btn;
-          //@extend .btn-block;
-          @extend .btn-danger;
-          position: absolute;
-          left: 3%;
-          right: 3%;
-          bottom: 0;
-        }
+          @extend .btn-block;
+          @extend .btn-success;
+          position: relative;
+            & a {
+              @extend .btn;
+              @extend .bg-danger;
+            }
+          }
+          &.wc-forward {
+            @extend .btn;
+            @extend .btn-danger;
+            position: absolute;
+            left: 3%;
+            right: 3%;
+            bottom: 0;
+            }
 
-      //   &:hover,
-      //   &:active,
-      //   &:focus, {
-      //     @extend .bg-danger;
-      //     border-color: $red;
-      //
-      //   }
-      // }
+        &:hover h2 {
+          color: darken($red, 10%);
+          transition: color 300ms 0s ease-in-out;
+          }
 
-      &:hover h2 {
-        color: darken($red, 10%);
-        transition: color 300ms 0s ease-in-out;
+      } // a end
 
-      } // hover end
-    } // a end
-  } //li.product
+
+  } //ul.products li.product
+
+  // Styling sidebar with laterst product
+  ul.cart_list,
+  ul.product_list_widget {
+     li {
+       a {
+         span {
+           color: darken($green, 5%);
+           font-weight: initial;
+         }
+       }
+
+       &:hover,
+       &:focus {
+         a span {
+           color: $red;
+           transition: color 300ms 0s ease-in-out;
+         }
+       }
+
+       img {
+         float: left !important;
+         width: 25%;
+         margin-right: 0.5rem;
+         border: 1px solid $theme-border;
+         padding: 0.1rem;
+
+       } //  img end
+       .woocommerce-Price-amount {
+         display: none;
+       }
+     } // li end
+
+   } // Styling side bar End
+
+   // Single page
+   // This lines of code describe single page styles
+   // Single page related product row
+   section.related {
+     ul.products li.product {
+       @extend .col-md-3;
+     }
+   }
+   // Single Tabs
+   div.product .woocommerce-tabs {
+     ul {
+       margin-bottom: 0;
+       li {
+
+
+         a {
+           color: $dark;
+           border-color: $theme-border;
+           &.active {
+             background-color: $theme-bg-color;
+             border-bottom-color: $theme-bg-color;
+           }
+         }
+       }
+     }
+     .panel {
+       background-color: $theme-bg-color;
+       border: 1px solid $theme-border;
+       border-top: none;
+       @extend .px-3;
+       @extend .py-5;
+       @extend .border-top-0;
+
+     }
+   }
+
+   // End single
+
+
+  // Pagination
   nav.woocommerce-pagination {
     ul {
       border: none !important;
@@ -111,4 +205,25 @@
       } //li end
     } // ul end
   } //.woocommerce-pagination
+
+  // Styling Woo button classes
+  #respond input#submit.alt,
+  a.button.alt,
+  button.button.alt,
+  input.button.alt {
+    @include themefont;
+    @extend .btn;
+    @extend .btn-success;
+    @extend .btn-block;
+    @extend .py-3;
+    @extend .my-2;
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+
+
+
+
+
+
 } //.woocommerce
