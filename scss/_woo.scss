@@ -31,12 +31,16 @@
 
 
 
-
 .woocommerce {
 
 
   // Main Shop Page
   ul.products li.product {
+    @extend .col-6;
+    @extend .col-md-4;
+
+
+
     width: inherit;
     margin: inherit;
     @extend .px-2;
@@ -124,6 +128,13 @@
 
    // Single page
    // This lines of code describe single page styles
+   // Single page related product row
+   section.related {
+     ul.products li.product {
+       @extend .col-md-3;
+     }
+   }
+   // Single Tabs
    div.product .woocommerce-tabs {
      ul {
        margin-bottom: 0;
@@ -138,13 +149,6 @@
              border-bottom-color: $theme-bg-color;
            }
          }
-         // background-color: $theme-bg-color;
-         // &.active {
-         //   background-color: $theme-bg-color;
-         // }
-         // &:not(.active) {
-         //   background-color: white;
-         // }
        }
      }
      .panel {
