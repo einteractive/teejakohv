@@ -17,7 +17,7 @@
 
 // Shop header display results and ordering in shop page
 .shop-header {
-  background-color: #f5f5f5;
+  background-color: $theme-bg-color;
   border-top: 1px solid $theme-border;
   border-bottom: 1px solid $theme-border;
   margin-bottom: 1rem;
@@ -121,6 +121,19 @@
      } // li end
 
    } // Styling side bar End
+
+   // Single page
+   // This lines of code describe single page styles
+   div.product .woocommerce-tabs .panel {
+     background-color: $theme-bg-color;
+     border: 1px solid $theme-border;
+     border-top: none;
+     @extend .px-3;
+     @extend .py-5;
+     @extend .border-top-0;
+
+   }
+   // End single
 
 
   // Pagination

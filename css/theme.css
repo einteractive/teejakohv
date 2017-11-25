@@ -5202,7 +5202,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .border-0 {
   border: 0 !important; }
 
-.border-top-0 {
+.border-top-0, .woocommerce div.product .woocommerce-tabs .panel {
   border-top: 0 !important; }
 
 .border-right-0 {
@@ -6080,7 +6080,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-top: 1rem !important; }
 
 .pr-3,
-.px-3 {
+.px-3,
+.woocommerce div.product .woocommerce-tabs .panel {
   padding-right: 1rem !important; }
 
 .pb-3,
@@ -6092,7 +6093,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-bottom: 1rem !important; }
 
 .pl-3,
-.px-3 {
+.px-3,
+.woocommerce div.product .woocommerce-tabs .panel {
   padding-left: 1rem !important; }
 
 .p-4 {
@@ -6118,7 +6120,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding: 3rem !important; }
 
 .pt-5,
-.py-5 {
+.py-5,
+.woocommerce div.product .woocommerce-tabs .panel {
   padding-top: 3rem !important; }
 
 .pr-5,
@@ -6126,7 +6129,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   padding-right: 3rem !important; }
 
 .pb-5,
-.py-5 {
+.py-5,
+.woocommerce div.product .woocommerce-tabs .panel {
   padding-bottom: 3rem !important; }
 
 .pl-5, #accountLog div.row,
@@ -7145,7 +7149,7 @@ body {
 .bg-dark,
 footer,
 #mainMenu {
-  background-image: url("../images/texture-bg.gif") !important; }
+  background-image: url("../images/debut_dark.png") !important; }
 
 a:hover {
   transition: color 300ms 0s ease-in-out; }
@@ -7254,6 +7258,11 @@ a:hover {
 .woocommerce ul.cart_list li .woocommerce-Price-amount,
 .woocommerce ul.product_list_widget li .woocommerce-Price-amount {
   display: none; }
+
+.woocommerce div.product .woocommerce-tabs .panel {
+  background-color: #f5f5f5;
+  border: 1px solid #d7d7d7;
+  border-top: none; }
 
 .woocommerce nav.woocommerce-pagination ul {
   border: none !important; }
