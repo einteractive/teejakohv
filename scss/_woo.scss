@@ -41,12 +41,15 @@
 
 
 
-    width: inherit;
-    margin: inherit;
+    width: inherit !important;
+    margin: inherit !important;
     @extend .px-2;
 
       a {
       transition: color 300ms 0s ease-in-out;
+        img {
+          border: 1px solid $theme-border;
+        }
 
         h2 {
           color: $green;
@@ -61,7 +64,24 @@
           color: $dark;
           font-weight: normal;
           line-height: normal;
+
+          del span {
+            float: right;
+            @extend del;
           }
+          &.onsale {
+            background-color: #28a745 !important;
+            border-radius: 0rem 0rem 0rem 0rem;
+            color: white;
+            font-size: 0.9rem;
+            left: 0.5rem;
+            right: auto;
+            padding: 0.4rem;
+            min-height: inherit;
+            top: 2rem;
+            margin: 0;
+            }
+          } // span end
 
         &:nth-child(even) {
           @extend .btn;
@@ -92,7 +112,7 @@
 
   } //ul.products li.product
 
-  // Styling side bar with laterst product
+  // Styling sidebar with laterst product
   ul.cart_list,
   ul.product_list_widget {
      li {
