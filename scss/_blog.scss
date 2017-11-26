@@ -23,6 +23,12 @@
         }
       }
     }
+    .btn {
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+        margin:  0.5rem 0;
+      }
+    }
 
     h2 {
       a {
@@ -37,6 +43,7 @@
   } // article end
 } //.blog
 .single-arrow a {
+  margin: 0.2rem;
   color: $green;
   font-size: 1.5rem;
 }

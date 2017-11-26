@@ -39,7 +39,7 @@
             <?php the_excerpt(); ?>
             <?php the_category( ', ' ); ?>
 
-<a href="<?php the_permalink(); ?>" class="btn btn-outline-success pull-right  mr-2" role="button" aria-pressed="true">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+<a href="<?php the_permalink(); ?>" class="btn btn-outline-success pull-right" role="button" aria-pressed="true">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 
 
 

@@ -14,7 +14,7 @@
 
 
             <div class="page-header">
-              <h1><?php ucfirst(wp_title('')); ?></h1>
+              <h1><?php wp_title(''); ?></h1>
             </div>
 
             <hr class="border-success my-3">
