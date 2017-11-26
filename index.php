@@ -10,14 +10,13 @@
     <div class="row row-offcanvas row-offcanvas-left pt-3">
 
 
-        <div class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
-					<?php get_sidebar(); ?>
+			<div id="pageRowSideBar" class="col-5 col-lg-3 sidebar-offcanvas" id="sidebar">
+				<?php get_sidebar(); ?>
+			</div><!--/#pageRowSideBar-->
 
-        </div><!--/.sidebar-offcanvas -->
+        <div id="pageRowMain" class="col-12 col-lg-9">
 
-        <div class="col-12 col-lg-9">
-
-            <button type="button" class="btn btn-success btn-sm d-lg-none" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
+            <button type="button" class="btn btn-success btn-sm d-lg-none mb-3" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
 
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

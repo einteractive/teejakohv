@@ -1,0 +1,41 @@
+// This file have styling for home page and single
+.blog,
+.single-post {
+  article.post {
+    img {
+      max-height: 20rem;
+      object-fit: cover;
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+
+    a {
+      color: $dark;
+      text-decoration: none;
+      &:hover {
+        color: $red;
+      }
+      &.btn {
+        color: inherit;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+
+    h2 {
+      a {
+      font-weight: bold;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 3rem;
+        }
+
+      } // a end
+    } // h2 end
+  } // article end
+} //.blog
+.single-arrow a {
+  color: $green;
+  font-size: 1.5rem;
+}

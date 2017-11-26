@@ -7153,7 +7153,7 @@ footer,
   background-image: url("../images/debut_dark.png") !important; }
 
 a:hover {
-  transition: color 300ms 0s ease-in-out; }
+  transition: color 300ms 0s ease; }
 
 #pageRowMain {
   margin-bottom: 1.5rem; }
@@ -7316,6 +7316,67 @@ a:hover {
     object-fit: cover;
     -o-object-fit: cover;
     max-height: 429px; }
+
+.blog article.post img,
+.single-post article.post img {
+  max-height: 20rem;
+  object-fit: cover;
+  width: 100%;
+  padding-bottom: 1rem; }
+
+.blog article.post a,
+.single-post article.post a {
+  color: #343a40;
+  text-decoration: none; }
+  .blog article.post a:hover,
+  .single-post article.post a:hover {
+    color: #dc3545; }
+  .blog article.post a.btn, .blog article.post #pageRowMain .nf-form-cont a#nf-field-8, #pageRowMain .nf-form-cont .blog article.post a#nf-field-8, .blog article.post .woocommerce ul.products li.product a:nth-child(even), .woocommerce ul.products li.product .blog article.post a:nth-child(even), .blog article.post .woocommerce ul.products li.product a:nth-child(even) a, .woocommerce ul.products li.product a:nth-child(even) .blog article.post a, .blog article.post .woocommerce ul.products li.product a.wc-forward, .woocommerce ul.products li.product .blog article.post a.wc-forward, .blog article.post
+  .woocommerce a.button.alt,
+  .woocommerce .blog article.post a.button.alt,
+  .single-post article.post a.btn,
+  .single-post article.post #pageRowMain .nf-form-cont a#nf-field-8, #pageRowMain .nf-form-cont
+  .single-post article.post a#nf-field-8,
+  .single-post article.post .woocommerce ul.products li.product a:nth-child(even), .woocommerce ul.products li.product
+  .single-post article.post a:nth-child(even),
+  .single-post article.post .woocommerce ul.products li.product a:nth-child(even) a, .woocommerce ul.products li.product a:nth-child(even)
+  .single-post article.post a,
+  .single-post article.post .woocommerce ul.products li.product a.wc-forward, .woocommerce ul.products li.product
+  .single-post article.post a.wc-forward,
+  .single-post article.post
+  .woocommerce a.button.alt,
+  .woocommerce
+  .single-post article.post a.button.alt {
+    color: inherit; }
+    .blog article.post a.btn:hover, .blog article.post #pageRowMain .nf-form-cont a#nf-field-8:hover, #pageRowMain .nf-form-cont .blog article.post a#nf-field-8:hover, .blog article.post .woocommerce ul.products li.product a:hover:nth-child(even), .woocommerce ul.products li.product .blog article.post a:hover:nth-child(even), .blog article.post .woocommerce ul.products li.product a:nth-child(even) a:hover, .woocommerce ul.products li.product a:nth-child(even) .blog article.post a:hover, .blog article.post .woocommerce ul.products li.product a.wc-forward:hover, .woocommerce ul.products li.product .blog article.post a.wc-forward:hover, .blog article.post
+    .woocommerce a.button.alt:hover,
+    .woocommerce .blog article.post a.button.alt:hover,
+    .single-post article.post a.btn:hover,
+    .single-post article.post #pageRowMain .nf-form-cont a#nf-field-8:hover, #pageRowMain .nf-form-cont
+    .single-post article.post a#nf-field-8:hover,
+    .single-post article.post .woocommerce ul.products li.product a:hover:nth-child(even), .woocommerce ul.products li.product
+    .single-post article.post a:hover:nth-child(even),
+    .single-post article.post .woocommerce ul.products li.product a:nth-child(even) a:hover, .woocommerce ul.products li.product a:nth-child(even)
+    .single-post article.post a:hover,
+    .single-post article.post .woocommerce ul.products li.product a.wc-forward:hover, .woocommerce ul.products li.product
+    .single-post article.post a.wc-forward:hover,
+    .single-post article.post
+    .woocommerce a.button.alt:hover,
+    .woocommerce
+    .single-post article.post a.button.alt:hover {
+      color: white; }
+
+.blog article.post h2 a,
+.single-post article.post h2 a {
+  font-weight: bold; }
+  @media (min-width: 992px) {
+    .blog article.post h2 a,
+    .single-post article.post h2 a {
+      font-size: 3rem; } }
+
+.single-arrow a {
+  color: #28a745;
+  font-size: 1.5rem; }
 
 footer {
   font-family: Georgia, "Times New Roman", Times, serif;

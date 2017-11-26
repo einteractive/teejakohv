@@ -10,7 +10,7 @@
 
         <div id="pageRowMain" class="col-12 col-lg-9">
 
-            <button type="button" class="btn btn-success btn-sm d-lg-none" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
+            <button type="button" class="btn btn-success btn-sm d-lg-none mb-3" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
 
 
 
@@ -24,16 +24,22 @@
                 $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);
               ?>
               <a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></a>
+              <p><em>
+                By <?php the_author(); ?>
+                on <?php echo the_time('l, F jS, Y');?>
 
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <p><em>
-              By <?php the_author(); ?>
-              on <?php echo the_time('l, F jS, Y');?>
-              in <?php the_category( ', ' ); ?>.
-              <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
-            </em></p>
+                <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+              </em></p>
+
+
+
+            <h2><a href="<?php the_permalink(); ?>"><i class="fa fa-thumb-tack mx-2" aria-hidden="true"></i><?php the_title(); ?></a></h2>
+
 
             <?php the_excerpt(); ?>
+            <?php the_category( ', ' ); ?>
+
+<a href="<?php the_permalink(); ?>" class="btn btn-outline-success pull-right  mr-2" role="button" aria-pressed="true">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 
             <hr>
 
