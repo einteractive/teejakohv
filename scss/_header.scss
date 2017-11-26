@@ -138,7 +138,7 @@
                 display: inline-block;
               }
               &:hover {
-                @extend .btn-warning;
+                background-color: $yellow;
               }
           } // li
         } // ul
