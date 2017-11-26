@@ -27,7 +27,7 @@
 
         <div id="pageRowMain" class="col-12 col-lg-9">
 
-            <button type="button" class="btn btn-success btn-sm d-lg-none" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
+            <button type="button" class="btn btn-success btn-sm d-lg-none mb-3" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
 
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

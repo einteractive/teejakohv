@@ -1,0 +1,49 @@
+// This file have styling for home page and single
+.blog,
+.single-post,
+.archive {
+  article.post {
+    img {
+      max-height: 20rem;
+      object-fit: cover;
+      width: 100%;
+      padding-bottom: 1rem;
+    }
+
+    a {
+      color: $dark;
+      text-decoration: none;
+      &:hover {
+        color: $red;
+      }
+      &.btn {
+        color: inherit;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .btn {
+      @include media-breakpoint-down(xs) {
+        width: 100%;
+        margin:  0.5rem 0;
+      }
+    }
+
+    h2 {
+      a {
+      font-weight: bold;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 3rem;
+        }
+
+      } // a end
+    } // h2 end
+  } // article end
+} //.blog
+.single-arrow a {
+  margin: 0.2rem;
+  color: $green;
+  font-size: 1.5rem;
+}
