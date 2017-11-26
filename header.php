@@ -93,9 +93,13 @@
           <button class="btn btn-success px-3 btn-block" type="button">
            <?php _e('Cart','woocommerce') ?>
           </button>
-          <div class="box">
-              <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
-          </div>
+
+          <?php if ( !is_cart() ) : ?>
+            <div class="box">
+                <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
+            </div>
+          <?php endif; ?>
+
         </div>
 
 
