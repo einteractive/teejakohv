@@ -49,10 +49,10 @@
           <p>No content is appearing for this page!</p>
 
         <?php endif; ?>
+</div><!-- /#pageRowMain -->
+</div><!--/row-->
 
-      </div><!--/row-->
-
-      </div> <!-- /.container -->
+</div> <!-- /.container -->
 
 
 <?php get_footer(); ?>
