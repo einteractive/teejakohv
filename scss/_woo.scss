@@ -1,3 +1,17 @@
+.box {
+  display: none;
+  background-color: white;
+  position: absolute;
+  z-index: 9999;
+  right: 0;
+  .widget {
+
+  }
+}
+#cart {
+  position: relative;
+}
+
 #wooWraaper {
 
 }
@@ -55,9 +69,7 @@
         h2 {
           color: $green;
           width: 97%;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis
+          @include notwrap; 
           }
 
         span {

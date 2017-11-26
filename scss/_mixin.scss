@@ -21,3 +21,9 @@
 	-moz-border-radius-bottomright: $bottomright !important;
 	-moz-border-radius-bottomleft: $bottomleft !important;
 }
+
+@mixin notwrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
