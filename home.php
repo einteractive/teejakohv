@@ -17,7 +17,7 @@
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-          <article class="post">
+          <article class="post clearfix">
             <?php
                 $thumbnail_id = get_post_thumbnail_id();
                 $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
@@ -41,10 +41,10 @@
 
 <a href="<?php the_permalink(); ?>" class="btn btn-outline-success pull-right  mr-2" role="button" aria-pressed="true">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 
-            <hr>
+
 
           </article>
-
+<hr class="border-success">
 
         <?php endwhile; else: ?>
 

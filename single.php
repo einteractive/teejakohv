@@ -30,7 +30,6 @@
                     <h2><a href="<?php the_permalink(); ?>"><i class="fa fa-thumb-tack mx-2" aria-hidden="true"></i><?php the_title(); ?></a></h2>
 
 
-
                       <p><strong>Author</strong> <?php the_author_posts_link(); ?> on <?php the_time('F j, Y'); ?> <strong>Category:</strong> <?php the_category( ', ' ); ?></p>
 
                     <?php if( get_the_post_thumbnail() ) : ?>

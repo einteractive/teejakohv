@@ -7318,18 +7318,21 @@ a:hover {
     max-height: 429px; }
 
 .blog article.post img,
-.single-post article.post img {
+.single-post article.post img,
+.archive article.post img {
   max-height: 20rem;
   object-fit: cover;
   width: 100%;
   padding-bottom: 1rem; }
 
 .blog article.post a,
-.single-post article.post a {
+.single-post article.post a,
+.archive article.post a {
   color: #343a40;
   text-decoration: none; }
   .blog article.post a:hover,
-  .single-post article.post a:hover {
+  .single-post article.post a:hover,
+  .archive article.post a:hover {
     color: #dc3545; }
   .blog article.post a.btn, .blog article.post #pageRowMain .nf-form-cont a#nf-field-8, #pageRowMain .nf-form-cont .blog article.post a#nf-field-8, .blog article.post .woocommerce ul.products li.product a:nth-child(even), .woocommerce ul.products li.product .blog article.post a:nth-child(even), .blog article.post .woocommerce ul.products li.product a:nth-child(even) a, .woocommerce ul.products li.product a:nth-child(even) .blog article.post a, .blog article.post .woocommerce ul.products li.product a.wc-forward, .woocommerce ul.products li.product .blog article.post a.wc-forward, .blog article.post
   .woocommerce a.button.alt,
@@ -7346,7 +7349,20 @@ a:hover {
   .single-post article.post
   .woocommerce a.button.alt,
   .woocommerce
-  .single-post article.post a.button.alt {
+  .single-post article.post a.button.alt,
+  .archive article.post a.btn,
+  .archive article.post #pageRowMain .nf-form-cont a#nf-field-8, #pageRowMain .nf-form-cont
+  .archive article.post a#nf-field-8,
+  .archive article.post .woocommerce ul.products li.product a:nth-child(even), .woocommerce ul.products li.product
+  .archive article.post a:nth-child(even),
+  .archive article.post .woocommerce ul.products li.product a:nth-child(even) a, .woocommerce ul.products li.product a:nth-child(even)
+  .archive article.post a,
+  .archive article.post .woocommerce ul.products li.product a.wc-forward, .woocommerce ul.products li.product
+  .archive article.post a.wc-forward,
+  .archive article.post
+  .woocommerce a.button.alt,
+  .woocommerce
+  .archive article.post a.button.alt {
     color: inherit; }
     .blog article.post a.btn:hover, .blog article.post #pageRowMain .nf-form-cont a#nf-field-8:hover, #pageRowMain .nf-form-cont .blog article.post a#nf-field-8:hover, .blog article.post .woocommerce ul.products li.product a:hover:nth-child(even), .woocommerce ul.products li.product .blog article.post a:hover:nth-child(even), .blog article.post .woocommerce ul.products li.product a:nth-child(even) a:hover, .woocommerce ul.products li.product a:nth-child(even) .blog article.post a:hover, .blog article.post .woocommerce ul.products li.product a.wc-forward:hover, .woocommerce ul.products li.product .blog article.post a.wc-forward:hover, .blog article.post
     .woocommerce a.button.alt:hover,
@@ -7363,15 +7379,30 @@ a:hover {
     .single-post article.post
     .woocommerce a.button.alt:hover,
     .woocommerce
-    .single-post article.post a.button.alt:hover {
+    .single-post article.post a.button.alt:hover,
+    .archive article.post a.btn:hover,
+    .archive article.post #pageRowMain .nf-form-cont a#nf-field-8:hover, #pageRowMain .nf-form-cont
+    .archive article.post a#nf-field-8:hover,
+    .archive article.post .woocommerce ul.products li.product a:hover:nth-child(even), .woocommerce ul.products li.product
+    .archive article.post a:hover:nth-child(even),
+    .archive article.post .woocommerce ul.products li.product a:nth-child(even) a:hover, .woocommerce ul.products li.product a:nth-child(even)
+    .archive article.post a:hover,
+    .archive article.post .woocommerce ul.products li.product a.wc-forward:hover, .woocommerce ul.products li.product
+    .archive article.post a.wc-forward:hover,
+    .archive article.post
+    .woocommerce a.button.alt:hover,
+    .woocommerce
+    .archive article.post a.button.alt:hover {
       color: white; }
 
 .blog article.post h2 a,
-.single-post article.post h2 a {
+.single-post article.post h2 a,
+.archive article.post h2 a {
   font-weight: bold; }
   @media (min-width: 992px) {
     .blog article.post h2 a,
-    .single-post article.post h2 a {
+    .single-post article.post h2 a,
+    .archive article.post h2 a {
       font-size: 3rem; } }
 
 .single-arrow a {
