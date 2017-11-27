@@ -1,16 +1,5 @@
-.box {
-  display: none;
-  background-color: white;
-  position: absolute;
-  z-index: 9999;
-  right: 0;
-  .widget {
 
-  }
-}
-#cart {
-  position: relative;
-}
+
 
 #wooWraaper {
 
@@ -47,6 +36,40 @@
 
 
 .woocommerce {
+  // Cart
+  form.woocommerce-cart-form {
+    .product-name a {
+      color: darken($green, 10%);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    // Cart <td>
+    td.actions {
+
+      div.coupon {
+        @extend .input-group;
+        input {
+          @extend .form-control;
+          @extend .mb-1;
+        }
+      }
+      input.button {
+        @extend .form-control;
+      }
+
+    }// Close <td>
+
+
+  }// Close cart
+
+// Loading
+a.button.loading::after {
+  font-style: normal;
+  top: 0.5rem;
+  right: 0.2rem;
+}
+// Close Loading
 
 
   // Main Shop Page
@@ -69,7 +92,7 @@
         h2 {
           color: $green;
           width: 97%;
-          @include notwrap; 
+          @include notwrap;
           }
 
         span {

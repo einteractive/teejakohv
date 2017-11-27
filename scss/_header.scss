@@ -96,12 +96,13 @@
     }
 
   #cart {
+
     .box {
       display: none;
       background-color: $cart-bg-color;
       box-shadow: 0 1px 0 #C6C6C6;
       position: absolute;
-      z-index: 9999;
+      z-index: 1099;
       right: 0;
       width: 300%;
       @include border-radii(0, 0, 8px, 8px);
