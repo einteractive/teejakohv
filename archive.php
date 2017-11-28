@@ -13,7 +13,11 @@
             <button type="button" class="btn btn-success btn-sm d-lg-none mb-3" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
 
 
+            <div class="page-header">
+              <h1><?php wp_title(''); ?></h1>
+            </div>
 
+            <hr class="border-success my-3">
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -44,8 +48,8 @@
 
 
           </article>
-<hr class="border-success">
 
+<hr class="border-success">
         <?php endwhile; else: ?>
 
           <div class="page-header">

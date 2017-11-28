@@ -88,17 +88,35 @@
         <div>
           <?php get_product_search_form() ?>
         </div>
+
         <div id="cart">
+          <button class="btn btn-success px-3 btn-block" type="button">
+           <?php _e('Cart','woocommerce') ?>
+          </button>
+
+          <?php if ( !is_cart() ) : ?>
+            <div class="box">
+                <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
+            </div>
+          <?php endif; ?>
+
+        </div>
+
+
+        <!-- <div id="cart">
+
+
           <div class="dropdown">
             <button class="btn btn-success px-3 btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <?php _e('Cart','woocommerce') ?>
+             <?php //_e('Cart','woocommerce') ?>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-              <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
+              <?php //if ( dynamic_sidebar( 'cart-menu' ) ); ?>
             </div>
           </div>
-        </div>
+        </div> -->
+
         </div>
       </div><!-- /search -->
 

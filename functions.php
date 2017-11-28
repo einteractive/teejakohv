@@ -410,3 +410,14 @@ add_action('woocommerce_archive_description','woocommerce_result_count', 10 );
  */
 remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering', 30 );
 add_action('woocommerce_archive_description','woocommerce_catalog_ordering', 15 );
+
+/**
+ * Woocommerce Mini Cart Ajax call function.
+ * Author: DJ
+ */
+function mode_theme_update_mini_cart() {
+  echo wc_get_template( 'cart/mini-cart.php' );
+  die();
+}
+add_filter( 'wp_ajax_nopriv_mode_theme_update_mini_cart', 'mode_theme_update_mini_cart' );
+add_filter( 'wp_ajax_mode_theme_update_mini_cart', 'mode_theme_update_mini_cart' );
