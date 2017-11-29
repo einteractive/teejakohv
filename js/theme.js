@@ -35,7 +35,7 @@ $(function () {
     $(".box").slideToggle(600);
   });
 
-}) // Close mini cart btn
+}); // Close mini cart btn
 
 
 
@@ -95,10 +95,10 @@ $.post(
 //   update( $( "span.cart-badge" ) );
 // });
 
-function update( j ) {
-  var n = parseInt( j.text(), 10 );
-  j.text( n + 1 );
-}
+// function update( j ) {
+//   var n = parseInt( j.text(), 10 );
+//   j.text( n + 1 );
+// }
 
   // Add +1 cout to cart Button
   // Despay counts
@@ -106,4 +106,4 @@ function update( j ) {
 
 
 
-}) // Close Mini cart animation and count
+// }) // Close Mini cart animation and count

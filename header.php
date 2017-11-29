@@ -91,9 +91,9 @@
 
         <div id="cart">
           <button class="btn btn-success px-3 btn-block" type="button">
-           <?php _e('Cart','woocommerce') ?> <span class="cart-badge badge"></span>
-           <?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
-          </button>
+           <?php _e('Cart','woocommerce') ?> <span class="cart-badge badge"><?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
+
+         </button>
 
           <?php if ( !is_cart() ) : ?>
             <div class="box">
@@ -104,7 +104,7 @@
         </div>
 
 
-  
+
 
         </div>
       </div><!-- /search -->
