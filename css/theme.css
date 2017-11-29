@@ -9985,11 +9985,16 @@ ul.product_list_widget li .woocommerce-Price-amount {
         top: 1rem;
         margin: 0; }
     .woocommerce ul.products li.product a:nth-child(even) {
-      position: relative; }
+      position: relative;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-right: 0 !important; }
     .woocommerce ul.products li.product a.wc-forward {
       position: absolute;
-      left: 3%;
-      right: 3%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      left: 0.5rem;
+      right: 0.5rem;
       bottom: 0; }
     .woocommerce ul.products li.product a:hover h2 {
       color: #bd2130;

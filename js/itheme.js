@@ -3924,18 +3924,18 @@ $.post(
 
 // Mini cart animation and count
 // Open
-// $(function () {
-//   'use strict'
+$(function () {
+  'use strict'
   // Added lisener to add to cart botton
-  // $( ".ajax_add_to_cart" ).bind( "click", function() {
-  //   update( $( "span.cart-badge" ) );
-  // });
+  $( ".ajax_add_to_cart" ).bind( "click", function() {
+    console.log("animet");
+    $(this).addClass("animet");
+  });
   // var pc = 1;
-  // $(".ajax_add_to_cart").click(function(){
-  //     pc += 1; console.log("+");
-  //     $("span.cart-badge").text(pc);
-  //
-  // });
+  $(".ajax_add_to_cart").click(function(){
+
+
+  });
   // $("a.remove").click(function(){
   //     pc -= 1; console.log("-");
   //     $("span.cart-badge").text(pc);
@@ -3958,9 +3958,7 @@ $.post(
   // Despay counts
   // If remove botton clicked remove count from cart btn
 
-
-
-// }) // Close Mini cart animation and count
+}) // Close Mini cart animation and count
 
 });
 
