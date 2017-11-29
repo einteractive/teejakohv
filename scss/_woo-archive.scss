@@ -1,3 +1,4 @@
+.woocommerce {
 // Main Shop Page
 ul.products li.product {
   @extend .col-6;
@@ -32,7 +33,7 @@ ul.products li.product {
           @extend del;
         }
         &.onsale {
-          background-color: #28a745 !important;
+          background-color: $green !important;
           border-radius: 0rem 0rem 0rem 0rem;
           color: white;
           font-size: 0.9rem;
@@ -40,7 +41,7 @@ ul.products li.product {
           right: auto;
           padding: 0.4rem;
           min-height: inherit;
-          top: 2rem;
+          top: 1rem;
           margin: 0;
           }
         } // span end
@@ -73,3 +74,4 @@ ul.products li.product {
 
 
 } // Close ul.products li.product
+} // Close .woocommerce

@@ -1,6 +1,9 @@
 html {
   font-size: 13px;
   @include media-breakpoint-up(md) {
+    font-size: 15px;
+  }
+  @include media-breakpoint-up(lg) {
   font-size: 17px;
   }
 }

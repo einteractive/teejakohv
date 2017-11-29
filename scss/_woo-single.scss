@@ -7,6 +7,28 @@ section.related {
     @extend .col-md-3;
   }
 }
+// Onsale
+.product {
+  img {
+    margin-top: 1rem;
+    border: 1px solid $theme-border;
+  }
+  span.onsale {
+    background-color: #28a745 !important;
+      border-radius: 0rem 0rem 0rem 0rem;
+      color: white;
+      font-size: 0.9rem;
+      left: 0;
+      right: auto;
+      padding: 0rem 0.4rem;
+      min-height: inherit;
+      top: 2rem;
+      margin: 0;
+      line-height: 2.5;
+    }
+}
+
+
 // Single Tabs
 div.product .woocommerce-tabs {
   ul {
