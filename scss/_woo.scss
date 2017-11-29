@@ -1,9 +1,4 @@
 
-
-
-#wooWraaper {
-
-}
 // Woo Bug with Bootstrap4
 .woocommerce-page {
   .woocommerce {
@@ -36,40 +31,65 @@
 
 
 .woocommerce {
+
+  // Woo Global
+  // Open
+
+      // Loading
+      a.button.loading::after {
+        font-style: normal;
+        top: 0.5rem;
+        right: 0.2rem;
+      }
+      // Close Loading
+
+  // Close Woo Global
+
+
+
   // Cart
+  // Open
   form.woocommerce-cart-form {
     .product-name a {
       color: darken($green, 10%);
       font-weight: bold;
       text-decoration: none;
     }
+    a.remove {
+      line-height: 0.9;
+      color: $red !important;
+      &:hover {
+        color: white !important;
+        background: $red;
+      }
+    }
+    #woo_pp_ec_button {
+      @extend .btn;
+      @extend .btn-success;
+    }
 
     // Cart <td>
+    // Open
     td.actions {
 
       div.coupon {
         @extend .input-group;
         input {
-          @extend .form-control;
           @extend .mb-1;
         }
       }
-      input.button {
+      input {
         @extend .form-control;
+        @include themefont;
       }
+
 
     }// Close <td>
 
 
   }// Close cart
 
-// Loading
-a.button.loading::after {
-  font-style: normal;
-  top: 0.5rem;
-  right: 0.2rem;
-}
-// Close Loading
+
 
 
   // Main Shop Page

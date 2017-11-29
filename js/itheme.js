@@ -3852,7 +3852,13 @@ return exports;
 }({},$,Popper));
 //# sourceMappingURL=bootstrap.js.map
 
-"use strict";
+// function name demo
+// Open
+$(function () {
+  'use strict'
+
+
+}) // Close
 
 // This code add and remove to woo tabs bootstrap4 active class to anchor element
 $( "li.nav-item.active a" ).addClass( "active" );
@@ -3866,19 +3872,29 @@ $( 'li.nav-item a' ).click(function(e){
 
 
 // Mini Cart button open Woo widget hover or click function
-// $('#cart').on('mouseenter', function () {
-//   $(".box").slideDown(600);
-//   console.log("IN");
-//   });
-// $('#cart').on('mouseleave', function () {
-//   $(".box").slideUp(600);
-//   console.log("OUT");
-//   });
+$(function () {
+  'use strict'
 
-$("#cart").click(function(){
-  $(".box").slideToggle(600);
-});
-// Close Mini Cart
+  // $('#cart').on('mouseenter', function () {
+  //   $(".box").slideDown(500);
+  //   console.log("IN");
+  //   });
+  // $('#cart').on('mouseleave', function () {
+  //   $(".box").slideUp(500);
+  //   console.log("OUT");
+  //   // Need add slow effect
+  // });
+
+  $("#cart").click(function(){
+    $(".box").slideToggle(600);
+  });
+
+}) // Close mini cart btn
+
+
+
+
+
 
 
 // Off-Canvas Menu in #mainWraaper
@@ -3894,7 +3910,7 @@ $(function () {
 
 // Define the PHP function to call from here
 var data = {
-  'action': 'mode_theme_update_mini_cart'
+  'action': 'theme_update_mini_cart'
 };
 $.post(
   woocommerce_params.ajax_url, // The AJAX URL
@@ -3904,6 +3920,47 @@ $.post(
   }
 );
 // Close anon function.
+
+
+// Mini cart animation and count
+// Open
+$(function () {
+  'use strict'
+  // Added lisener to add to cart botton
+  // $( ".ajax_add_to_cart" ).bind( "click", function() {
+  //   update( $( "span.cart-badge" ) );
+  // });
+  // var pc = 1;
+  // $(".ajax_add_to_cart").click(function(){
+  //     pc += 1; console.log("+");
+  //     $("span.cart-badge").text(pc);
+  //
+  // });
+  // $("a.remove").click(function(){
+  //     pc -= 1; console.log("-");
+  //     $("span.cart-badge").text(pc);
+  //
+  // });
+
+
+
+//   $( "button:last" ).click(function() {
+//
+//   update( $( "span.cart-badge" ) );
+// });
+
+function update( j ) {
+  var n = parseInt( j.text(), 10 );
+  j.text( n + 1 );
+}
+
+  // Add +1 cout to cart Button
+  // Despay counts
+  // If remove botton clicked remove count from cart btn
+
+
+
+}) // Close Mini cart animation and count
 
 });
 

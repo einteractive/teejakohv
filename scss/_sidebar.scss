@@ -1,3 +1,19 @@
+// Woo mini cart
+// Open
+.widget_shopping_cart_content {
+  ul {
+    li {
+      .woocommerce-Price-amount,
+      span {
+        display: block;
+      }
+    } // Close li
+  } // Close ul
+} // Close
+
+
+
+
 #pageRowSideBar,
 #shopRowSideBar {
   @include media-breakpoint-down(md) {

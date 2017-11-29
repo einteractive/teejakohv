@@ -193,6 +193,7 @@ li {
 
     a {
       @include themefont;
+      font-style: normal;
       @extend .text-white;
       text-transform: uppercase;
       font-size: 1.1rem;

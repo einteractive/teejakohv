@@ -5,9 +5,11 @@ body {
   background-repeat: no-repeat;
   background-color: #f3f3f3;
   @include themefont;
+font-size: 13px;
+@include media-breakpoint-up(md) {
+font-size: 17px;
+ }
 
-
-      font-size: 17px;
 
 
 }
