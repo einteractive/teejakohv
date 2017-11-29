@@ -9702,6 +9702,11 @@ a.text-dark:focus, a.text-dark:hover {
   overflow: visible;
   clip: auto; }
 
+#site-logo {
+  max-width: 240px;
+  margin-bottom: -20px;
+  margin-top: -25px; }
+
 #topMenu div ul li a {
   font-size: 1rem;
   padding: 0rem 0.4rem; }
@@ -9838,9 +9843,10 @@ a.text-dark:focus, a.text-dark:hover {
     background-color: #343a40; }
 
 body {
-  background-image: url("../images/bg2K.jpg");
+  background: url("../images/bg2K.jpg");
   background-repeat: no-repeat;
   background-color: #f3f3f3;
+  background-size: contain;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: italic;
   font-size: 13px; }

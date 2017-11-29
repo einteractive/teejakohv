@@ -1,9 +1,10 @@
 
 
 body {
-  background-image: url("../images/bg2K.jpg");
+  background: url("../images/bg2K.jpg");
   background-repeat: no-repeat;
   background-color: #f3f3f3;
+  background-size: contain;
   @include themefont;
 font-size: 13px;
 @include media-breakpoint-up(md) {
