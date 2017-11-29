@@ -3936,29 +3936,54 @@ $(function () {
 
 
   });
-  // $("a.remove").click(function(){
-  //     pc -= 1; console.log("-");
-  //     $("span.cart-badge").text(pc);
-  //
-  // });
-
-
-
-//   $( "button:last" ).click(function() {
-//
-//   update( $( "span.cart-badge" ) );
-// });
-
-// function update( j ) {
-//   var n = parseInt( j.text(), 10 );
-//   j.text( n + 1 );
-// }
-
-  // Add +1 cout to cart Button
-  // Despay counts
-  // If remove botton clicked remove count from cart btn
 
 }) // Close Mini cart animation and count
+
+
+/*
+	Add to cart fly effect with jQuery. - May 05, 2013
+	(c) 2013 @ElmahdiMahmoud - fikra-masri.by
+	license: https://www.opensource.org/licenses/mit-license.php
+*/
+
+$('.ajax_add_to_cart').on('click', function () {
+        var cart = $('#cart');
+        var imgtodrag = $(this).parent('li.product').find("a.woocommerce-LoopProduct-link img").eq(0);
+        if (imgtodrag) {
+            var imgclone = imgtodrag.clone()
+                .offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                    'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '150px',
+                    'width': '150px',
+                    'z-index': '1099'
+            })
+                .appendTo($('body'))
+                .animate({
+                    'top' : cart.offset().top + '50',
+                    'left' : cart.offset().left + '50',
+                    'width' : '75',
+                    'height' : '75'
+            }, 1000, 'easeInOutExpo');
+
+            setTimeout(function () {
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                'height': 0
+            }, function () {
+                $(this).detach()
+            });
+        }
+    });
 
 });
 
