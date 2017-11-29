@@ -1,7 +1,12 @@
 #site-logo {
+  max-width: 180px;
+  margin: 0;
+  @include media-breakpoint-up(md) {
     max-width: 240px;
     margin-bottom: -20px; // Should be changed
     margin-top: -25px; // Should be changed
+   }
+
 }
 
 #topMenu {
@@ -103,7 +108,7 @@
 
   #cart {
 
-    
+
 
 
     position: relative;

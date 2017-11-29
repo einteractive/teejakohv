@@ -36,6 +36,12 @@ ul.product_list_widget {
 // Open
 #cart {
 
+  .cart-badge {
+
+    font-size: inherit;
+
+  }
+
   .box {
     display: none;
     background-color: $cart-bg-color;
@@ -49,6 +55,8 @@ ul.product_list_widget {
     .widget h3 {
       display: none;
     }
+
+
 
     .widget_shopping_cart_content {
       ul.woocommerce-mini-cart {
@@ -65,6 +73,10 @@ ul.product_list_widget {
                 color: $red;
                 text-decoration: none;
                 font-weight: bold;
+                &:hover {
+                  background-color: inherit;
+                  color: inherit;
+                }
               }
               &:not(.remove) {
                 @extend .col-6;

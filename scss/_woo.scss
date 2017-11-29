@@ -59,88 +59,27 @@
         font-weight: normal;
       }
 
+      // Pagination
+      nav.woocommerce-pagination {
+        ul {
+          border: none !important;
+          li {
+            border: none !important;
+            a {
+              color: #999;
+              &:hover {
+                color: $red;
+              }
+            }
+            span.current {
+              background: transparent;
+              color: $red;
+            } // span.current end
+
+          } //li end
+        } // ul end
+      } //.woocommerce-pagination
+
   // Close Woo Global
 
-
-
-  // Cart
-  // Open
-  form.woocommerce-cart-form {
-    .product-name a {
-      color: darken($green, 10%);
-      font-weight: bold;
-      text-decoration: none;
-    }
-    a.remove {
-      line-height: 0.9;
-      color: $red !important;
-      &:hover {
-        color: white !important;
-        background: $red;
-      }
-    }
-    #woo_pp_ec_button {
-      @extend .btn;
-      @extend .btn-success;
-    }
-
-    // Cart <td>
-    // Open
-    td.actions {
-      div.coupon {
-        @extend .input-group;
-        input {
-          @extend .mb-1;
-        }
-      }
-      input {
-        @extend .form-control;
-        @include themefont;
-      }
-      // Close <td>
-
-
-  }// Close cart
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  // Pagination
-  nav.woocommerce-pagination {
-    ul {
-      border: none !important;
-      li {
-        border: none !important;
-        a {
-          color: #999;
-          &:hover {
-            color: $red;
-          }
-        }
-        span.current {
-          background: transparent;
-          color: $red;
-        } // span.current end
-
-      } //li end
-    } // ul end
-  } //.woocommerce-pagination
-
-
-
-
-
-
-
-}
 } //.woocommerce
