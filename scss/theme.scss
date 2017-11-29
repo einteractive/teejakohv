@@ -13,11 +13,11 @@ $cart-bg-color: #faf8ef;
 // Theme scss mixin
 @import "mixin";
 // Theme scss styles
-@import "header";
 @import "global";
 @import "page";
 @import "sidebar";
 @import "woo";
+@import "header";
 @import "itemplate";
 @import "blog";
 @import "footer";

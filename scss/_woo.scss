@@ -11,6 +11,7 @@
       }
     }
   }
+
 }
 
 
@@ -42,6 +43,21 @@
         right: 0.2rem;
       }
       // Close Loading
+
+      // Styling Woo button classes
+      #respond input#submit.alt,
+      a.button.alt,
+      button.button.alt,
+      input.button.alt {
+        @include themefont;
+        @extend .btn;
+        @extend .btn-success;
+        @extend .btn-block;
+        @extend .py-3;
+        @extend .my-2;
+        font-size: 1.3rem;
+        font-weight: normal;
+      }
 
   // Close Woo Global
 
@@ -166,7 +182,7 @@
       } // a end
 
 
-  } //ul.products li.product
+  } // Close ul.products li.product
 
   // Styling sidebar with laterst product
   ul.cart_list,
@@ -199,8 +215,90 @@
          display: none;
        }
      } // li end
-
    } // Styling side bar End
+
+   // Woo mini cart
+   // Open
+   #cart {
+
+     .box {
+       display: none;
+       background-color: $cart-bg-color;
+       box-shadow: 0 1px 0 #C6C6C6;
+       position: absolute;
+       z-index: 1099;
+       right: 0;
+       width: 300%;
+       @include border-radii(0, 0, 8px, 8px);
+       .widget_shopping_cart_content {
+         ul.woocommerce-mini-cart {
+           @extend .pt-3;
+           @extend .pl-0;
+           @extend .mx-0;
+
+           li {
+             @extend .row;
+             @extend .mx-0;
+               a {
+                 &.remove {
+                   @extend .col-1;
+                   color: $red;
+                   text-decoration: none;
+                   font-weight: bold;
+                 }
+                 &:not(.remove) {
+                   @extend .col-6;
+                   color: $dark;
+                   font-weight: bold;
+                   font-size: 0.9rem;
+                   text-decoration: none;
+                   @include notwrap;
+                 }
+                 img {
+                   display: none;
+                 }
+               } // a end
+               span.quantity {
+                 @extend .col;
+                 display: inline-block;
+               }
+               &:hover {
+                 background-color: $yellow;
+               }
+           } // li
+         } // ul
+       } //.widget_shopping_cart_content
+       p.total {
+         @extend .text-center;
+         @extend .mb-0;
+         strong,
+         span {
+
+         }
+       }
+       p {
+         padding: 0rem 1rem 1rem 1rem;
+         a {
+           width: 100%;
+           margin-bottom: 0.5rem;
+           @extend .btn;
+           @extend .btn-success;
+           &:last-child {
+             @extend .btn-warning;
+           }
+         }
+       }
+     } //.box
+   .widget_shopping_cart_content {
+     ul {
+       li.mini_cart_item {
+         span.woocommerce-Price-amount,
+         span {
+           display: inline-block;
+         }
+       } // Close li
+     } // Close ul
+   } // Close
 
    // Single page
    // This lines of code describe single page styles
@@ -262,20 +360,7 @@
     } // ul end
   } //.woocommerce-pagination
 
-  // Styling Woo button classes
-  #respond input#submit.alt,
-  a.button.alt,
-  button.button.alt,
-  input.button.alt {
-    @include themefont;
-    @extend .btn;
-    @extend .btn-success;
-    @extend .btn-block;
-    @extend .py-3;
-    @extend .my-2;
-    font-size: 1.3rem;
-    font-weight: normal;
-  }
+
 
 
 

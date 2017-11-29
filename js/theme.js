@@ -70,8 +70,8 @@ $.post(
 
 // Mini cart animation and count
 // Open
-$(function () {
-  'use strict'
+// $(function () {
+//   'use strict'
   // Added lisener to add to cart botton
   // $( ".ajax_add_to_cart" ).bind( "click", function() {
   //   update( $( "span.cart-badge" ) );
