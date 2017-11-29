@@ -1,373 +1,40 @@
-
-// Woo Bug with Bootstrap4
 .woocommerce-page {
-  .woocommerce {
-    #customer_login,
-    #customer_details,
-    .woocommerce-MyAccount-content {
-      .col-1,
-      .col-2 {
-        max-width: 100% !important;
-      }
-    }
-  }
-
-}
-
-
-// Shop header display results and ordering in shop page
-.shop-header {
-  background-color: $theme-bg-color;
-  border-top: 1px solid $theme-border;
-  border-bottom: 1px solid $theme-border;
-  margin-bottom: 1rem;
-
-  p,
-  form {
-    margin: 1rem 0 !important;
-  }
-
-} // End
-
-
-
-.woocommerce {
-
-  // Woo Global
-  // Open
-
-      // Loading
-      a.button.loading::after {
-        font-style: normal;
-        top: 0.5rem;
-        right: 0.2rem;
-      }
-      // Close Loading
-
-      // Styling Woo button classes
-      #respond input#submit.alt,
-      a.button.alt,
-      button.button.alt,
-      input.button.alt {
-        @include themefont;
-        @extend .btn;
-        @extend .btn-success;
-        @extend .btn-block;
-        @extend .py-3;
-        @extend .my-2;
-        font-size: 1.3rem;
-        font-weight: normal;
-      }
-
-  // Close Woo Global
-
-
-
-  // Cart
-  // Open
-  form.woocommerce-cart-form {
-    .product-name a {
-      color: darken($green, 10%);
-      font-weight: bold;
-      text-decoration: none;
-    }
-    a.remove {
-      line-height: 0.9;
-      color: $red !important;
-      &:hover {
-        color: white !important;
-        background: $red;
-      }
-    }
-    #woo_pp_ec_button {
-      @extend .btn;
-      @extend .btn-success;
-    }
-
-    // Cart <td>
-    // Open
-    td.actions {
-      div.coupon {
-        @extend .input-group;
-        input {
-          @extend .mb-1;
-        }
-      }
-      input {
-        @extend .form-control;
-        @include themefont;
-      }
-      // Close <td>
-
-
-  }// Close cart
-
-
-
-
-  // Main Shop Page
+// Single page
+// This lines of code describe single page styles
+// Single page related product row
+section.related {
   ul.products li.product {
-    @extend .col-6;
-    @extend .col-md-4;
+    @extend .col-md-3;
+  }
+}
+// Single Tabs
+div.product .woocommerce-tabs {
+  ul {
+    margin-bottom: 0;
+    li {
 
-
-
-    width: inherit !important;
-    margin: inherit !important;
-    @extend .px-2;
 
       a {
-      transition: color 300ms 0s ease-in-out;
-        img {
-          border: 1px solid $theme-border;
+        color: $dark;
+        border-color: $theme-border;
+        &.active {
+          background-color: $theme-bg-color;
+          border-bottom-color: $theme-bg-color;
         }
+      }
+    }
+  }
+  .panel {
+    background-color: $theme-bg-color;
+    border: 1px solid $theme-border;
+    border-top: none;
+    @extend .px-3;
+    @extend .py-5;
+    @extend .border-top-0;
 
-        h2 {
-          color: $green;
-          width: 97%;
-          @include notwrap;
-          }
-
-        span {
-          font-size: 1.3rem;
-          color: $dark;
-          font-weight: normal;
-          line-height: normal;
-
-          del span {
-            float: right;
-            @extend del;
-          }
-          &.onsale {
-            background-color: #28a745 !important;
-            border-radius: 0rem 0rem 0rem 0rem;
-            color: white;
-            font-size: 0.9rem;
-            left: 0.5rem;
-            right: auto;
-            padding: 0.4rem;
-            min-height: inherit;
-            top: 2rem;
-            margin: 0;
-            }
-          } // span end
-
-        &:nth-child(even) {
-          @extend .btn;
-          @extend .btn-block;
-          @extend .btn-success;
-          position: relative;
-            & a {
-              @extend .btn;
-              @extend .bg-danger;
-            }
-          }
-          &.wc-forward {
-            @extend .btn;
-            @extend .btn-danger;
-            position: absolute;
-            left: 3%;
-            right: 3%;
-            bottom: 0;
-            }
-
-        &:hover h2 {
-          color: darken($red, 10%);
-          transition: color 300ms 0s ease-in-out;
-          }
-
-      } // a end
-
-
-  } // Close ul.products li.product
-
-  // Styling sidebar with laterst product
-  ul.cart_list,
-  ul.product_list_widget {
-     li {
-       a {
-         span {
-           color: darken($green, 5%);
-           font-weight: initial;
-         }
-       }
-
-       &:hover,
-       &:focus {
-         a span {
-           color: $red;
-           transition: color 300ms 0s ease-in-out;
-         }
-       }
-
-       img {
-         float: left !important;
-         width: 25%;
-         margin-right: 0.5rem;
-         border: 1px solid $theme-border;
-         padding: 0.1rem;
-
-       } //  img end
-       .woocommerce-Price-amount {
-         display: none;
-       }
-     } // li end
-   } // Styling side bar End
-
-   // Woo mini cart
-   // Open
-   #cart {
-
-     .box {
-       display: none;
-       background-color: $cart-bg-color;
-       box-shadow: 0 1px 0 #C6C6C6;
-       position: absolute;
-       z-index: 1099;
-       right: 0;
-       width: 250%;
-       @include border-radii(0, 0, 8px, 8px);
-
-       .widget h3 {
-         display: none;
-       }
-
-       .widget_shopping_cart_content {
-         ul.woocommerce-mini-cart {
-           @extend .pt-3;
-           @extend .pl-0;
-           @extend .mx-0;
-
-           li {
-             @extend .row;
-             @extend .mx-0;
-               a {
-                 &.remove {
-                   @extend .col-1;
-                   color: $red;
-                   text-decoration: none;
-                   font-weight: bold;
-                 }
-                 &:not(.remove) {
-                   @extend .col-6;
-                   color: $dark;
-                   font-weight: bold;
-                   font-size: 0.9rem;
-                   text-decoration: none;
-                   @include notwrap;
-                 }
-                 img {
-                   display: none;
-                 }
-               } // a end
-               span.quantity {
-                 @extend .col;
-                 display: inline-block;
-               }
-               &:hover {
-                 background-color: $yellow;
-               }
-           } // li
-         } // ul
-       } //.widget_shopping_cart_content
-
-       p.total {
-         @extend .text-center;
-         @extend .mb-0;
-         strong,
-         span {
-
-         }
-       }
-       p {
-         padding: 0rem 1rem 1rem 1rem;
-         a {
-           width: 100%;
-           margin-bottom: 0.5rem;
-           @extend .btn;
-           @extend .btn-success;
-           &:last-child {
-             @extend .btn-warning;
-           }
-         }
-       }
-     } //.box
-   .widget_shopping_cart_content {
-     ul {
-       li.mini_cart_item {
-         span.woocommerce-Price-amount,
-         span {
-           display: inline-block;
-         }
-       } // Close li
-     } // Close ul
-   } // Close
-
-   // Single page
-   // This lines of code describe single page styles
-   // Single page related product row
-   section.related {
-     ul.products li.product {
-       @extend .col-md-3;
-     }
-   }
-   // Single Tabs
-   div.product .woocommerce-tabs {
-     ul {
-       margin-bottom: 0;
-       li {
-
-
-         a {
-           color: $dark;
-           border-color: $theme-border;
-           &.active {
-             background-color: $theme-bg-color;
-             border-bottom-color: $theme-bg-color;
-           }
-         }
-       }
-     }
-     .panel {
-       background-color: $theme-bg-color;
-       border: 1px solid $theme-border;
-       border-top: none;
-       @extend .px-3;
-       @extend .py-5;
-       @extend .border-top-0;
-
-     }
-   }
-
-   // End single
-
-
-  // Pagination
-  nav.woocommerce-pagination {
-    ul {
-      border: none !important;
-      li {
-        border: none !important;
-        a {
-          color: #999;
-          &:hover {
-            color: $red;
-          }
-        }
-        span.current {
-          background: transparent;
-          color: $red;
-        } // span.current end
-
-      } //li end
-    } // ul end
-  } //.woocommerce-pagination
+  }
+}// End single
 
 
 
-
-
-
-
-}
-} //.woocommerce
+} // Close woocommerce-page
