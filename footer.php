@@ -28,7 +28,7 @@
     </div>
 
     <div class="col-6 col-lg-3">
-      <h3>Contact us</h3>
+      <h3><?php _e('Contact us','teejakohv') ?></h3>
       <address>
         <strong>RC TRADING OÜ</strong><br />
         Redise tn 8-15, <br />
