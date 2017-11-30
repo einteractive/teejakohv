@@ -10249,6 +10249,7 @@ ul.product_list_widget li .woocommerce-Price-amount {
       overflow: hidden;
       text-overflow: ellipsis; }
     .woocommerce ul.products li.product a span {
+      display: inline-block;
       font-size: 1.3rem;
       color: #343a40;
       font-weight: normal;
