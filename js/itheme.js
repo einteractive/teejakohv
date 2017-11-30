@@ -3940,12 +3940,8 @@ $(function () {
 }) // Close Mini cart animation and count
 
 
-/*
-	Add to cart fly effect with jQuery. - May 05, 2013
-	(c) 2013 @ElmahdiMahmoud - fikra-masri.by
-	license: https://www.opensource.org/licenses/mit-license.php
-*/
 
+// Add to cart fly effect with jQuery.
 $('.ajax_add_to_cart').on('click', function () {
         var cart = $('#cart');
         var imgtodrag = $(this).parent('li.product').find("a.woocommerce-LoopProduct-link img").eq(0);
@@ -3983,7 +3979,7 @@ $('.ajax_add_to_cart').on('click', function () {
                 $(this).detach()
             });
         }
-    });
+    }); // Close
 
 });
 

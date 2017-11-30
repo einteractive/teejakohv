@@ -7,7 +7,7 @@ section.related {
     @extend .col-md-3;
   }
 }
-// Onsale
+// Open product
 .product {
   img {
     margin-top: 1rem;
@@ -15,7 +15,7 @@ section.related {
   }
   span.onsale {
     background-color: $green !important;
-      border-radius: 0rem 0rem 0rem 0rem;
+      @include border-radii(0rem, 0rem, 0rem, 0rem);
       color: white;
       font-size: 0.9rem;
       left: 0;
@@ -26,7 +26,39 @@ section.related {
       margin: 0;
       line-height: 2.5;
     }
-}
+  .entry-summary {
+    form.cart {
+      @include clearfix;
+      @extend .input-group;
+      width: 100%;
+
+      div.quantity,
+      .single_add_to_cart_button {
+        display: inline-block;
+      }
+      div.quantity {
+        width: 20%;
+        margin-right: 0.5rem;
+        @extend .my-2;
+
+
+        .input-text {
+          @extend .py-3;
+          font-size: 1.3rem;
+          @include border-radii(0.5rem, 0rem, 0rem, 0.5rem);
+          border: 1px solid $green;
+        }
+      }
+      .single_add_to_cart_button {
+        width: 80%;
+        @include border-radii(0rem, 0.5rem, 0.5rem, 0rem);
+      }
+
+    } // Close form.cart
+
+  } // Close entry-summary
+
+} // Close product
 
 
 // Single Tabs
