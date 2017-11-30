@@ -29,9 +29,11 @@ body {
 }
 .bg-dark,
 footer,
-#mainMenu {
+#mainMenu,
+#mainMenu ul.dropdown-menu {
   background-image: url("../images/debut_dark.png") !important;
 }
+
 a {
   &:hover {
     transition: color 300ms 0s ease;

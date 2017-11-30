@@ -134,32 +134,32 @@
 
 #mainMenu {
   @include border-radii(8px, 8px, 0, 0);
+ul {
+  &#mainMenu-id {
+    //@extend .d-flex;
+    width: 100%;
+  }
 
-li {
+  li {
+    @extend .mx-auto;
 
-    a {
-      @include themefont;
-      font-style: normal;
-      @extend .text-white;
-      text-transform: uppercase;
-      font-size: 1.1rem;
 
-      }
-
-      a:hover,
-      a:active,
-      &.active a {
-      color: $green !important;
-
-      }
-
-      ul.dropdown-menu {
-        background-color: $dark;
-        li {
-
+      a {
+        @include themefont;
+        font-style: normal;
+        @extend .text-white;
+        text-transform: uppercase;
+        font-size: 1.1rem;
         }
-      }
-    }
+
+        a:hover,
+        a:active,
+        &.active a {
+        color: $green !important;
+        }
+
+      } // Close li
+  } // Close ul
 
 
 
