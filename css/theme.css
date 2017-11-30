@@ -6859,7 +6859,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   margin-top: auto !important; }
 
 .mr-auto,
-.mx-auto {
+.mx-auto,
+#mainMenu ul li {
   margin-right: auto !important; }
 
 .mb-auto,
@@ -6867,7 +6868,8 @@ a.bg-dark:focus, a.bg-dark:hover {
   margin-bottom: auto !important; }
 
 .ml-auto,
-.mx-auto {
+.mx-auto,
+#mainMenu ul li {
   margin-left: auto !important; }
 
 @media (min-width: 576px) {
@@ -7679,7 +7681,7 @@ a.bg-dark:focus, a.bg-dark:hover {
 .font-italic {
   font-style: italic !important; }
 
-.text-white, #mainMenu li a {
+.text-white, #mainMenu ul li a {
   color: #fff !important; }
 
 .text-primary {
@@ -10112,7 +10114,8 @@ body {
 
 .bg-dark,
 footer,
-#mainMenu {
+#mainMenu,
+#mainMenu ul.dropdown-menu {
   background-image: url("../images/debut_dark.png") !important; }
 
 a:hover {
@@ -10518,18 +10521,18 @@ form.woocommerce-cart-form td.actions input {
   -moz-border-radius-topright: 8px !important;
   -moz-border-radius-bottomright: 0 !important;
   -moz-border-radius-bottomleft: 0 !important; }
-  #mainMenu li a {
+  #mainMenu ul#mainMenu-id {
+    width: 100%; }
+  #mainMenu ul li a {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     font-style: normal;
     text-transform: uppercase;
     font-size: 1.1rem; }
-  #mainMenu li a:hover,
-  #mainMenu li a:active,
-  #mainMenu li.active a {
+  #mainMenu ul li a:hover,
+  #mainMenu ul li a:active,
+  #mainMenu ul li.active a {
     color: #28a745 !important; }
-  #mainMenu li ul.dropdown-menu {
-    background-color: #343a40; }
 
 #carouselFront .carousel-inner .carousel-item {
   max-height: 429px; }
@@ -10733,6 +10736,26 @@ footer {
   position: relative;
   padding-top: 6rem;
   padding-bottom: 1rem; }
+  footer address abbr[title],
+  footer address abbr {
+    cursor: inherit;
+    color: #868e96;
+    text-decoration: none; }
+  footer address a {
+    color: #868e96;
+    text-decoration: none; }
+    footer address a:hover {
+      color: white;
+      text-decoration: none;
+      transition: color 300ms 0s ease; }
+  footer .social-links a,
+  footer .social-links a.text-light {
+    color: #fff;
+    text-decoration: none; }
+    footer .social-links a:hover, footer .social-links a:focus,
+    footer .social-links a.text-light:hover,
+    footer .social-links a.text-light:focus {
+      color: #dc3545 !important; }
   footer h3 {
     color: #28a745; }
   footer ul.navbar,
@@ -10743,8 +10766,9 @@ footer {
     footer ul.menu li a {
       color: #fff;
       text-decoration: none; }
-      footer ul.navbar li a:hover,
-      footer ul.menu li a:hover {
+      footer ul.navbar li a:hover, footer ul.navbar li a:focus,
+      footer ul.menu li a:hover,
+      footer ul.menu li a:focus {
         color: #dc3545; }
   footer .facebook span:first-child {
     color: #007bff; }
