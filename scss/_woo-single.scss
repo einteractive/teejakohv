@@ -38,11 +38,12 @@ section.related {
       }
       div.quantity {
         width: 20%;
-        margin-right: 0.5rem;
+        margin-right: 0rem;
         @extend .my-2;
 
 
         .input-text {
+          width: 100%;
           @extend .py-3;
           font-size: 1.3rem;
           @include border-radii(0.5rem, 0rem, 0rem, 0.5rem);
