@@ -7748,6 +7748,7 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -7768,6 +7769,12 @@ a.text-dark:focus, a.text-dark:hover {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+#site-logo {
+  max-width: 240px;
+  margin-bottom: -20px;
+  margin-top: -30px; }
+
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
