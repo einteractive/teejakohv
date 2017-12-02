@@ -91,8 +91,9 @@
 
         <div id="cart">
           <button class="btn btn-success px-3 btn-block" type="button">
-           <?php _e('Cart','woocommerce') ?>
-          </button>
+           <?php _e('Cart','woocommerce') ?> <span class="cart-badge badge"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
+
+         </button>
 
           <?php if ( !is_cart() ) : ?>
             <div class="box">
@@ -103,19 +104,7 @@
         </div>
 
 
-        <!-- <div id="cart">
 
-
-          <div class="dropdown">
-            <button class="btn btn-success px-3 btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             <?php //_e('Cart','woocommerce') ?>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-              <?php //if ( dynamic_sidebar( 'cart-menu' ) ); ?>
-            </div>
-          </div>
-        </div> -->
 
         </div>
       </div><!-- /search -->

@@ -1,0 +1,95 @@
+.woocommerce-page {
+// Single page
+// This lines of code describe single page styles
+// Single page related product row
+section.related {
+  ul.products li.product {
+    @extend .col-md-3;
+  }
+}
+// Open product
+.product {
+  img {
+    margin-top: 1rem;
+    border: 1px solid $theme-border;
+  }
+  span.onsale {
+    background-color: $green !important;
+      @include border-radii(0rem, 0rem, 0rem, 0rem);
+      color: white;
+      font-size: 0.9rem;
+      left: 0;
+      right: auto;
+      padding: 0rem 0.4rem;
+      min-height: inherit;
+      top: 2rem;
+      margin: 0;
+      line-height: 2.5;
+    }
+  .entry-summary {
+    form.cart {
+      @include clearfix;
+      @extend .input-group;
+      width: 100%;
+
+      div.quantity,
+      .single_add_to_cart_button {
+        display: inline-block;
+      }
+      div.quantity {
+        width: 20%;
+        margin-right: 0rem;
+        @extend .my-2;
+
+
+        .input-text {
+          width: 100%;
+          @extend .py-3;
+          font-size: 1.3rem;
+          @include border-radii(0.5rem, 0rem, 0rem, 0.5rem);
+          border: 1px solid $green;
+        }
+      }
+      .single_add_to_cart_button {
+        width: 80%;
+        @include border-radii(0rem, 0.5rem, 0.5rem, 0rem);
+      }
+
+    } // Close form.cart
+
+  } // Close entry-summary
+
+} // Close product
+
+
+// Single Tabs
+div.product .woocommerce-tabs {
+  ul {
+    margin-bottom: 0;
+    li {
+
+
+      a {
+        color: $dark;
+        border-color: $theme-border;
+        &.active {
+          background-color: $theme-bg-color;
+          border-bottom-color: $theme-bg-color;
+        }
+      }
+    }
+  }
+  .panel {
+    background-color: $theme-bg-color;
+    border: 1px solid $theme-border;
+    border-top: none;
+    @extend .px-3;
+    @extend .py-5;
+    @extend .border-top-0;
+
+  }
+}// End single
+
+
+
+} // Close woocommerce-page

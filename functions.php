@@ -415,9 +415,29 @@ add_action('woocommerce_archive_description','woocommerce_catalog_ordering', 15 
  * Woocommerce Mini Cart Ajax call function.
  * Author: DJ
  */
-function mode_theme_update_mini_cart() {
+function theme_update_mini_cart() {
   echo wc_get_template( 'cart/mini-cart.php' );
   die();
 }
-add_filter( 'wp_ajax_nopriv_mode_theme_update_mini_cart', 'mode_theme_update_mini_cart' );
-add_filter( 'wp_ajax_mode_theme_update_mini_cart', 'mode_theme_update_mini_cart' );
+add_filter( 'wp_ajax_nopriv_theme_update_mini_cart', 'theme_update_mini_cart' );
+add_filter( 'wp_ajax_theme_update_mini_cart', 'theme_update_mini_cart' );
+
+// Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php).
+// Used in conjunction with https://gist.github.com/DanielSantoro/1d0dc206e242239624eb71b2636ab148
+// Compatible with 3.0.1+, for lower versions, remove "woocommerce_" from the first mention on Line 4
+add_filter('woocommerce_add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+
+	ob_start();
+
+	?>
+	<span class="cart-badge badge"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
+	<?php
+
+	$fragments['span.cart-badge'] = ob_get_clean();
+
+	return $fragments;
+
+}

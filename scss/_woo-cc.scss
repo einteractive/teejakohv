@@ -1,0 +1,42 @@
+// Cart
+// Open
+form.woocommerce-cart-form {
+  .product-name a {
+    color: darken($green, 10%);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a.remove {
+    line-height: 0.9;
+    color: $red !important;
+    &:hover {
+      color: white !important;
+      background: $red;
+    }
+  }
+
+
+  // Cart <td>
+  // Open
+  td.actions {
+    div.coupon {
+      @extend .input-group;
+      input {
+        @extend .mb-1;
+      }
+    }
+    input {
+      @extend .form-control;
+      @include themefont;
+    }
+  } // Close <td>
+
+} // Close form
+
+// PayPal btn
+a#woo_pp_ec_button,
+a.wcppec-checkout-buttons__button {
+  @extend .btn;
+  @extend .btn-warning;
+
+}

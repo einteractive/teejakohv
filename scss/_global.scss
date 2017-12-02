@@ -1,4 +1,12 @@
-
+html {
+  font-size: 13px;
+  @include media-breakpoint-up(md) {
+    font-size: 15px;
+  }
+  @include media-breakpoint-up(lg) {
+  font-size: 17px;
+  }
+}
 
 body {
   background: url("../images/bg2K.jpg");
@@ -7,11 +15,11 @@ body {
   background-size: contain;
   @include themefont;
 
+ }
 
-      font-size: 17px;
 
 
-}
+
 #mainWraaper .container {
   position: relative;
   z-index: 9;
@@ -21,9 +29,11 @@ body {
 }
 .bg-dark,
 footer,
-#mainMenu {
+#mainMenu,
+#mainMenu ul.dropdown-menu {
   background-image: url("../images/debut_dark.png") !important;
 }
+
 a {
   &:hover {
     transition: color 300ms 0s ease;

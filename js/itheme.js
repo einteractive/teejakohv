@@ -3852,7 +3852,13 @@ return exports;
 }({},$,Popper));
 //# sourceMappingURL=bootstrap.js.map
 
-"use strict";
+// function name demo
+// Open
+$(function () {
+  'use strict'
+
+
+}) // Close
 
 // This code add and remove to woo tabs bootstrap4 active class to anchor element
 $( "li.nav-item.active a" ).addClass( "active" );
@@ -3866,19 +3872,29 @@ $( 'li.nav-item a' ).click(function(e){
 
 
 // Mini Cart button open Woo widget hover or click function
-// $('#cart').on('mouseenter', function () {
-//   $(".box").slideDown(600);
-//   console.log("IN");
-//   });
-// $('#cart').on('mouseleave', function () {
-//   $(".box").slideUp(600);
-//   console.log("OUT");
-//   });
+$(function () {
+  'use strict'
 
-$("#cart").click(function(){
-  $(".box").slideToggle(600);
-});
-// Close Mini Cart
+  // $('#cart').on('mouseenter', function () {
+  //   $(".box").slideDown(500);
+  //   console.log("IN");
+  //   });
+  // $('#cart').on('mouseleave', function () {
+  //   $(".box").slideUp(500);
+  //   console.log("OUT");
+  //   // Need add slow effect
+  // });
+
+  $("#cart").click(function(){
+    $(".box").slideToggle(600);
+  });
+
+}); // Close mini cart btn
+
+
+
+
+
 
 
 // Off-Canvas Menu in #mainWraaper
@@ -3894,7 +3910,7 @@ $(function () {
 
 // Define the PHP function to call from here
 var data = {
-  'action': 'mode_theme_update_mini_cart'
+  'action': 'theme_update_mini_cart'
 };
 $.post(
   woocommerce_params.ajax_url, // The AJAX URL
@@ -3904,6 +3920,66 @@ $.post(
   }
 );
 // Close anon function.
+
+
+// Mini cart animation and count
+// Open
+$(function () {
+  'use strict'
+  // Added lisener to add to cart botton
+  $( ".ajax_add_to_cart" ).bind( "click", function() {
+    console.log("animet");
+    $(this).addClass("animet");
+  });
+  // var pc = 1;
+  $(".ajax_add_to_cart").click(function(){
+
+
+  });
+
+}) // Close Mini cart animation and count
+
+
+
+// Add to cart fly effect with jQuery.
+$('.ajax_add_to_cart').on('click', function () {
+        var cart = $('#cart');
+        var imgtodrag = $(this).parent('li.product').find("a.woocommerce-LoopProduct-link img").eq(0);
+        if (imgtodrag) {
+            var imgclone = imgtodrag.clone()
+                .offset({
+                top: imgtodrag.offset().top,
+                left: imgtodrag.offset().left
+            })
+                .css({
+                    'opacity': '0.5',
+                    'position': 'absolute',
+                    'height': '150px',
+                    'width': '150px',
+                    'z-index': '1099'
+            })
+                .appendTo($('body'))
+                .animate({
+                    'top' : cart.offset().top + '50',
+                    'left' : cart.offset().left + '50',
+                    'width' : '75',
+                    'height' : '75'
+            }, 1000, 'easeInOutExpo');
+
+            setTimeout(function () {
+                cart.effect("shake", {
+                    times: 2
+                }, 200);
+            }, 1500);
+
+            imgclone.animate({
+                'width': 0,
+                'height': 0
+            }, function () {
+                $(this).detach()
+            });
+        }
+    }); // Close
 
 });
 

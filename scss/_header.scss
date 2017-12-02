@@ -1,7 +1,14 @@
 #site-logo {
+  max-width: 180px;
+  margin: 0;
+  @include media-breakpoint-up(md) {
     max-width: 240px;
     margin-bottom: -20px; // Should be changed
-    margin-top: -30px; // Should be changed
+
+    margin-top: -25px; // Should be changed
+   }
+
+
 }
 
 #topMenu {
@@ -102,74 +109,10 @@
     }
 
   #cart {
-    .box {
-      display: none;
-      background-color: $cart-bg-color;
-      box-shadow: 0 1px 0 #C6C6C6;
-      position: absolute;
-      z-index: 9999;
-      right: 0;
-      width: 300%;
-      @include border-radii(0, 0, 8px, 8px);
-      .widget_shopping_cart_content {
-        ul.woocommerce-mini-cart {
-          @extend .pt-3;
-          @extend .pl-0;
-          @extend .mx-0;
 
-          li {
-            @extend .row;
-            @extend .mx-0;
-              a {
-                &.remove {
-                  @extend .col-1;
-                  color: $red;
-                  text-decoration: none;
-                  font-weight: bold;
-                }
-                &:not(.remove) {
-                  @extend .col-6;
-                  color: $dark;
-                  font-weight: bold;
-                  font-size: 0.9rem;
-                  text-decoration: none;
-                  @include notwrap;
-                }
-                img {
-                  display: none;
-                }
-              } // a end
-              span.quantity {
-                @extend .col;
-                display: inline-block;
-              }
-              &:hover {
-                background-color: $yellow;
-              }
-          } // li
-        } // ul
-      } //.widget_shopping_cart_content
-      p.total {
-        @extend .text-center;
-        @extend .mb-0;
-        strong,
-        span {
 
-        }
-      }
-      p {
-        padding: 0rem 1rem 1rem 1rem;
-        a {
-          width: 100%;
-          margin-bottom: 0.5rem;
-          @extend .btn;
-          @extend .btn-success;
-          &:last-child {
-            @extend .btn-warning;
-          }
-        }
-      }
-    } //.box
+
+
     position: relative;
     @extend .pl-0;
 
@@ -193,31 +136,32 @@
 
 #mainMenu {
   @include border-radii(8px, 8px, 0, 0);
+ul {
+  &#mainMenu-id {
+    //@extend .d-flex;
+    width: 100%;
+  }
 
-li {
+  li {
+    @extend .mx-auto;
 
-    a {
-      @include themefont;
-      @extend .text-white;
-      text-transform: uppercase;
-      font-size: 1.1rem;
 
-      }
-
-      a:hover,
-      a:active,
-      &.active a {
-      color: $green !important;
-
-      }
-
-      ul.dropdown-menu {
-        background-color: $dark;
-        li {
-
+      a {
+        @include themefont;
+        font-style: normal;
+        @extend .text-white;
+        text-transform: uppercase;
+        font-size: 1.1rem;
         }
-      }
-    }
+
+        a:hover,
+        a:active,
+        &.active a {
+        color: $green !important;
+        }
+
+      } // Close li
+  } // Close ul
 
 
 

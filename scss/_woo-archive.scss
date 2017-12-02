@@ -1,0 +1,82 @@
+.woocommerce {
+// Main Shop Page
+ul.products li.product {
+  @extend .col-6;
+  @extend .col-md-4;
+  width: inherit !important;
+  margin: inherit !important;
+  @extend .px-2;
+
+    a {
+    transition: color 300ms 0s ease-in-out;
+      img {
+        border: 1px solid $theme-border;
+      }
+
+      h2 {
+        color: $green;
+        width: 97%;
+        @include notwrap;
+        }
+
+      span {
+        display: inline-block;
+        font-size: 1.3rem;
+        color: $dark;
+        font-weight: normal;
+        line-height: normal;
+
+        del span {
+          float: right;
+          @extend del;
+        }
+        &.onsale {
+          background-color: $green !important;
+          border-radius: 0rem 0rem 0rem 0rem;
+          color: white;
+          font-size: 0.9rem;
+          left: 0.5rem;
+          right: auto;
+          padding: 0.4rem;
+          min-height: inherit;
+          top: 1rem;
+          margin: 0;
+          }
+        } // span end
+
+      &:nth-child(even) {
+        @extend .btn;
+        @extend .btn-block;
+        @extend .btn-success;
+        position: relative;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+
+          & a {
+            @extend .btn;
+            @extend .bg-danger;
+
+          }
+        }
+        &.wc-forward {
+          @extend .btn;
+          @extend .btn-danger;
+          position: absolute;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          left: 0.5rem;
+          right: 0.5rem;
+          bottom: 0;
+          }
+
+      &:hover h2 {
+        color: darken($red, 10%);
+        transition: color 300ms 0s ease-in-out;
+        }
+
+    } // a end
+
+
+} // Close ul.products li.product
+} // Close .woocommerce

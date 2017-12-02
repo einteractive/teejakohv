@@ -1,5 +1,8 @@
 // Bootstrap 4
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// FontAwesome
+@import "../scss/font-awesome/font-awesome.scss";
 // Varibels
 $sidebar-li-color: #7b7979;
 $theme-border: #d7d7d7;
@@ -10,11 +13,15 @@ $cart-bg-color: #faf8ef;
 // Theme scss mixin
 @import "mixin";
 // Theme scss styles
-@import "header";
 @import "global";
 @import "page";
 @import "sidebar";
+@import "woo-widget";
+@import "woo-archive";
+@import "woo-single";
+@import "woo-cc";
 @import "woo";
+@import "header";
 @import "itemplate";
 @import "blog";
 @import "footer";
