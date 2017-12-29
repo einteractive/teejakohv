@@ -10767,7 +10767,8 @@ footer {
     footer .social-links a.text-light:focus {
       color: #dc3545 !important; }
   footer h3 {
-    color: #28a745; }
+    color: #28a745;
+    font-size: 1.3rem; }
   footer ul.navbar,
   footer ul.menu {
     list-style-type: none;
