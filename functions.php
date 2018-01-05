@@ -271,29 +271,6 @@ function wpt_footer_cart_link() {
 		echo '<a class="btn btn-success" href="' . $woocommerce->cart->get_checkout_url() . '" title="' . __( 'Checkout' ) . '">' . __( 'Checkout', 'woocommerce' ) . '</a>';
 	endif;
 }
-/**
- * Woocommerce Checkout.
- *
- * Disable fields in Checkout page. to make this for shipping change billing to  shipping in unset(... and add_filter
- *
- */
-function wpt_custom_billing_fields( $fields = array() ) {
-
-	unset( $fields['billing_company'] );
-	unset( $fields['billing_address_1'] );
-	unset( $fields['billing_address_2'] );
-	unset( $fields['billing_state'] );
-	unset( $fields['billing_city'] );
-	unset( $fields['billing_phone'] );
-
-	// echo "<pre>";
-	// var_export( $fields );
-	// echo "</pre>";
-
-	return $fields;
-
-}
-add_filter( 'woocommerce_billing_fields', 'wpt_custom_billing_fields' );
 
 /**
  * Woocommerce Coupons.
