@@ -136,14 +136,14 @@
 
 #mainMenu {
   @include border-radii(8px, 8px, 0, 0);
-ul {
-  &#mainMenu-id {
-    //@extend .d-flex;
-    width: 100%;
-  }
+  ul {
+    &#mainMenu-id {
+      //@extend .d-flex;
+      //width: 100%;
+    }
 
   li {
-    
+
     //@extend .mx-auto;
 
 
