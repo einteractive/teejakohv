@@ -555,7 +555,7 @@ pre {
 
 .col-1, #cart .box .widget_shopping_cart_content ul.woocommerce-mini-cart li a.remove, .col-2, .col-3, .col-4, .col-5, .col-6, #cart .box .widget_shopping_cart_content ul.woocommerce-mini-cart li a:not(.remove), .woocommerce ul.products li.product, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, #cart .box .widget_shopping_cart_content ul.woocommerce-mini-cart li span.quantity,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .woocommerce-page section.related ul.products li.product, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .single-product section.related ul.products li.product, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
@@ -806,7 +806,7 @@ pre {
   .col-md-2 {
     flex: 0 0 16.66667%;
     max-width: 16.66667%; }
-  .col-md-3, .woocommerce-page section.related ul.products li.product {
+  .col-md-3, .single-product section.related ul.products li.product {
     flex: 0 0 25%;
     max-width: 25%; }
   .col-md-4, .woocommerce ul.products li.product {
@@ -6859,8 +6859,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   margin-top: auto !important; }
 
 .mr-auto,
-.mx-auto,
-#mainMenu ul li {
+.mx-auto {
   margin-right: auto !important; }
 
 .mb-auto,
@@ -6868,8 +6867,7 @@ a.bg-dark:focus, a.bg-dark:hover {
   margin-bottom: auto !important; }
 
 .ml-auto,
-.mx-auto,
-#mainMenu ul li {
+.mx-auto {
   margin-left: auto !important; }
 
 @media (min-width: 576px) {
@@ -7748,7 +7746,6 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
-
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -7769,12 +7766,6 @@ a.text-dark:focus, a.text-dark:hover {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-
-#site-logo {
-  max-width: 240px;
-  margin-bottom: -20px;
-  margin-top: -30px; }
-
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -10378,6 +10369,15 @@ ul.product_list_widget li .woocommerce-Price-amount {
   border: 1px solid #d7d7d7;
   border-top: none; }
 
+.single-product section.related ul.products li.product .add_to_cart_button {
+  font-size: 0.9rem; }
+  @media (min-width: 992px) {
+    .single-product section.related ul.products li.product .add_to_cart_button {
+      font-size: 0.7rem; } }
+  @media (min-width: 1200px) {
+    .single-product section.related ul.products li.product .add_to_cart_button {
+      font-size: 0.9rem; } }
+
 form.woocommerce-cart-form .product-name a {
   color: #1e7e34;
   font-weight: bold;
@@ -10765,7 +10765,8 @@ footer {
     footer .social-links a.text-light:focus {
       color: #dc3545 !important; }
   footer h3 {
-    color: #28a745; }
+    color: #28a745;
+    font-size: 1.3rem; }
   footer ul.navbar,
   footer ul.menu {
     list-style-type: none;

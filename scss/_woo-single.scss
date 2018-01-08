@@ -2,11 +2,7 @@
 // Single page
 // This lines of code describe single page styles
 // Single page related product row
-section.related {
-  ul.products li.product {
-    @extend .col-md-3;
-  }
-}
+
 // Open product
 .product {
   img {
@@ -93,3 +89,25 @@ div.product .woocommerce-tabs {
 
 
 } // Close woocommerce-page
+
+.single-product {
+  section.related {
+    ul.products li.product {
+      @extend .col-md-3;
+
+      .add_to_cart_button {
+        font-size: 0.9rem;
+
+        @include media-breakpoint-up(lg) {
+          font-size: 0.7rem;
+        }
+        @include media-breakpoint-up(xl) {
+          font-size: 0.9rem;
+        }
+      }
+
+
+    }
+  }
+
+} // Close .single-product
