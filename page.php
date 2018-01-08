@@ -27,9 +27,18 @@
 
         <div id="pageRowMain" class="col-12 col-lg-9">
 
-            <?php if ( !is_cart() ) : ?>
+            <?php if ( !is_cart() && !is_checkout() ) : ?>
               <button type="button" class="btn btn-success btn-sm d-lg-none mb-3" data-toggle="offcanvas"><i class="fa fa-hand-o-up" aria-hidden="true"></i> Shop Category</button>
             <?php endif; ?>
+            <?php if ( is_checkout() ) : 
+              global $woocommerce;
+              $cart_url = $woocommerce->cart->get_cart_url();
+              
+            ?>
+            <a class="btn btn-success btn-sm mb-3" href="<?php echo $cart_url; ?>" role="button"><i class="fa fa-reply" aria-hidden="true"></i> <?php _e('Back to cart','teejakohv') ?></a>
+             
+            <?php endif; ?>
+
 
             
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

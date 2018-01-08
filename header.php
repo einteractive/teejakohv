@@ -95,7 +95,7 @@
 
          </button>
 
-          <?php if ( !is_cart() ) : ?>
+          <?php if ( !is_cart() && !is_checkout() ) : ?>
             <div class="box">
                 <?php if ( dynamic_sidebar( 'cart-menu' ) ); ?>
             </div>
