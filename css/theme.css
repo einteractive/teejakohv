@@ -10541,11 +10541,16 @@ form.woocommerce-cart-form td.actions input {
     color: #28a745 !important; }
 
 #carouselFront .carousel-inner .carousel-item {
-  max-height: 429px; }
+  min-height: 13rem; }
   #carouselFront .carousel-inner .carousel-item img {
     object-fit: cover;
     -o-object-fit: cover;
-    max-height: 429px; }
+    min-height: 300px; }
+  @media (min-width: 992px) {
+    #carouselFront .carousel-inner .carousel-item {
+      max-height: 429px; }
+      #carouselFront .carousel-inner .carousel-item img {
+        max-height: 429px; } }
 
 .blog article.post img,
 .single-post article.post img,
