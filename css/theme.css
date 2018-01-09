@@ -10529,16 +10529,19 @@ form.woocommerce-cart-form td.actions input {
   -moz-border-radius-topright: 8px !important;
   -moz-border-radius-bottomright: 0 !important;
   -moz-border-radius-bottomleft: 0 !important; }
-  #mainMenu ul li a {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-style: italic;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 1.1rem; }
-  #mainMenu ul li a:hover,
-  #mainMenu ul li a:active,
-  #mainMenu ul li.active a {
-    color: #28a745 !important; }
+  #mainMenu ul li {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem; }
+    #mainMenu ul li a {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-style: italic;
+      font-style: normal;
+      text-transform: uppercase;
+      font-size: 1.1rem; }
+    #mainMenu ul li a:hover,
+    #mainMenu ul li a:active,
+    #mainMenu ul li.active a {
+      color: #28a745 !important; }
 
 #carouselFront .carousel-inner .carousel-item {
   min-height: 13rem; }
