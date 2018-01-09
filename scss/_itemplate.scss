@@ -4,21 +4,27 @@
 
   .carousel-inner {
 
+
     .carousel-item {
-      max-height: 429px;
 
-      img {
-        object-fit: cover;
-        -o-object-fit: cover;
-        max-height: 429px;
+      
+      min-height: 13rem;
+        
+        img {
+          object-fit: cover;
+          -o-object-fit: cover;
+          min-height: 300px;
+        }
+        @include media-breakpoint-up(lg) { 
+          max-height: 429px;
+            img {
+              max-height: 429px;
+            }
+        }
+    } // Close .carousel-item 
 
+  } // Close .carousel-inner
 
+  
 
-
-      }
-    }
-    }
-
-
-
-}
+} // Close #carouselFront
